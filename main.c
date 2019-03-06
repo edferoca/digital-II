@@ -17,7 +17,7 @@ static void busy_wait(unsigned int ds)
 	while(timer0_value_read()) timer0_update_value_write(1);
 }
 
-
+//test edit
 static char *readstr(void)
 {
 	char c[2];
