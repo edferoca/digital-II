@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">Mram_storage1/SPO</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">79</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">Mram_storage2/SPO,
+Mram_storage3/SPO,
+Mram_storage6/SPO,
+Mram_storage4/SPO,
+Mram_storage5/SPO</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="error" file="Pack" num="2811" delta="old" >Directed packing was unable to obey the user design constraints <arg fmt="%z" index="1">(LOC=D18) which requires the combination of the symbols listed below to be packed into a single IOB33 component.
+
+The directed pack was not possible because: More than one pad symbol.
+The symbols involved are:
+	BUF symbol &quot;rst_lcd_OBUF&quot; (Output Signal = rst_lcd)
+	PAD symbol &quot;rst_lcd&quot; (Pad Signal = rst_lcd)
+	PAD symbol &quot;lcd_spi_mosi&quot; (Pad Signal = lcd_spi_mosi)</arg>
+</msg>
+
+</messages>
+

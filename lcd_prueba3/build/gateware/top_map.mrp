@@ -1,0 +1,46 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -ol high -w -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -1
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Wed Mar  6 09:47:46 2019
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Pack:2811 - Directed packing was unable to obey the user design
+   constraints (LOC=D18) which requires the combination of the symbols listed
+   below to be packed into a single IOB33 component.
+
+   The directed pack was not possible because: More than one pad symbol.
+   The symbols involved are:
+   	BUF symbol "rst_lcd_OBUF" (Output Signal = rst_lcd)
+   	PAD symbol "rst_lcd" (Pad Signal = rst_lcd)
+   	PAD symbol "lcd_spi_mosi" (Pad Signal = lcd_spi_mosi)
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network Mram_storage1/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 79 more times for the
+   following (max. 5 shown):
+   Mram_storage2/SPO,
+   Mram_storage3/SPO,
+   Mram_storage6/SPO,
+   Mram_storage4/SPO,
+   Mram_storage5/SPO
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
