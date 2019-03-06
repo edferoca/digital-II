@@ -8,7 +8,7 @@ COPY_TO_MAIN_RAM=1
 EXECUTE_IN_PLACE=0
 SOC_DIRECTORY=/opt/liteX/litex/litex/soc
 export BUILDINC_DIRECTORY
-BUILDINC_DIRECTORY=/home/edferoca/Documentos/digital2/fpga_101-master/SDpruebain2/build/software/include
+BUILDINC_DIRECTORY=/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/software/include
 LIBCOMPILER_RT_DIRECTORY=/opt/liteX/litex/litex/soc/software/libcompiler_rt
 LIBBASE_DIRECTORY=/opt/liteX/litex/litex/soc/software/libbase
 LIBNET_DIRECTORY=/opt/liteX/litex/litex/soc/software/libnet

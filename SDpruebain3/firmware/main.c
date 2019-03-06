@@ -63,22 +63,23 @@ static void sd_do (void){
 	//tiempo muerto para energizar correctamente la SD
 //CMD0
 
-		SD_xfer_write(1 | 16*WRITE_LENGTH);
+		SD_xfer_write(1 | 16*WRITE_LENGTH | 16*READ_LENGTH);
 		busy_wait(0.01);
 		printf("Power sequence complete...\n");
-		SD_xfer_write(0 | 16*WRITE_LENGTH);
+		SD_xfer_write(0 |  16*WRITE_LENGTH | 16*READ_LENGTH);
 		//busy_wait(15);
 		SD_write_16(0x4000);//01000000 00000000
 		SD_write_16(0x0000);//00000000 00000000
 		SD_write_16(0x0095);//00000000 10010101
+				printf("miso : %x\n",SD_miso_data_read());
 		busy_wait(0.001);
-		printf("miso data: %x\n",SD_miso_data_read())
+		printf("miso : %x\n",SD_miso_data_read());
 		if(SD_miso_data_read() == 1){
 			SD_write_16(0X4800);
 			SD_write_16(0X0001);
 			SD_write_16(0XAA0F);
 			busy_wait(0.001);
-			printf("miso data: %x\n",SD_miso_data_read())
+			printf("miso data: %x\n",SD_miso_data_read());
 		}
 printf("Inicialización terminada.\n" );
 }
