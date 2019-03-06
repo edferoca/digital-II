@@ -39,10 +39,10 @@ static void SD_configure(void) {
 	//																			reloj de 5MHz(16)
 	//				100M/400k = div_write + 2
   SD_config_write(config);
-	SD_xfer_write(1 | 16*WRITE_LENGTH | 16*READ_LENGTH);
+	SD_xfer_write(1 | 16*WRITE_LENGTH);
 }
 
-static void SD_write_8(unsigned short int value){
+static void SD_write_16(unsigned short int value){
 	SD_configure();
 
 	//unsigned char val = (0b00001010 << 16) | ((0 & 0xff) << 8) | (value & 0xff);
@@ -57,118 +57,29 @@ static void SD_write_8(unsigned short int value){
 
 
 static void sd_do (void){
-	printf("Inicializando SD...\n");
+		printf("Inicializando SD...\n");
+
+		busy_wait(0.01);
 	//tiempo muerto para energizar correctamente la SD
+//CMD0
 
-			SD_write_8(0x4000);
-			SD_write_8(0x0000);
-			SD_write_8(0x0095);
-
-			SD_write_8(0xFFFF);
-			uint32_t val1= SD_miso_data_read();
-			//uint32_t val4= SD_miso_data_read();
-			SD_write_8(0xFFFF);
-			SD_write_8(0xFFFF);
-
-
-			SD_write_8(0X4800);
-			SD_write_8(0X0001);
-			SD_write_8(0XAA87);
-			uint32_t val2= SD_miso_data_read();
-			SD_write_8(0xFFFF);
-			SD_write_8(0xFFFF);
-			SD_write_8(0xFFFF);
-
-
-			 printf("%X %x\n", val1, val2 );
-
-	  //Espera
-		//una
-		//respuesta de
-	//la sd
-		//while(!(SD_miso_data_read() == 1)){	SD_write_8(255);}
-
-
-		/*
-		//Envía condiciones de operación(CMD8)
-		// HEX: 48 00 00 00 00 FF
-		// DEC: 72 00 00 00 00 255
-		//Dicen que el CRC7 es 0x87 en lugar de FF
-		// arg: 0x00 00 01 AA ?
-		SD_write_8(0X4800);
-		SD_write_8(0X0001);
-		SD_write_8(0XAA87);
-		SD_write_8(0xFFFF);
-		SD_write_8(0xFFFF);
-		SD_write_8(0xFFFF);
-		// HEX: 77 00 00 00 00 FF(cmd55)
-		// DEC: 119 00 00 00 00 255
-		// posible CRC7: 65
-		SD_write_8(0X7700);
-		SD_write_8(0X0000);
-		SD_write_8(0X00FF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		//HEX: 69 00 00 00 00 FF(acmd41)
-		// DEC: 105 00 00 00 00 255
-		//posible CRC7: E5 si el argumento es 0 ó 77 si el argumento es
-	// arg:0x 40 00 00 00
-		SD_write_8(0X6900);
-		SD_write_8(0X0000);
-		SD_write_8(0X00FF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-
-		//La respuesta debe ser 00, si es 1 se debe reenviar
-		//la orde y si es 5 se puede usar cmd1 en lugar de acmd41
-
-
-		//CMD 58 LEER OCR
-		// HEX 7A 00 00 00 00 95 (CMD 58)
-		SD_write_8(0X7A00);
-		SD_write_8(0X0000);
-		SD_write_8(0X00FD);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-
-		//CMD 16 LEER OCR
-		// HEX 50 00 00 02 00 15 (CMD 58)
-
-		SD_write_8(0X5000);
-		SD_write_8(0X0002);
-		SD_write_8(0X0015);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-
-		//CMD 58 LEER OCR
-		// HEX 7A 00 00 00 00 95 (CMD 58)
-		SD_write_8(0X7A00);
-		SD_write_8(0X0000);
-		SD_write_8(0X00FD);
-		//printf("%x\n",SD_miso_data_read());
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-		SD_write_8(0XFFFF);
-
-
-
-
-	//CMD 17 LEER OCR
-	// HEX 51 00 00 00 00 55 (CMD 58)
-	SD_write_8(0X5100);
-	SD_write_8(0X0000);
-	SD_write_8(0X0055);
-	SD_write_8(0XFFFF);
-	SD_write_8(0XFFFF);
-	SD_write_8(0XFFFF);
-	//Envía condiciones de operación(ACMD41)
-*/
-
-
+		SD_xfer_write(1 | 16*WRITE_LENGTH);
+		busy_wait(0.01);
+		printf("Power sequence complete...\n");
+		SD_xfer_write(0 | 16*WRITE_LENGTH);
+		//busy_wait(15);
+		SD_write_16(0x4000);//01000000 00000000
+		SD_write_16(0x0000);//00000000 00000000
+		SD_write_16(0x0095);//00000000 10010101
+		busy_wait(0.001);
+		printf("miso data: %x\n",SD_miso_data_read())
+		if(SD_miso_data_read() == 1){
+			SD_write_16(0X4800);
+			SD_write_16(0X0001);
+			SD_write_16(0XAA0F);
+			busy_wait(0.001);
+			printf("miso data: %x\n",SD_miso_data_read())
+		}
 printf("Inicialización terminada.\n" );
 }
 
