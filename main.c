@@ -6,7 +6,7 @@
 #include <uart.h>
 #include <console.h>
 #include <generated/csr.h>
-cvxcvxcvxcv
+cvxcvxcvxcv  ads
 static void busy_wait(unsigned int ds)
 {
 	timer0_en_write(0);
