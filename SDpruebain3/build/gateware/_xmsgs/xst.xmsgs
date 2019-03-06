@@ -296,22 +296,22 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v" Line 1897: Assignment to <arg fmt="%s" index="1">SD_clk_t_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain3/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1769</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">mem</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">top</arg>&apos;, is tied to its initial value.

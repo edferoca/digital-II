@@ -76,7 +76,7 @@ static void sd_do (void){
 			SD_write_16(0X0001);
 			SD_write_16(0XAA0F);
 			busy_wait(0.001);
-			printf("miso data: %x\n",SD_miso_data_read())
+			printf("miso data: %x\n",SD_miso_data_read());
 		}
 printf("Inicialización terminada.\n" );
 }
