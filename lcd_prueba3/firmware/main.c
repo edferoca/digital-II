@@ -74,7 +74,6 @@ static void help(void)
 	puts("Available commands:");
 	puts("help                            - this command");
 	puts("reboot                          - reboot CPU");
-	puts("sw										  		-led->sw");
 	puts("lcd										  		-cpantalla");
 }
 
@@ -84,16 +83,6 @@ static void reboot(void)
 }
 
 
-static void sw_led_test(void)
-{
-	int i=1;
-	printf("sw_led_test...\n");
-
-	while (i) {
-			leds_out_write(switches_in_read());
-			busy_wait(1);
-	}
-}
 
 //creacion de constantes para spi
 unsigned int WRITE_LENGTH = (1 << 16); //tamaño de como va ha escribir datos
@@ -131,8 +120,6 @@ static void console_service(void)
 		help();
 	else if(strcmp(token, "reboot") == 0)
 		reboot();
-	else if(strcmp(token,"sw")==0)
-		sw_led_test();
 	else if(strcmp(token,"lcd")==0)
 		pantalla();
 	prompt();
