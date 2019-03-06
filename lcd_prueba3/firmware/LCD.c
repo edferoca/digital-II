@@ -195,6 +195,7 @@ void lcd_config(void){
 	   lcd_xfer_write(1 | 0x180000); //180001
 	   lcd_config_write(0x10300000); //5000 Khz
 }
+
 void lcd_write( unsigned char rs, unsigned int info){
 		rs_out_write(rs);
 		lcd_mosi_data_write(info<<16);
