@@ -8,7 +8,7 @@ main.o: main.c /opt/liteX/litex/litex/soc/software/include/base/stdio.h \
   /opt/liteX/litex/litex/soc/software/include/base/console.h \
   /home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/software/include/generated/csr.h \
   /opt/liteX/litex/litex/soc/software/include/base/stdint.h \
-  /opt/liteX/litex/litex/soc/software/include/hw/common.h LCD.h
+  /opt/liteX/litex/litex/soc/software/include/hw/common.h LCD.h lcdraw.h
 
 /opt/liteX/litex/litex/soc/software/include/base/stdio.h:
 
@@ -33,3 +33,5 @@ main.o: main.c /opt/liteX/litex/litex/soc/software/include/base/stdio.h \
 /opt/liteX/litex/litex/soc/software/include/hw/common.h:
 
 LCD.h:
+
+lcdraw.h:
