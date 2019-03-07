@@ -192,7 +192,7 @@ void lcd_inic(void){
 
 
 void lcd_config(void){
-	   lcd_xfer_write(1 | 0x180000); //180001
+	   lcd_xfer_write(1 | 0x100000); //180001
 	   lcd_config_write(0x10300000); //5000 Khz
 }
 

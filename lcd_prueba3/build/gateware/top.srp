@@ -53,193 +53,178 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
 WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
-Parsing module <lm32_addsub>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_interrupt>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
-Parsing module <lm32_dp_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_shifter>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
-Parsing module <lm32_decoder>.
+Parsing module <lm32_adder>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
 Parsing module <lm32_icache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
-Parsing module <lm32_load_store_unit>.
-Analyzing Verilog file "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" into library work
-Parsing module <top>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_adder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_multiplier>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
-Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
 Parsing module <lm32_cpu>.
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
+Parsing module <lm32_load_store_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" into library work
+Parsing module <top>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_mc_arithmetic>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Parsing module <lm32_addsub>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
+Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_logic_op>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_multiplier>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2339: Port I_LOCK_O is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2014: Port I_LOCK_O is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <$unit_1>.
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 56: Using initial value of basesoc_ctrl_reset_reset_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 100: Using initial value of basesoc_rom_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 113: Using initial value of basesoc_sram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 128: Using initial value of basesoc_main_ram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 147: Using initial value of basesoc_bus_wishbone_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 164: Using initial value of basesoc_uart_phy_source_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 165: Using initial value of basesoc_uart_phy_source_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 201: Using initial value of basesoc_uart_tx_fifo_sink_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 202: Using initial value of basesoc_uart_tx_fifo_sink_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 218: Using initial value of basesoc_uart_tx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 255: Using initial value of basesoc_uart_rx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 273: Using initial value of basesoc_uart_reset since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 285: Using initial value of basesoc_timer0_update_value_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 388: Using initial value of lcd_start_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 409: Using initial value of display_write_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 422: Using initial value of display_enable since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 22: Using initial value of ctrl_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 66: Using initial value of rom_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 79: Using initial value of sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 94: Using initial value of main_ram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 113: Using initial value of bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 130: Using initial value of uart_phy_source_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 131: Using initial value of uart_phy_source_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 167: Using initial value of uart_tx_fifo_sink_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 168: Using initial value of uart_tx_fifo_sink_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 184: Using initial value of uart_tx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 221: Using initial value of uart_rx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 239: Using initial value of uart_reset since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 251: Using initial value of timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 350: Using initial value of start_w since it is never assigned
 Reading initialization file \"mem.init\".
-WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2380: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2055: Signal <mem> in initial block is partially initialized.
 Reading initialization file \"mem_2.init\".
-WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2416: Signal <mem_2> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2091: Signal <mem_2> in initial block is partially initialized.
 Reading initialization file \"mem_3.init\".
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 764: Assignment to basesoc_uart_phy_sink_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 765: Assignment to basesoc_uart_phy_sink_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 769: Assignment to basesoc_uart_phy_source_ready ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 815: Assignment to basesoc_uart_tx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 840: Assignment to basesoc_uart_rx_fifo_source_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 841: Assignment to basesoc_uart_rx_fifo_source_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 845: Assignment to basesoc_uart_rx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 877: Assignment to lcd_config_padding0 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 878: Assignment to lcd_xfer_padding0 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 891: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 973: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 976: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 979: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 982: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 985: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 988: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1069: Assignment to basesoc_rom_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1070: Assignment to basesoc_rom_bus_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1072: Assignment to basesoc_rom_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1073: Assignment to basesoc_rom_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1074: Assignment to basesoc_rom_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1080: Assignment to basesoc_sram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1081: Assignment to basesoc_sram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1087: Assignment to basesoc_main_ram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1088: Assignment to basesoc_main_ram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1091: Assignment to basesoc_bus_wishbone_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1094: Assignment to basesoc_bus_wishbone_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1095: Assignment to basesoc_bus_wishbone_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1116: Assignment to csrbank0_in_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1117: Assignment to csrbank0_in_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1120: Assignment to basesoc_ctrl_reset_reset_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1130: Assignment to csrbank1_bus_errors3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1131: Assignment to csrbank1_bus_errors3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1132: Assignment to csrbank1_bus_errors2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1133: Assignment to csrbank1_bus_errors2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1134: Assignment to csrbank1_bus_errors1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1135: Assignment to csrbank1_bus_errors1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1136: Assignment to csrbank1_bus_errors0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1137: Assignment to csrbank1_bus_errors0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1138: Assignment to basesoc_ctrl_storage ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1152: Assignment to display_write_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1159: Assignment to csrbank3_id7_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1160: Assignment to csrbank3_id7_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1161: Assignment to csrbank3_id6_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1162: Assignment to csrbank3_id6_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1163: Assignment to csrbank3_id5_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1164: Assignment to csrbank3_id5_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1165: Assignment to csrbank3_id4_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1166: Assignment to csrbank3_id4_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1167: Assignment to csrbank3_id3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1168: Assignment to csrbank3_id3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1169: Assignment to csrbank3_id2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1170: Assignment to csrbank3_id2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1171: Assignment to csrbank3_id1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1172: Assignment to csrbank3_id1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1173: Assignment to csrbank3_id0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1174: Assignment to csrbank3_id0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1210: Assignment to csrbank4_active_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1211: Assignment to csrbank4_active_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1212: Assignment to csrbank4_pending_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1213: Assignment to csrbank4_pending_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1222: Assignment to csrbank4_miso_data3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1223: Assignment to csrbank4_miso_data3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1224: Assignment to csrbank4_miso_data2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1225: Assignment to csrbank4_miso_data2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1226: Assignment to csrbank4_miso_data1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1227: Assignment to csrbank4_miso_data1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1228: Assignment to csrbank4_miso_data0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1229: Assignment to csrbank4_miso_data0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1270: Assignment to csrbank8_in1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1271: Assignment to csrbank8_in1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1272: Assignment to csrbank8_in0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1273: Assignment to csrbank8_in0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1295: Assignment to basesoc_timer0_update_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1297: Assignment to csrbank9_value3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1298: Assignment to csrbank9_value3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1299: Assignment to csrbank9_value2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1300: Assignment to csrbank9_value2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1301: Assignment to csrbank9_value1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1302: Assignment to csrbank9_value1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1303: Assignment to csrbank9_value0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1304: Assignment to csrbank9_value0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1305: Assignment to basesoc_timer0_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1306: Assignment to basesoc_timer0_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1332: Assignment to csrbank10_txfull_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1333: Assignment to csrbank10_txfull_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1334: Assignment to csrbank10_rxempty_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1335: Assignment to csrbank10_rxempty_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1336: Assignment to basesoc_uart_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1337: Assignment to basesoc_uart_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1385: Assignment to sram_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1398: Assignment to sram_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1490: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1490: Assignment to xilinxmultiregimpl1 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1492: Result of 5-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1492: Assignment to xilinxmultiregimpl2 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1517: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1518: Result of 30-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1690: Result of 58-bit expression is truncated to fit in 57-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1498: Assignment to basesoc_ctrl_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 663: Assignment to uart_phy_sink_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 664: Assignment to uart_phy_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 668: Assignment to uart_phy_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 714: Assignment to uart_tx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 739: Assignment to uart_rx_fifo_source_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 740: Assignment to uart_rx_fifo_source_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 744: Assignment to uart_rx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 775: Assignment to config_padding0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 776: Assignment to xfer_padding0 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 789: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 886: Assignment to rom_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 887: Assignment to rom_bus_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 889: Assignment to rom_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 890: Assignment to rom_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 891: Assignment to rom_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 897: Assignment to sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 898: Assignment to sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 904: Assignment to main_ram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 905: Assignment to main_ram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 908: Assignment to bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 911: Assignment to bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 912: Assignment to bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 933: Assignment to csrbank0_in_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 934: Assignment to csrbank0_in_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 937: Assignment to ctrl_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 947: Assignment to csrbank1_bus_errors3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 948: Assignment to csrbank1_bus_errors3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 949: Assignment to csrbank1_bus_errors2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 950: Assignment to csrbank1_bus_errors2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 951: Assignment to csrbank1_bus_errors1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 952: Assignment to csrbank1_bus_errors1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 953: Assignment to csrbank1_bus_errors0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 954: Assignment to csrbank1_bus_errors0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 955: Assignment to ctrl_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 965: Assignment to csrbank2_id7_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 966: Assignment to csrbank2_id7_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 967: Assignment to csrbank2_id6_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 968: Assignment to csrbank2_id6_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 969: Assignment to csrbank2_id5_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 970: Assignment to csrbank2_id5_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 971: Assignment to csrbank2_id4_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 972: Assignment to csrbank2_id4_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 973: Assignment to csrbank2_id3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 974: Assignment to csrbank2_id3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 975: Assignment to csrbank2_id2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 976: Assignment to csrbank2_id2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 977: Assignment to csrbank2_id1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 978: Assignment to csrbank2_id1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 979: Assignment to csrbank2_id0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 980: Assignment to csrbank2_id0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1016: Assignment to csrbank3_active_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1017: Assignment to csrbank3_active_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1018: Assignment to csrbank3_pending_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1019: Assignment to csrbank3_pending_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1028: Assignment to csrbank3_miso_data3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1029: Assignment to csrbank3_miso_data3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1030: Assignment to csrbank3_miso_data2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1031: Assignment to csrbank3_miso_data2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1032: Assignment to csrbank3_miso_data1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1033: Assignment to csrbank3_miso_data1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1034: Assignment to csrbank3_miso_data0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1035: Assignment to csrbank3_miso_data0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1086: Assignment to timer0_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1088: Assignment to csrbank6_value3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1089: Assignment to csrbank6_value3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1090: Assignment to csrbank6_value2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1091: Assignment to csrbank6_value2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1092: Assignment to csrbank6_value1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1093: Assignment to csrbank6_value1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1094: Assignment to csrbank6_value0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1095: Assignment to csrbank6_value0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1096: Assignment to timer0_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1097: Assignment to timer0_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1123: Assignment to csrbank7_txfull_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1124: Assignment to csrbank7_txfull_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1125: Assignment to csrbank7_rxempty_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1126: Assignment to csrbank7_rxempty_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1127: Assignment to uart_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1128: Assignment to uart_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1170: Assignment to sram_bus_we1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1180: Assignment to sram_bus_dat_w1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1272: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1272: Assignment to xilinxmultiregimpl1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1297: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1298: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1470: Result of 58-bit expression is truncated to fit in 57-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 1278: Assignment to ctrl_re ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu(eba_reset=32'b0)>.
 
@@ -284,12 +269,12 @@ WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/su
 WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to im_csr_read_data ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2433: Assignment to basesoc_uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2450: Assignment to basesoc_uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2108: Assignment to uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2125: Assignment to uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
 
 Elaborating module <DNA_PORT>.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2474: Assignment to lcd_cs_n_t_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2477: Assignment to lcd_clk_t_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2149: Assignment to cs_n_t_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" Line 2152: Assignment to clk_t_i ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -301,20 +286,16 @@ Synthesizing Unit <top>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs0>.
     Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs1>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs1>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl2_regs0>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl2_regs0>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl2_regs1>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl2_regs1>.
     Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs0>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs0>.
     Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs1>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs1>.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2341: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba3/build/gateware/top.v" line 2016: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
 WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
     Found 8192x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
@@ -324,340 +305,309 @@ WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its in
     Found 16x10-bit dual-port RAM <Mram_storage_1> for signal <storage_1>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>, simulation mismatch.
     Found 33x8-bit single-port Read Only RAM <Mram_mem_3> for signal <mem_3>.
-    Found 32-bit register for signal <basesoc_ctrl_bus_errors>.
-    Found 1-bit register for signal <basesoc_rom_bus_ack>.
-    Found 1-bit register for signal <basesoc_sram_bus_ack>.
-    Found 1-bit register for signal <basesoc_main_ram_bus_ack>.
-    Found 1-bit register for signal <basesoc_interface_we>.
-    Found 8-bit register for signal <basesoc_interface_dat_w>.
-    Found 14-bit register for signal <basesoc_interface_adr>.
-    Found 32-bit register for signal <basesoc_bus_wishbone_dat_r>.
-    Found 1-bit register for signal <basesoc_bus_wishbone_ack>.
-    Found 2-bit register for signal <basesoc_counter>.
-    Found 1-bit register for signal <basesoc_uart_phy_sink_ready>.
-    Found 8-bit register for signal <basesoc_uart_phy_tx_reg>.
-    Found 4-bit register for signal <basesoc_uart_phy_tx_bitcount>.
-    Found 1-bit register for signal <basesoc_uart_phy_tx_busy>.
+    Found 32-bit register for signal <ctrl_bus_errors>.
+    Found 1-bit register for signal <rom_bus_ack>.
+    Found 1-bit register for signal <sram_bus_ack>.
+    Found 1-bit register for signal <main_ram_bus_ack>.
+    Found 1-bit register for signal <interface_we>.
+    Found 8-bit register for signal <interface_dat_w>.
+    Found 14-bit register for signal <interface_adr>.
+    Found 32-bit register for signal <bus_wishbone_dat_r>.
+    Found 1-bit register for signal <bus_wishbone_ack>.
+    Found 2-bit register for signal <counter>.
+    Found 1-bit register for signal <uart_phy_sink_ready>.
+    Found 8-bit register for signal <uart_phy_tx_reg>.
+    Found 4-bit register for signal <uart_phy_tx_bitcount>.
+    Found 1-bit register for signal <uart_phy_tx_busy>.
     Found 1-bit register for signal <serial_tx>.
-    Found 32-bit register for signal <basesoc_uart_phy_phase_accumulator_tx>.
-    Found 1-bit register for signal <basesoc_uart_phy_uart_clk_txen>.
-    Found 1-bit register for signal <basesoc_uart_phy_source_valid>.
-    Found 1-bit register for signal <basesoc_uart_phy_rx_r>.
-    Found 1-bit register for signal <basesoc_uart_phy_rx_busy>.
-    Found 4-bit register for signal <basesoc_uart_phy_rx_bitcount>.
-    Found 8-bit register for signal <basesoc_uart_phy_source_payload_data>.
-    Found 8-bit register for signal <basesoc_uart_phy_rx_reg>.
-    Found 32-bit register for signal <basesoc_uart_phy_phase_accumulator_rx>.
-    Found 1-bit register for signal <basesoc_uart_phy_uart_clk_rxen>.
-    Found 1-bit register for signal <basesoc_uart_tx_pending>.
-    Found 1-bit register for signal <basesoc_uart_tx_old_trigger>.
-    Found 1-bit register for signal <basesoc_uart_rx_pending>.
-    Found 1-bit register for signal <basesoc_uart_rx_old_trigger>.
-    Found 1-bit register for signal <basesoc_uart_tx_fifo_readable>.
-    Found 4-bit register for signal <basesoc_uart_tx_fifo_produce>.
-    Found 4-bit register for signal <basesoc_uart_tx_fifo_consume>.
-    Found 5-bit register for signal <basesoc_uart_tx_fifo_level0>.
-    Found 1-bit register for signal <basesoc_uart_rx_fifo_readable>.
-    Found 4-bit register for signal <basesoc_uart_rx_fifo_produce>.
-    Found 4-bit register for signal <basesoc_uart_rx_fifo_consume>.
-    Found 5-bit register for signal <basesoc_uart_rx_fifo_level0>.
-    Found 32-bit register for signal <basesoc_timer0_value>.
-    Found 32-bit register for signal <basesoc_timer0_value_status>.
-    Found 1-bit register for signal <basesoc_timer0_zero_pending>.
-    Found 1-bit register for signal <basesoc_timer0_zero_old_trigger>.
+    Found 32-bit register for signal <uart_phy_phase_accumulator_tx>.
+    Found 1-bit register for signal <uart_phy_uart_clk_txen>.
+    Found 1-bit register for signal <uart_phy_source_valid>.
+    Found 1-bit register for signal <uart_phy_rx_r>.
+    Found 1-bit register for signal <uart_phy_rx_busy>.
+    Found 4-bit register for signal <uart_phy_rx_bitcount>.
+    Found 8-bit register for signal <uart_phy_source_payload_data>.
+    Found 8-bit register for signal <uart_phy_rx_reg>.
+    Found 32-bit register for signal <uart_phy_phase_accumulator_rx>.
+    Found 1-bit register for signal <uart_phy_uart_clk_rxen>.
+    Found 1-bit register for signal <uart_tx_pending>.
+    Found 1-bit register for signal <uart_tx_old_trigger>.
+    Found 1-bit register for signal <uart_rx_pending>.
+    Found 1-bit register for signal <uart_rx_old_trigger>.
+    Found 1-bit register for signal <uart_tx_fifo_readable>.
+    Found 4-bit register for signal <uart_tx_fifo_produce>.
+    Found 4-bit register for signal <uart_tx_fifo_consume>.
+    Found 5-bit register for signal <uart_tx_fifo_level0>.
+    Found 1-bit register for signal <uart_rx_fifo_readable>.
+    Found 4-bit register for signal <uart_rx_fifo_produce>.
+    Found 4-bit register for signal <uart_rx_fifo_consume>.
+    Found 5-bit register for signal <uart_rx_fifo_level0>.
+    Found 32-bit register for signal <timer0_value>.
+    Found 32-bit register for signal <timer0_value_status>.
+    Found 1-bit register for signal <timer0_zero_pending>.
+    Found 1-bit register for signal <timer0_zero_old_trigger>.
     Found 7-bit register for signal <dna_cnt>.
     Found 57-bit register for signal <dna_status>.
-    Found 32-bit register for signal <lcd_data_read>.
-    Found 16-bit register for signal <lcd_cs>.
-    Found 6-bit register for signal <lcd_machine_n_write>.
-    Found 6-bit register for signal <lcd_machine_n_read>.
-    Found 32-bit register for signal <lcd_machine_data>.
-    Found 1-bit register for signal <lcd_pending1>.
-    Found 32-bit register for signal <lcd_data_write>.
-    Found 1-bit register for signal <lcd_active>.
-    Found 1-bit register for signal <lcd_pending0>.
-    Found 1-bit register for signal <lcd_machine_write0>.
-    Found 1-bit register for signal <lcd_machine_bias1>.
-    Found 8-bit register for signal <lcd_machine_cnt>.
-    Found 1-bit register for signal <lcd_machine_clk>.
+    Found 32-bit register for signal <data_read>.
+    Found 16-bit register for signal <cs>.
+    Found 6-bit register for signal <machine_n_write>.
+    Found 6-bit register for signal <machine_n_read>.
+    Found 32-bit register for signal <machine_data>.
+    Found 1-bit register for signal <pending1>.
+    Found 32-bit register for signal <data_write>.
+    Found 1-bit register for signal <active>.
+    Found 1-bit register for signal <pending0>.
+    Found 1-bit register for signal <machine_write0>.
+    Found 1-bit register for signal <machine_bias1>.
+    Found 8-bit register for signal <machine_cnt>.
+    Found 1-bit register for signal <machine_clk>.
     Found 2-bit register for signal <state>.
-    Found 5-bit register for signal <display_values0>.
-    Found 5-bit register for signal <display_values1>.
-    Found 5-bit register for signal <display_values2>.
-    Found 5-bit register for signal <display_values3>.
-    Found 5-bit register for signal <display_values4>.
-    Found 5-bit register for signal <display_values5>.
-    Found 6-bit register for signal <display_cs2>.
-    Found 17-bit register for signal <display_counter>.
     Found 1-bit register for signal <grant>.
     Found 4-bit register for signal <slave_sel_r>.
     Found 20-bit register for signal <count>.
     Found 8-bit register for signal <interface0_bank_bus_dat_r>.
     Found 8-bit register for signal <interface1_bank_bus_dat_r>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<31>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<30>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<29>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<28>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<27>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<26>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<25>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<24>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<23>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<22>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<21>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<20>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<19>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<18>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<17>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<16>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<15>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<14>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<13>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<12>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<11>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<10>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<9>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<8>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<7>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<6>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<5>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<4>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<3>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<2>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<1>>.
-    Found 1-bit register for signal <basesoc_ctrl_storage_full<0>>.
+    Found 1-bit register for signal <ctrl_storage_full<31>>.
+    Found 1-bit register for signal <ctrl_storage_full<30>>.
+    Found 1-bit register for signal <ctrl_storage_full<29>>.
+    Found 1-bit register for signal <ctrl_storage_full<28>>.
+    Found 1-bit register for signal <ctrl_storage_full<27>>.
+    Found 1-bit register for signal <ctrl_storage_full<26>>.
+    Found 1-bit register for signal <ctrl_storage_full<25>>.
+    Found 1-bit register for signal <ctrl_storage_full<24>>.
+    Found 1-bit register for signal <ctrl_storage_full<23>>.
+    Found 1-bit register for signal <ctrl_storage_full<22>>.
+    Found 1-bit register for signal <ctrl_storage_full<21>>.
+    Found 1-bit register for signal <ctrl_storage_full<20>>.
+    Found 1-bit register for signal <ctrl_storage_full<19>>.
+    Found 1-bit register for signal <ctrl_storage_full<18>>.
+    Found 1-bit register for signal <ctrl_storage_full<17>>.
+    Found 1-bit register for signal <ctrl_storage_full<16>>.
+    Found 1-bit register for signal <ctrl_storage_full<15>>.
+    Found 1-bit register for signal <ctrl_storage_full<14>>.
+    Found 1-bit register for signal <ctrl_storage_full<13>>.
+    Found 1-bit register for signal <ctrl_storage_full<12>>.
+    Found 1-bit register for signal <ctrl_storage_full<11>>.
+    Found 1-bit register for signal <ctrl_storage_full<10>>.
+    Found 1-bit register for signal <ctrl_storage_full<9>>.
+    Found 1-bit register for signal <ctrl_storage_full<8>>.
+    Found 1-bit register for signal <ctrl_storage_full<7>>.
+    Found 1-bit register for signal <ctrl_storage_full<6>>.
+    Found 1-bit register for signal <ctrl_storage_full<5>>.
+    Found 1-bit register for signal <ctrl_storage_full<4>>.
+    Found 1-bit register for signal <ctrl_storage_full<3>>.
+    Found 1-bit register for signal <ctrl_storage_full<2>>.
+    Found 1-bit register for signal <ctrl_storage_full<1>>.
+    Found 1-bit register for signal <ctrl_storage_full<0>>.
     Found 8-bit register for signal <interface2_bank_bus_dat_r>.
-    Found 4-bit register for signal <display_sel_storage_full>.
-    Found 4-bit register for signal <display_value_storage_full>.
-    Found 8-bit register for signal <interface3_bank_bus_dat_r>.
     Found 1-bit register for signal <sel_r>.
+    Found 8-bit register for signal <interface3_bank_bus_dat_r>.
+    Found 1-bit register for signal <config_storage_full<31>>.
+    Found 1-bit register for signal <config_storage_full<30>>.
+    Found 1-bit register for signal <config_storage_full<29>>.
+    Found 1-bit register for signal <config_storage_full<28>>.
+    Found 1-bit register for signal <config_storage_full<27>>.
+    Found 1-bit register for signal <config_storage_full<26>>.
+    Found 1-bit register for signal <config_storage_full<25>>.
+    Found 1-bit register for signal <config_storage_full<24>>.
+    Found 1-bit register for signal <config_storage_full<23>>.
+    Found 1-bit register for signal <config_storage_full<22>>.
+    Found 1-bit register for signal <config_storage_full<21>>.
+    Found 1-bit register for signal <config_storage_full<20>>.
+    Found 1-bit register for signal <config_storage_full<19>>.
+    Found 1-bit register for signal <config_storage_full<18>>.
+    Found 1-bit register for signal <config_storage_full<17>>.
+    Found 1-bit register for signal <config_storage_full<16>>.
+    Found 1-bit register for signal <config_storage_full<15>>.
+    Found 1-bit register for signal <config_storage_full<14>>.
+    Found 1-bit register for signal <config_storage_full<13>>.
+    Found 1-bit register for signal <config_storage_full<12>>.
+    Found 1-bit register for signal <config_storage_full<11>>.
+    Found 1-bit register for signal <config_storage_full<10>>.
+    Found 1-bit register for signal <config_storage_full<9>>.
+    Found 1-bit register for signal <config_storage_full<8>>.
+    Found 1-bit register for signal <config_half_duplex>.
+    Found 1-bit register for signal <config_lsb_first>.
+    Found 1-bit register for signal <config_clk_phase>.
+    Found 1-bit register for signal <config_clk_polarity>.
+    Found 1-bit register for signal <config_cs_polarity>.
+    Found 1-bit register for signal <config_storage_full<2>>.
+    Found 1-bit register for signal <config_storage_full<1>>.
+    Found 1-bit register for signal <config_offline>.
+    Found 1-bit register for signal <xfer_storage_full<31>>.
+    Found 1-bit register for signal <xfer_storage_full<30>>.
+    Found 1-bit register for signal <xfer_storage_full<29>>.
+    Found 1-bit register for signal <xfer_storage_full<28>>.
+    Found 1-bit register for signal <xfer_storage_full<27>>.
+    Found 1-bit register for signal <xfer_storage_full<26>>.
+    Found 1-bit register for signal <xfer_storage_full<25>>.
+    Found 1-bit register for signal <xfer_storage_full<24>>.
+    Found 1-bit register for signal <xfer_storage_full<23>>.
+    Found 1-bit register for signal <xfer_storage_full<22>>.
+    Found 1-bit register for signal <xfer_storage_full<21>>.
+    Found 1-bit register for signal <xfer_storage_full<20>>.
+    Found 1-bit register for signal <xfer_storage_full<19>>.
+    Found 1-bit register for signal <xfer_storage_full<18>>.
+    Found 1-bit register for signal <xfer_storage_full<17>>.
+    Found 1-bit register for signal <xfer_storage_full<16>>.
+    Found 1-bit register for signal <xfer_storage_full<15>>.
+    Found 1-bit register for signal <xfer_storage_full<14>>.
+    Found 1-bit register for signal <xfer_storage_full<13>>.
+    Found 1-bit register for signal <xfer_storage_full<12>>.
+    Found 1-bit register for signal <xfer_storage_full<11>>.
+    Found 1-bit register for signal <xfer_storage_full<10>>.
+    Found 1-bit register for signal <xfer_storage_full<9>>.
+    Found 1-bit register for signal <xfer_storage_full<8>>.
+    Found 1-bit register for signal <xfer_storage_full<7>>.
+    Found 1-bit register for signal <xfer_storage_full<6>>.
+    Found 1-bit register for signal <xfer_storage_full<5>>.
+    Found 1-bit register for signal <xfer_storage_full<4>>.
+    Found 1-bit register for signal <xfer_storage_full<3>>.
+    Found 1-bit register for signal <xfer_storage_full<2>>.
+    Found 1-bit register for signal <xfer_storage_full<1>>.
+    Found 1-bit register for signal <xfer_storage_full<0>>.
+    Found 1-bit register for signal <mosi_data_storage_full<31>>.
+    Found 1-bit register for signal <mosi_data_storage_full<30>>.
+    Found 1-bit register for signal <mosi_data_storage_full<29>>.
+    Found 1-bit register for signal <mosi_data_storage_full<28>>.
+    Found 1-bit register for signal <mosi_data_storage_full<27>>.
+    Found 1-bit register for signal <mosi_data_storage_full<26>>.
+    Found 1-bit register for signal <mosi_data_storage_full<25>>.
+    Found 1-bit register for signal <mosi_data_storage_full<24>>.
+    Found 1-bit register for signal <mosi_data_storage_full<23>>.
+    Found 1-bit register for signal <mosi_data_storage_full<22>>.
+    Found 1-bit register for signal <mosi_data_storage_full<21>>.
+    Found 1-bit register for signal <mosi_data_storage_full<20>>.
+    Found 1-bit register for signal <mosi_data_storage_full<19>>.
+    Found 1-bit register for signal <mosi_data_storage_full<18>>.
+    Found 1-bit register for signal <mosi_data_storage_full<17>>.
+    Found 1-bit register for signal <mosi_data_storage_full<16>>.
+    Found 1-bit register for signal <mosi_data_storage_full<15>>.
+    Found 1-bit register for signal <mosi_data_storage_full<14>>.
+    Found 1-bit register for signal <mosi_data_storage_full<13>>.
+    Found 1-bit register for signal <mosi_data_storage_full<12>>.
+    Found 1-bit register for signal <mosi_data_storage_full<11>>.
+    Found 1-bit register for signal <mosi_data_storage_full<10>>.
+    Found 1-bit register for signal <mosi_data_storage_full<9>>.
+    Found 1-bit register for signal <mosi_data_storage_full<8>>.
+    Found 1-bit register for signal <mosi_data_storage_full<7>>.
+    Found 1-bit register for signal <mosi_data_storage_full<6>>.
+    Found 1-bit register for signal <mosi_data_storage_full<5>>.
+    Found 1-bit register for signal <mosi_data_storage_full<4>>.
+    Found 1-bit register for signal <mosi_data_storage_full<3>>.
+    Found 1-bit register for signal <mosi_data_storage_full<2>>.
+    Found 1-bit register for signal <mosi_data_storage_full<1>>.
+    Found 1-bit register for signal <mosi_data_storage_full<0>>.
     Found 8-bit register for signal <interface4_bank_bus_dat_r>.
-    Found 1-bit register for signal <lcd_config_storage_full<31>>.
-    Found 1-bit register for signal <lcd_config_storage_full<30>>.
-    Found 1-bit register for signal <lcd_config_storage_full<29>>.
-    Found 1-bit register for signal <lcd_config_storage_full<28>>.
-    Found 1-bit register for signal <lcd_config_storage_full<27>>.
-    Found 1-bit register for signal <lcd_config_storage_full<26>>.
-    Found 1-bit register for signal <lcd_config_storage_full<25>>.
-    Found 1-bit register for signal <lcd_config_storage_full<24>>.
-    Found 1-bit register for signal <lcd_config_storage_full<23>>.
-    Found 1-bit register for signal <lcd_config_storage_full<22>>.
-    Found 1-bit register for signal <lcd_config_storage_full<21>>.
-    Found 1-bit register for signal <lcd_config_storage_full<20>>.
-    Found 1-bit register for signal <lcd_config_storage_full<19>>.
-    Found 1-bit register for signal <lcd_config_storage_full<18>>.
-    Found 1-bit register for signal <lcd_config_storage_full<17>>.
-    Found 1-bit register for signal <lcd_config_storage_full<16>>.
-    Found 1-bit register for signal <lcd_config_storage_full<15>>.
-    Found 1-bit register for signal <lcd_config_storage_full<14>>.
-    Found 1-bit register for signal <lcd_config_storage_full<13>>.
-    Found 1-bit register for signal <lcd_config_storage_full<12>>.
-    Found 1-bit register for signal <lcd_config_storage_full<11>>.
-    Found 1-bit register for signal <lcd_config_storage_full<10>>.
-    Found 1-bit register for signal <lcd_config_storage_full<9>>.
-    Found 1-bit register for signal <lcd_config_storage_full<8>>.
-    Found 1-bit register for signal <lcd_config_half_duplex>.
-    Found 1-bit register for signal <lcd_config_lsb_first>.
-    Found 1-bit register for signal <lcd_config_clk_phase>.
-    Found 1-bit register for signal <lcd_config_clk_polarity>.
-    Found 1-bit register for signal <lcd_config_cs_polarity>.
-    Found 1-bit register for signal <lcd_config_storage_full<2>>.
-    Found 1-bit register for signal <lcd_config_storage_full<1>>.
-    Found 1-bit register for signal <lcd_config_offline>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<31>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<30>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<29>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<28>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<27>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<26>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<25>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<24>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<23>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<22>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<21>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<20>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<19>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<18>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<17>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<16>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<15>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<14>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<13>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<12>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<11>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<10>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<9>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<8>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<7>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<6>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<5>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<4>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<3>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<2>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<1>>.
-    Found 1-bit register for signal <lcd_xfer_storage_full<0>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<31>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<30>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<29>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<28>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<27>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<26>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<25>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<24>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<23>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<22>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<21>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<20>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<19>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<18>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<17>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<16>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<15>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<14>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<13>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<12>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<11>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<10>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<9>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<8>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<7>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<6>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<5>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<4>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<3>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<2>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<1>>.
-    Found 1-bit register for signal <lcd_mosi_data_storage_full<0>>.
-    Found 8-bit register for signal <interface5_bank_bus_dat_r>.
-    Found 1-bit register for signal <user_led15>.
-    Found 1-bit register for signal <user_led14>.
-    Found 1-bit register for signal <user_led13>.
-    Found 1-bit register for signal <user_led12>.
-    Found 1-bit register for signal <user_led11>.
-    Found 1-bit register for signal <user_led10>.
-    Found 1-bit register for signal <user_led9>.
-    Found 1-bit register for signal <user_led8>.
-    Found 1-bit register for signal <user_led7>.
-    Found 1-bit register for signal <user_led6>.
-    Found 1-bit register for signal <user_led5>.
-    Found 1-bit register for signal <user_led4>.
-    Found 1-bit register for signal <user_led3>.
-    Found 1-bit register for signal <user_led2>.
-    Found 1-bit register for signal <user_led1>.
-    Found 1-bit register for signal <user_led0>.
-    Found 8-bit register for signal <interface6_bank_bus_dat_r>.
     Found 1-bit register for signal <rs_lcd>.
-    Found 8-bit register for signal <interface7_bank_bus_dat_r>.
+    Found 8-bit register for signal <interface5_bank_bus_dat_r>.
     Found 1-bit register for signal <rst_lcd>.
+    Found 8-bit register for signal <interface6_bank_bus_dat_r>.
+    Found 1-bit register for signal <timer0_load_storage_full<31>>.
+    Found 1-bit register for signal <timer0_load_storage_full<30>>.
+    Found 1-bit register for signal <timer0_load_storage_full<29>>.
+    Found 1-bit register for signal <timer0_load_storage_full<28>>.
+    Found 1-bit register for signal <timer0_load_storage_full<27>>.
+    Found 1-bit register for signal <timer0_load_storage_full<26>>.
+    Found 1-bit register for signal <timer0_load_storage_full<25>>.
+    Found 1-bit register for signal <timer0_load_storage_full<24>>.
+    Found 1-bit register for signal <timer0_load_storage_full<23>>.
+    Found 1-bit register for signal <timer0_load_storage_full<22>>.
+    Found 1-bit register for signal <timer0_load_storage_full<21>>.
+    Found 1-bit register for signal <timer0_load_storage_full<20>>.
+    Found 1-bit register for signal <timer0_load_storage_full<19>>.
+    Found 1-bit register for signal <timer0_load_storage_full<18>>.
+    Found 1-bit register for signal <timer0_load_storage_full<17>>.
+    Found 1-bit register for signal <timer0_load_storage_full<16>>.
+    Found 1-bit register for signal <timer0_load_storage_full<15>>.
+    Found 1-bit register for signal <timer0_load_storage_full<14>>.
+    Found 1-bit register for signal <timer0_load_storage_full<13>>.
+    Found 1-bit register for signal <timer0_load_storage_full<12>>.
+    Found 1-bit register for signal <timer0_load_storage_full<11>>.
+    Found 1-bit register for signal <timer0_load_storage_full<10>>.
+    Found 1-bit register for signal <timer0_load_storage_full<9>>.
+    Found 1-bit register for signal <timer0_load_storage_full<8>>.
+    Found 1-bit register for signal <timer0_load_storage_full<7>>.
+    Found 1-bit register for signal <timer0_load_storage_full<6>>.
+    Found 1-bit register for signal <timer0_load_storage_full<5>>.
+    Found 1-bit register for signal <timer0_load_storage_full<4>>.
+    Found 1-bit register for signal <timer0_load_storage_full<3>>.
+    Found 1-bit register for signal <timer0_load_storage_full<2>>.
+    Found 1-bit register for signal <timer0_load_storage_full<1>>.
+    Found 1-bit register for signal <timer0_load_storage_full<0>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<31>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<30>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<29>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<28>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<27>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<26>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<25>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<24>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<23>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<22>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<21>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<20>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<19>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<18>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<17>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<16>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<15>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<14>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<13>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<12>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<11>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<10>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<9>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<8>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<7>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<6>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<5>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<4>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<3>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<2>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<1>>.
+    Found 1-bit register for signal <timer0_reload_storage_full<0>>.
+    Found 1-bit register for signal <timer0_en_storage_full>.
+    Found 1-bit register for signal <timer0_eventmanager_storage_full>.
+    Found 8-bit register for signal <interface7_bank_bus_dat_r>.
+    Found 2-bit register for signal <uart_eventmanager_storage_full>.
     Found 8-bit register for signal <interface8_bank_bus_dat_r>.
-    Found 8-bit register for signal <interface9_bank_bus_dat_r>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<31>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<30>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<29>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<28>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<27>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<26>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<25>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<24>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<23>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<22>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<21>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<20>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<19>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<18>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<17>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<16>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<15>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<14>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<13>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<12>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<11>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<10>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<9>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<8>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<7>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<6>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<5>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<4>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<3>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<2>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<1>>.
-    Found 1-bit register for signal <basesoc_timer0_load_storage_full<0>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<31>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<30>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<29>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<28>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<27>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<26>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<25>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<24>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<23>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<22>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<21>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<20>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<19>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<18>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<17>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<16>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<15>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<14>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<13>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<12>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<11>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<10>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<9>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<8>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<7>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<6>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<5>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<4>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<3>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<2>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<1>>.
-    Found 1-bit register for signal <basesoc_timer0_reload_storage_full<0>>.
-    Found 1-bit register for signal <basesoc_timer0_en_storage_full>.
-    Found 1-bit register for signal <basesoc_timer0_eventmanager_storage_full>.
-    Found 8-bit register for signal <interface10_bank_bus_dat_r>.
-    Found 2-bit register for signal <basesoc_uart_eventmanager_storage_full>.
-    Found 8-bit register for signal <interface11_bank_bus_dat_r>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<31>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<30>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<29>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<28>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<27>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<26>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<25>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<24>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<23>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<22>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<21>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<20>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<19>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<18>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<17>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<16>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<15>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<14>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<13>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<12>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<11>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<10>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<9>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<8>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<7>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<6>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<5>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<4>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<3>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<2>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<1>>.
-    Found 1-bit register for signal <basesoc_uart_phy_storage_full<0>>.
+    Found 1-bit register for signal <uart_phy_storage_full<31>>.
+    Found 1-bit register for signal <uart_phy_storage_full<30>>.
+    Found 1-bit register for signal <uart_phy_storage_full<29>>.
+    Found 1-bit register for signal <uart_phy_storage_full<28>>.
+    Found 1-bit register for signal <uart_phy_storage_full<27>>.
+    Found 1-bit register for signal <uart_phy_storage_full<26>>.
+    Found 1-bit register for signal <uart_phy_storage_full<25>>.
+    Found 1-bit register for signal <uart_phy_storage_full<24>>.
+    Found 1-bit register for signal <uart_phy_storage_full<23>>.
+    Found 1-bit register for signal <uart_phy_storage_full<22>>.
+    Found 1-bit register for signal <uart_phy_storage_full<21>>.
+    Found 1-bit register for signal <uart_phy_storage_full<20>>.
+    Found 1-bit register for signal <uart_phy_storage_full<19>>.
+    Found 1-bit register for signal <uart_phy_storage_full<18>>.
+    Found 1-bit register for signal <uart_phy_storage_full<17>>.
+    Found 1-bit register for signal <uart_phy_storage_full<16>>.
+    Found 1-bit register for signal <uart_phy_storage_full<15>>.
+    Found 1-bit register for signal <uart_phy_storage_full<14>>.
+    Found 1-bit register for signal <uart_phy_storage_full<13>>.
+    Found 1-bit register for signal <uart_phy_storage_full<12>>.
+    Found 1-bit register for signal <uart_phy_storage_full<11>>.
+    Found 1-bit register for signal <uart_phy_storage_full<10>>.
+    Found 1-bit register for signal <uart_phy_storage_full<9>>.
+    Found 1-bit register for signal <uart_phy_storage_full<8>>.
+    Found 1-bit register for signal <uart_phy_storage_full<7>>.
+    Found 1-bit register for signal <uart_phy_storage_full<6>>.
+    Found 1-bit register for signal <uart_phy_storage_full<5>>.
+    Found 1-bit register for signal <uart_phy_storage_full<4>>.
+    Found 1-bit register for signal <uart_phy_storage_full<3>>.
+    Found 1-bit register for signal <uart_phy_storage_full<2>>.
+    Found 1-bit register for signal <uart_phy_storage_full<1>>.
+    Found 1-bit register for signal <uart_phy_storage_full<0>>.
     Found 1-bit register for signal <xilinxmultiregimpl0_regs0>.
     Found 1-bit register for signal <xilinxmultiregimpl0_regs1>.
-    Found 16-bit register for signal <xilinxmultiregimpl1_regs0>.
-    Found 16-bit register for signal <xilinxmultiregimpl1_regs1>.
-    Found 5-bit register for signal <xilinxmultiregimpl2_regs0>.
-    Found 5-bit register for signal <xilinxmultiregimpl2_regs1>.
+    Found 5-bit register for signal <xilinxmultiregimpl1_regs0>.
+    Found 5-bit register for signal <xilinxmultiregimpl1_regs1>.
     Found 13-bit register for signal <memadr>.
     Found 10-bit register for signal <memadr_1>.
     Found 12-bit register for signal <memadr_2>.
@@ -679,45 +629,43 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit subtractor for signal <basesoc_uart_tx_fifo_level0[4]_GND_1_o_sub_439_OUT> created at line 1629.
-    Found 5-bit subtractor for signal <basesoc_uart_rx_fifo_level0[4]_GND_1_o_sub_448_OUT> created at line 1651.
-    Found 32-bit subtractor for signal <basesoc_timer0_value[31]_GND_1_o_sub_452_OUT> created at line 1672.
-    Found 8-bit subtractor for signal <lcd_machine_cnt[7]_GND_1_o_sub_467_OUT> created at line 1716.
-    Found 6-bit subtractor for signal <lcd_machine_n_write[5]_GND_1_o_sub_473_OUT> created at line 1743.
-    Found 6-bit subtractor for signal <lcd_machine_n_read[5]_GND_1_o_sub_474_OUT> created at line 1746.
-    Found 17-bit subtractor for signal <display_counter[16]_GND_1_o_sub_501_OUT> created at line 1786.
-    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_503_OUT> created at line 1807.
-    Found 32-bit adder for signal <basesoc_ctrl_bus_errors[31]_GND_1_o_add_394_OUT> created at line 1501.
-    Found 2-bit adder for signal <basesoc_counter[1]_GND_1_o_add_401_OUT> created at line 1530.
-    Found 4-bit adder for signal <basesoc_uart_phy_tx_bitcount[3]_GND_1_o_add_404_OUT> created at line 1544.
-    Found 33-bit adder for signal <n2077> created at line 1560.
-    Found 4-bit adder for signal <basesoc_uart_phy_rx_bitcount[3]_GND_1_o_add_416_OUT> created at line 1573.
-    Found 33-bit adder for signal <n2082> created at line 1592.
-    Found 4-bit adder for signal <basesoc_uart_tx_fifo_produce[3]_GND_1_o_add_432_OUT> created at line 1618.
-    Found 4-bit adder for signal <basesoc_uart_tx_fifo_consume[3]_GND_1_o_add_434_OUT> created at line 1621.
-    Found 5-bit adder for signal <basesoc_uart_tx_fifo_level0[4]_GND_1_o_add_436_OUT> created at line 1625.
-    Found 4-bit adder for signal <basesoc_uart_rx_fifo_produce[3]_GND_1_o_add_441_OUT> created at line 1640.
-    Found 4-bit adder for signal <basesoc_uart_rx_fifo_consume[3]_GND_1_o_add_443_OUT> created at line 1643.
-    Found 5-bit adder for signal <basesoc_uart_rx_fifo_level0[4]_GND_1_o_add_445_OUT> created at line 1647.
-    Found 7-bit adder for signal <dna_cnt[6]_GND_1_o_add_456_OUT> created at line 1688.
-    Found 8-bit 12-to-1 multiplexer for signal <interface1_bank_bus_adr[3]_GND_1_o_wide_mux_507_OUT> created at line 1822.
-    Found 8-bit 3-to-1 multiplexer for signal <interface2_bank_bus_adr[1]_GND_1_o_wide_mux_509_OUT> created at line 1867.
-    Found 8-bit 8-to-1 multiplexer for signal <interface3_bank_bus_adr[2]_csrbank3_id0_w[7]_wide_mux_513_OUT> created at line 1889.
-    Found 8-bit 22-to-1 multiplexer for signal <interface4_bank_bus_adr[4]_GND_1_o_wide_mux_515_OUT> created at line 1919.
-    Found 8-bit 21-to-1 multiplexer for signal <interface9_bank_bus_adr[4]_GND_1_o_wide_mux_525_OUT> created at line 2073.
-    Found 8-bit 7-to-1 multiplexer for signal <interface10_bank_bus_adr[2]_GND_1_o_wide_mux_527_OUT> created at line 2163.
-    Found 8-bit 4-to-1 multiplexer for signal <interface11_bank_bus_adr[1]_csrbank11_tuning_word0_w[7]_wide_mux_530_OUT> created at line 2190.
-    Found 1-bit tristate buffer for signal <lcd_spi_cs_n> created at line 2473
-    Found 1-bit tristate buffer for signal <lcd_spi_clk> created at line 2476
-    Found 1-bit tristate buffer for signal <lcd_spi_mosi> created at line 2479
-    Found 7-bit comparator greater for signal <dna_cnt[6]_PWR_1_o_LessThan_456_o> created at line 1687
-    Found 7-bit comparator greater for signal <dna_cnt[6]_GND_1_o_LessThan_751_o> created at line 2468
+    Found 5-bit subtractor for signal <uart_tx_fifo_level0[4]_GND_1_o_sub_387_OUT> created at line 1409.
+    Found 5-bit subtractor for signal <uart_rx_fifo_level0[4]_GND_1_o_sub_396_OUT> created at line 1431.
+    Found 32-bit subtractor for signal <timer0_value[31]_GND_1_o_sub_400_OUT> created at line 1452.
+    Found 8-bit subtractor for signal <machine_cnt[7]_GND_1_o_sub_415_OUT> created at line 1496.
+    Found 6-bit subtractor for signal <machine_n_write[5]_GND_1_o_sub_421_OUT> created at line 1523.
+    Found 6-bit subtractor for signal <machine_n_read[5]_GND_1_o_sub_422_OUT> created at line 1526.
+    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_429_OUT> created at line 1552.
+    Found 32-bit adder for signal <ctrl_bus_errors[31]_GND_1_o_add_342_OUT> created at line 1281.
+    Found 2-bit adder for signal <counter[1]_GND_1_o_add_349_OUT> created at line 1310.
+    Found 4-bit adder for signal <uart_phy_tx_bitcount[3]_GND_1_o_add_352_OUT> created at line 1324.
+    Found 33-bit adder for signal <n1853> created at line 1340.
+    Found 4-bit adder for signal <uart_phy_rx_bitcount[3]_GND_1_o_add_364_OUT> created at line 1353.
+    Found 33-bit adder for signal <n1858> created at line 1372.
+    Found 4-bit adder for signal <uart_tx_fifo_produce[3]_GND_1_o_add_380_OUT> created at line 1398.
+    Found 4-bit adder for signal <uart_tx_fifo_consume[3]_GND_1_o_add_382_OUT> created at line 1401.
+    Found 5-bit adder for signal <uart_tx_fifo_level0[4]_GND_1_o_add_384_OUT> created at line 1405.
+    Found 4-bit adder for signal <uart_rx_fifo_produce[3]_GND_1_o_add_389_OUT> created at line 1420.
+    Found 4-bit adder for signal <uart_rx_fifo_consume[3]_GND_1_o_add_391_OUT> created at line 1423.
+    Found 5-bit adder for signal <uart_rx_fifo_level0[4]_GND_1_o_add_393_OUT> created at line 1427.
+    Found 7-bit adder for signal <dna_cnt[6]_GND_1_o_add_404_OUT> created at line 1468.
+    Found 8-bit 12-to-1 multiplexer for signal <interface1_bank_bus_adr[3]_GND_1_o_wide_mux_433_OUT> created at line 1567.
+    Found 8-bit 8-to-1 multiplexer for signal <interface2_bank_bus_adr[2]_csrbank2_id0_w[7]_wide_mux_435_OUT> created at line 1612.
+    Found 8-bit 22-to-1 multiplexer for signal <interface3_bank_bus_adr[4]_GND_1_o_wide_mux_437_OUT> created at line 1642.
+    Found 8-bit 21-to-1 multiplexer for signal <interface6_bank_bus_adr[4]_GND_1_o_wide_mux_443_OUT> created at line 1767.
+    Found 8-bit 7-to-1 multiplexer for signal <interface7_bank_bus_adr[2]_GND_1_o_wide_mux_445_OUT> created at line 1857.
+    Found 8-bit 4-to-1 multiplexer for signal <interface8_bank_bus_adr[1]_csrbank8_tuning_word0_w[7]_wide_mux_448_OUT> created at line 1884.
+    Found 1-bit tristate buffer for signal <lcd_spi_cs_n> created at line 2148
+    Found 1-bit tristate buffer for signal <lcd_spi_clk> created at line 2151
+    Found 1-bit tristate buffer for signal <lcd_spi_mosi> created at line 2154
+    Found 7-bit comparator greater for signal <dna_cnt[6]_PWR_1_o_LessThan_404_o> created at line 1467
+    Found 7-bit comparator greater for signal <dna_cnt[6]_GND_1_o_LessThan_640_o> created at line 2143
     Summary:
 	inferred   6 RAM(s).
-	inferred  19 Adder/Subtractor(s).
-	inferred 1032 D-type flip-flop(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred 899 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred 146 Multiplexer(s).
+	inferred 139 Multiplexer(s).
 	inferred   3 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <top> synthesized.
@@ -1149,8 +1097,7 @@ Macro Statistics
  8192x32-bit single-port Read Only RAM                 : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 34
- 17-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 33
  2-bit adder                                           : 5
  20-bit subtractor                                     : 1
  30-bit adder                                          : 2
@@ -1163,26 +1110,25 @@ Macro Statistics
  6-bit subtractor                                      : 3
  7-bit adder                                           : 1
  8-bit subtractor                                      : 3
-# Registers                                            : 310
+# Registers                                            : 293
  1-bit register                                        : 165
  10-bit register                                       : 5
  12-bit register                                       : 1
  13-bit register                                       : 1
  14-bit register                                       : 1
- 16-bit register                                       : 3
- 17-bit register                                       : 1
+ 16-bit register                                       : 1
  2-bit register                                        : 7
  20-bit register                                       : 1
  23-bit register                                       : 1
  3-bit register                                        : 4
  30-bit register                                       : 10
  32-bit register                                       : 34
- 4-bit register                                        : 12
- 5-bit register                                        : 13
+ 4-bit register                                        : 10
+ 5-bit register                                        : 7
  57-bit register                                       : 1
- 6-bit register                                        : 5
+ 6-bit register                                        : 4
  7-bit register                                        : 1
- 8-bit register                                        : 44
+ 8-bit register                                        : 39
 # Comparators                                          : 13
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
@@ -1190,12 +1136,11 @@ Macro Statistics
  32-bit comparator greater                             : 1
  5-bit comparator equal                                : 6
  7-bit comparator greater                              : 2
-# Multiplexers                                         : 294
+# Multiplexers                                         : 287
  1-bit 2-to-1 multiplexer                              : 135
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
- 17-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 7
  20-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
@@ -1206,10 +1151,9 @@ Macro Statistics
  5-bit 2-to-1 multiplexer                              : 3
  6-bit 2-to-1 multiplexer                              : 6
  8-bit 12-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 34
+ 8-bit 2-to-1 multiplexer                              : 29
  8-bit 21-to-1 multiplexer                             : 1
  8-bit 22-to-1 multiplexer                             : 1
- 8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
  8-bit 7-to-1 multiplexer                              : 1
  8-bit 8-to-1 multiplexer                              : 1
@@ -1337,19 +1281,18 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
 Unit <lm32_ram_2> synthesized (advanced).
 
 Synthesizing (advanced) Unit <top>.
-The following registers are absorbed into counter <display_counter>: 1 register on signal <display_counter>.
-The following registers are absorbed into counter <basesoc_ctrl_bus_errors>: 1 register on signal <basesoc_ctrl_bus_errors>.
-The following registers are absorbed into counter <basesoc_counter>: 1 register on signal <basesoc_counter>.
-The following registers are absorbed into counter <basesoc_uart_phy_tx_bitcount>: 1 register on signal <basesoc_uart_phy_tx_bitcount>.
-The following registers are absorbed into counter <basesoc_uart_tx_fifo_produce>: 1 register on signal <basesoc_uart_tx_fifo_produce>.
-The following registers are absorbed into counter <basesoc_uart_phy_rx_bitcount>: 1 register on signal <basesoc_uart_phy_rx_bitcount>.
-The following registers are absorbed into counter <basesoc_uart_tx_fifo_consume>: 1 register on signal <basesoc_uart_tx_fifo_consume>.
-The following registers are absorbed into counter <basesoc_uart_rx_fifo_produce>: 1 register on signal <basesoc_uart_rx_fifo_produce>.
-The following registers are absorbed into counter <basesoc_uart_tx_fifo_level0>: 1 register on signal <basesoc_uart_tx_fifo_level0>.
-The following registers are absorbed into counter <basesoc_uart_rx_fifo_consume>: 1 register on signal <basesoc_uart_rx_fifo_consume>.
+The following registers are absorbed into counter <ctrl_bus_errors>: 1 register on signal <ctrl_bus_errors>.
+The following registers are absorbed into counter <uart_phy_tx_bitcount>: 1 register on signal <uart_phy_tx_bitcount>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <uart_phy_rx_bitcount>: 1 register on signal <uart_phy_rx_bitcount>.
+The following registers are absorbed into counter <uart_tx_fifo_produce>: 1 register on signal <uart_tx_fifo_produce>.
+The following registers are absorbed into counter <uart_tx_fifo_consume>: 1 register on signal <uart_tx_fifo_consume>.
+The following registers are absorbed into counter <uart_rx_fifo_produce>: 1 register on signal <uart_rx_fifo_produce>.
+The following registers are absorbed into counter <uart_tx_fifo_level0>: 1 register on signal <uart_tx_fifo_level0>.
+The following registers are absorbed into counter <uart_rx_fifo_consume>: 1 register on signal <uart_rx_fifo_consume>.
 The following registers are absorbed into counter <dna_cnt>: 1 register on signal <dna_cnt>.
-The following registers are absorbed into counter <basesoc_uart_rx_fifo_level0>: 1 register on signal <basesoc_uart_rx_fifo_level0>.
-The following registers are absorbed into counter <lcd_machine_cnt>: 1 register on signal <lcd_machine_cnt>.
+The following registers are absorbed into counter <uart_rx_fifo_level0>: 1 register on signal <uart_rx_fifo_level0>.
+The following registers are absorbed into counter <machine_cnt>: 1 register on signal <machine_cnt>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 INFO:Xst:3231 - The small RAM <Mram_mem_3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
@@ -1370,13 +1313,31 @@ INFO:Xst:3226 - The RAM <Mram_mem_1> will be implemented as a BLOCK RAM, absorbi
     |     aspect ratio   | 1024-word x 32-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk100>        | rise     |
-    |     weA<3>         | connected to signal <basesoc_sram_we<3>> | high     |
-    |     weA<2>         | connected to signal <basesoc_sram_we<2>> | high     |
-    |     weA<1>         | connected to signal <basesoc_sram_we<1>> | high     |
-    |     weA<0>         | connected to signal <basesoc_sram_we<0>> | high     |
+    |     weA<3>         | connected to signal <sram_we<3>>    | high     |
+    |     weA<2>         | connected to signal <sram_we<2>>    | high     |
+    |     weA<1>         | connected to signal <sram_we<1>>    | high     |
+    |     weA<0>         | connected to signal <sram_we<0>>    | high     |
     |     addrA          | connected to signal <array_muxed0<9:0>> |          |
     |     diA            | connected to signal <array_muxed1>  |          |
-    |     doA            | connected to signal <basesoc_sram_bus_dat_r> |          |
+    |     doA            | connected to signal <sram_bus_dat_r0> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_mem_2> will be implemented as a BLOCK RAM, absorbing the following register(s): <memadr_2>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk100>        | rise     |
+    |     weA<3>         | connected to signal <main_ram_we<3>> | high     |
+    |     weA<2>         | connected to signal <main_ram_we<2>> | high     |
+    |     weA<1>         | connected to signal <main_ram_we<1>> | high     |
+    |     weA<0>         | connected to signal <main_ram_we<0>> | high     |
+    |     addrA          | connected to signal <array_muxed0<11:0>> |          |
+    |     diA            | connected to signal <array_muxed1>  |          |
+    |     doA            | connected to signal <main_ram_bus_dat_r> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
@@ -1387,32 +1348,14 @@ INFO:Xst:3231 - The small RAM <Mram_storage> will be implemented on LUTs in orde
     | Port A                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
     |     clkA           | connected to signal <clk100>        | rise     |
-    |     weA            | connected to signal <basesoc_uart_tx_fifo_wrport_we> | high     |
-    |     addrA          | connected to signal <basesoc_uart_tx_fifo_produce> |          |
-    |     diA            | connected to signal <("00",basesoc_interface_dat_w)> |          |
+    |     weA            | connected to signal <uart_tx_fifo_wrport_we> | high     |
+    |     addrA          | connected to signal <uart_tx_fifo_produce> |          |
+    |     diA            | connected to signal <("00",interface_dat_w)> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
-    |     addrB          | connected to signal <basesoc_uart_tx_fifo_consume> |          |
+    |     addrB          | connected to signal <uart_tx_fifo_consume> |          |
     |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3226 - The RAM <Mram_mem_2> will be implemented as a BLOCK RAM, absorbing the following register(s): <memadr_2>
-    -----------------------------------------------------------------------
-    | ram_type           | Block                               |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4096-word x 32-bit                  |          |
-    |     mode           | write-first                         |          |
-    |     clkA           | connected to signal <clk100>        | rise     |
-    |     weA<3>         | connected to signal <basesoc_main_ram_we<3>> | high     |
-    |     weA<2>         | connected to signal <basesoc_main_ram_we<2>> | high     |
-    |     weA<1>         | connected to signal <basesoc_main_ram_we<1>> | high     |
-    |     weA<0>         | connected to signal <basesoc_main_ram_we<0>> | high     |
-    |     addrA          | connected to signal <array_muxed0<11:0>> |          |
-    |     diA            | connected to signal <array_muxed1>  |          |
-    |     doA            | connected to signal <basesoc_main_ram_bus_dat_r> |          |
-    -----------------------------------------------------------------------
-    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
@@ -1421,13 +1364,13 @@ INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in or
     | Port A                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
     |     clkA           | connected to signal <clk100>        | rise     |
-    |     weA            | connected to signal <basesoc_uart_rx_fifo_wrport_we> | high     |
-    |     addrA          | connected to signal <basesoc_uart_rx_fifo_produce> |          |
-    |     diA            | connected to signal <("00",basesoc_uart_phy_source_payload_data)> |          |
+    |     weA            | connected to signal <uart_rx_fifo_wrport_we> | high     |
+    |     addrA          | connected to signal <uart_rx_fifo_produce> |          |
+    |     diA            | connected to signal <("00",uart_phy_source_payload_data)> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
-    |     addrB          | connected to signal <basesoc_uart_rx_fifo_consume> |          |
+    |     addrB          | connected to signal <uart_rx_fifo_consume> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <memadr>
@@ -1441,24 +1384,18 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <array_muxed0<12:0>> |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <basesoc_rom_bus_dat_r> |          |
+    |     doA            | connected to signal <rom_bus_dat_r> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 Unit <top> synthesized (advanced).
-WARNING:Xst:2677 - Node <basesoc_interface_adr_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <basesoc_interface_adr_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <basesoc_interface_adr_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <interface_adr_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <interface_adr_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <interface_adr_8> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_1_8> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_1_9> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_3_8> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_3_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values0_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values3_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values1_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values2_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values4_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <display_values5_4> of sequential type is unconnected in block <top>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -1484,8 +1421,7 @@ Macro Statistics
  33-bit subtractor                                     : 1
  33-bit subtractor borrow in                           : 1
  6-bit subtractor                                      : 2
-# Counters                                             : 18
- 17-bit down counter                                   : 1
+# Counters                                             : 17
  2-bit up counter                                      : 1
  20-bit down counter                                   : 1
  32-bit up counter                                     : 2
@@ -1494,8 +1430,8 @@ Macro Statistics
  6-bit down counter                                    : 1
  7-bit up counter                                      : 1
  8-bit down counter                                    : 3
-# Registers                                            : 2081
- Flip-Flops                                            : 2081
+# Registers                                            : 1971
+ Flip-Flops                                            : 1971
 # Comparators                                          : 13
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
@@ -1503,8 +1439,8 @@ Macro Statistics
  32-bit comparator greater                             : 1
  5-bit comparator equal                                : 6
  7-bit comparator greater                              : 2
-# Multiplexers                                         : 635
- 1-bit 2-to-1 multiplexer                              : 497
+# Multiplexers                                         : 622
+ 1-bit 2-to-1 multiplexer                              : 489
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 9
  10-bit 2-to-1 multiplexer                             : 1
@@ -1517,10 +1453,9 @@ Macro Statistics
  5-bit 2-to-1 multiplexer                              : 3
  6-bit 2-to-1 multiplexer                              : 5
  8-bit 12-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 23
+ 8-bit 2-to-1 multiplexer                              : 19
  8-bit 21-to-1 multiplexer                             : 1
  8-bit 22-to-1 multiplexer                             : 1
- 8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
  8-bit 7-to-1 multiplexer                              : 1
 # Logic shifters                                       : 1
@@ -1535,30 +1470,30 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <basesoc_bus_wishbone_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <basesoc_bus_wishbone_dat_r_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <bus_wishbone_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bus_wishbone_dat_r_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <i_cyc_o> in Unit <lm32_instruction_unit> is equivalent to the following FF/Latch, which will be removed : <i_stb_o> 
 WARNING:Xst:1710 - FF/Latch <data_bus_error_seen> (without init value) has a constant value of 0 in block <lm32_cpu>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <data_bus_error_exception_m> (without init value) has a constant value of 0 in block <lm32_cpu>. This FF/Latch will be trimmed during the optimization process.
@@ -1641,42 +1576,38 @@ WARNING:Xst:1710 - FF/Latch <i_adr_o_0> (without init value) has a constant valu
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_adr_o_1> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_cti_o_1> (without init value) has a constant value of 1 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <d_cti_o_1> (without init value) has a constant value of 1 in block <lm32_load_store_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <interface7_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface7_bank_bus_dat_r_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface6_bank_bus_dat_r_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface2_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface2_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface2_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface2_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <interface5_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface5_bank_bus_dat_r_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface4_bank_bus_dat_r_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <lcd_cs_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <lcd_cs_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <cs_15> of sequential type is unconnected in block <top>.
 INFO:Xst:2261 - The FF/Latch <i_cti_o_0> in Unit <lm32_instruction_unit> is equivalent to the following FF/Latch, which will be removed : <i_cti_o_2> 
 INFO:Xst:2261 - The FF/Latch <d_cti_o_0> in Unit <lm32_load_store_unit> is equivalent to the following FF/Latch, which will be removed : <d_cti_o_2> 
 
@@ -1740,7 +1671,7 @@ WARNING:Xst:2677 - Node <lm32_cpu/load_store_unit/dcache/refill_address_3> of se
 WARNING:Xst:2677 - Node <lm32_cpu/load_store_unit/dcache/refill_address_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <lm32_cpu/load_store_unit/dcache/refill_address_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <lm32_cpu/load_store_unit/dcache/refill_address_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:1293 - FF/Latch <lcd_machine_cnt_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <machine_cnt_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/ra_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/ra_2> 
 INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/ra_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/ra_3> 
 INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/ra_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/ra_4> 
@@ -1766,14 +1697,14 @@ INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_x> in Unit <top> is equivalent to th
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 6.
+Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 5.
 INFO:Xst:2261 - The FF/Latch <lm32_cpu/direction_x> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <lm32_cpu/m_result_sel_compare_x_BRB0> <lm32_cpu/m_bypass_enable_x_BRB5> 
 
 Pipelining and Register Balancing Report ...
 
 Processing Unit <top> :
-	Register(s) basesoc_timer0_zero_pending basesoc_timer0_eventmanager_storage_full has(ve) been forward balanced into : basesoc_timer0_irq1_FRB.
-	Register(s) lm32_cpu/condition_met_m lm32_cpu/branch_predict_taken_m lm32_cpu/branch_predict_m has(ve) been forward balanced into : lm32_cpu/branch_mispredict_taken_m1_FRB.
+	Register(s) lm32_cpu/branch_predict_taken_m lm32_cpu/condition_met_m lm32_cpu/branch_predict_m has(ve) been forward balanced into : lm32_cpu/branch_mispredict_taken_m1_FRB.
+	Register(s) timer0_zero_pending timer0_eventmanager_storage_full has(ve) been forward balanced into : timer0_irq1_FRB.
 	Register(s) lm32_cpu/branch_x has(ve) been backward balanced into : lm32_cpu/branch_x_BRB0 lm32_cpu/branch_x_BRB1 .
 	Register(s) lm32_cpu/m_bypass_enable_x has(ve) been backward balanced into : lm32_cpu/m_bypass_enable_x_BRB4 .
 	Register(s) lm32_cpu/m_result_sel_compare_x has(ve) been backward balanced into : lm32_cpu/m_result_sel_compare_x_BRB1 .
@@ -1789,7 +1720,7 @@ Processing Unit <top> :
 	Register(s) lm32_cpu/mc_arithmetic/a_31 has(ve) been backward balanced into : lm32_cpu/mc_arithmetic/a_31_BRB0 lm32_cpu/mc_arithmetic/a_31_BRB1 lm32_cpu/mc_arithmetic/a_31_BRB2 lm32_cpu/mc_arithmetic/a_31_BRB3.
 	Register(s) lm32_cpu/w_result_sel_load_m has(ve) been backward balanced into : lm32_cpu/w_result_sel_load_m_BRB1.
 	Register(s) lm32_cpu/w_result_sel_mul_m has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_m_BRB0 lm32_cpu/w_result_sel_mul_m_BRB1.
-	Register(s) lm32_cpu/w_result_sel_mul_x has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_x_BRB0 lm32_cpu/w_result_sel_mul_x_BRB1 .
+	Register(s) lm32_cpu/w_result_sel_mul_x has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_x_BRB0 lm32_cpu/w_result_sel_mul_x_BRB2.
 Unit <top> processed.
 
 Final Macro Processing ...
@@ -1798,8 +1729,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2075
- Flip-Flops                                            : 2075
+# Registers                                            : 1952
+ Flip-Flops                                            : 1952
 
 =========================================================================
 
@@ -1822,36 +1753,36 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3441
+# BELS                             : 3303
 #      GND                         : 1
-#      INV                         : 82
-#      LUT1                        : 95
-#      LUT2                        : 351
-#      LUT3                        : 428
-#      LUT4                        : 232
-#      LUT5                        : 427
-#      LUT6                        : 1026
-#      MUXCY                       : 392
-#      MUXF7                       : 28
+#      INV                         : 60
+#      LUT1                        : 94
+#      LUT2                        : 350
+#      LUT3                        : 421
+#      LUT4                        : 177
+#      LUT5                        : 424
+#      LUT6                        : 1013
+#      MUXCY                       : 376
+#      MUXF7                       : 25
 #      VCC                         : 1
-#      XORCY                       : 378
-# FlipFlops/Latches                : 2075
-#      FD                          : 57
+#      XORCY                       : 361
+# FlipFlops/Latches                : 1952
+#      FD                          : 25
 #      FDE                         : 113
-#      FDR                         : 488
-#      FDRE                        : 1329
+#      FDR                         : 451
+#      FDRE                        : 1276
 #      FDS                         : 2
-#      FDSE                        : 86
+#      FDSE                        : 85
 # RAMS                             : 97
 #      RAM32X1D                    : 80
 #      RAMB18E1                    : 2
 #      RAMB36E1                    : 15
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 62
-#      IBUF                        : 24
+# IO Buffers                       : 14
+#      IBUF                        : 8
 #      IOBUF                       : 1
-#      OBUF                        : 35
+#      OBUF                        : 3
 #      OBUFT                       : 2
 # DSPs                             : 3
 #      DSP48E1                     : 3
@@ -1865,22 +1796,22 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2075  out of  126800     1%  
- Number of Slice LUTs:                 2801  out of  63400     4%  
-    Number used as Logic:              2641  out of  63400     4%  
+ Number of Slice Registers:            1952  out of  126800     1%  
+ Number of Slice LUTs:                 2699  out of  63400     4%  
+    Number used as Logic:              2539  out of  63400     4%  
     Number used as Memory:              160  out of  19000     0%  
        Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3561
-   Number with an unused Flip Flop:    1486  out of   3561    41%  
-   Number with an unused LUT:           760  out of   3561    21%  
-   Number of fully used LUT-FF pairs:  1315  out of   3561    36%  
-   Number of unique control sets:        90
+ Number of LUT Flip Flop pairs used:   3392
+   Number with an unused Flip Flop:    1440  out of   3392    42%  
+   Number with an unused LUT:           693  out of   3392    20%  
+   Number of fully used LUT-FF pairs:  1259  out of   3392    37%  
+   Number of unique control sets:        78
 
 IO Utilization: 
- Number of IOs:                          63
- Number of bonded IOBs:                  63  out of    210    30%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    210     7%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               16  out of    135    11%  
@@ -1909,7 +1840,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk100                             | BUFGP                  | 2175  |
+clk100                             | BUFGP                  | 2052  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1922,7 +1853,7 @@ Speed Grade: -1
 
    Minimum period: 7.319ns (Maximum Frequency: 136.631MHz)
    Minimum input arrival time before clock: 2.279ns
-   Maximum output required time after clock: 4.686ns
+   Maximum output required time after clock: 2.760ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1932,7 +1863,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100'
   Clock period: 7.319ns (frequency: 136.631MHz)
-  Total number of paths / destination ports: 268589 / 6839
+  Total number of paths / destination ports: 267237 / 6587
 -------------------------------------------------------------------------
 Delay:               7.319ns (Levels of Logic = 1)
   Source:            lm32_cpu/multiplier/Mmult_n0023 (DSP)
@@ -1953,48 +1884,46 @@ Delay:               7.319ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk100'
-  Total number of paths / destination ports: 26 / 25
+  Total number of paths / destination ports: 10 / 9
 -------------------------------------------------------------------------
 Offset:              2.279ns (Levels of Logic = 4)
   Source:            lcd_spi_miso (PAD)
-  Destination:       lcd_machine_data_0 (FF)
+  Destination:       machine_data_0 (FF)
   Destination Clock: clk100 rising
 
-  Data Path: lcd_spi_miso to lcd_machine_data_0
+  Data Path: lcd_spi_miso to machine_data_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.001   0.536  lcd_spi_miso_IBUF (lcd_spi_miso_IBUF)
-     LUT5:I3->O            1   0.124   0.421  Mmux_lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT110 (Mmux_lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT1)
-     LUT6:I5->O            1   0.124   0.919  Mmux_lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT111 (Mmux_lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT11)
-     LUT6:I1->O            1   0.124   0.000  Mmux_lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT113 (lcd_machine_data[31]_lcd_machine_data[31]_mux_471_OUT<0>)
-     FDR:D                     0.030          lcd_machine_data_0
+     LUT5:I3->O            1   0.124   0.421  Mmux_machine_data[31]_machine_data[31]_mux_419_OUT110 (Mmux_machine_data[31]_machine_data[31]_mux_419_OUT1)
+     LUT6:I5->O            1   0.124   0.919  Mmux_machine_data[31]_machine_data[31]_mux_419_OUT111 (Mmux_machine_data[31]_machine_data[31]_mux_419_OUT11)
+     LUT6:I1->O            1   0.124   0.000  Mmux_machine_data[31]_machine_data[31]_mux_419_OUT113 (machine_data[31]_machine_data[31]_mux_419_OUT<0>)
+     FDR:D                     0.030          machine_data_0
     ----------------------------------------
     Total                      2.279ns (0.403ns logic, 1.876ns route)
                                        (17.7% logic, 82.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk100'
-  Total number of paths / destination ports: 638 / 38
+  Total number of paths / destination ports: 35 / 9
 -------------------------------------------------------------------------
-Offset:              4.686ns (Levels of Logic = 5)
-  Source:            display_cs2_4 (FF)
-  Destination:       display_abcdefg<6> (PAD)
+Offset:              2.760ns (Levels of Logic = 3)
+  Source:            machine_n_write_3 (FF)
+  Destination:       lcd_spi_mosi (PAD)
   Source Clock:      clk100 rising
 
-  Data Path: display_cs2_4 to display_abcdefg<6>
+  Data Path: machine_n_write_3 to lcd_spi_mosi
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            11   0.478   0.782  display_cs2_4 (display_cs2_4)
-     LUT3:I0->O            4   0.124   0.939  display_value<0>1 (display_value<0>1)
-     LUT6:I1->O            1   0.124   0.776  display_value<1>2 (display_value<1>2)
-     LUT4:I0->O            7   0.124   0.816  display_value<1>5 (display_value<1>)
-     LUT4:I0->O            1   0.124   0.399  display_abcdefg<6>1 (display_abcdefg_6_OBUF)
-     OBUF:I->O                 0.000          display_abcdefg_6_OBUF (display_abcdefg<6>)
+     FDRE:C->Q             4   0.478   0.959  machine_n_write_3 (machine_n_write_3)
+     LUT6:I0->O           23   0.124   0.676  _n2470<5>1 (_n2470)
+     LUT6:I4->O            1   0.124   0.399  mosi_t_oe_inv1 (mosi_t_oe_inv)
+     IOBUF:T->IO               0.000          lcd_spi_mosi_IOBUF (lcd_spi_mosi)
     ----------------------------------------
-    Total                      4.686ns (0.974ns logic, 3.712ns route)
-                                       (20.8% logic, 79.2% route)
+    Total                      2.760ns (0.726ns logic, 2.034ns route)
+                                       (26.3% logic, 73.7% route)
 
 =========================================================================
 
@@ -2013,14 +1942,14 @@ clk100         |    7.319|         |         |         |
 
 
 Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 18.04 secs
+Total CPU time to Xst completion: 17.62 secs
  
 --> 
 
 
-Total memory usage is 536204 kilobytes
+Total memory usage is 534120 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  307 (   0 filtered)
+Number of warnings :  282 (   0 filtered)
 Number of infos    :   46 (   0 filtered)
 

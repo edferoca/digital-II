@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-edferoca::  Wed Mar 06 10:25:06 2019
+edferoca::  Wed Mar 06 20:35:36 2019
 
 par -ol high -w top_map.ncd top.ncd top.pcf 
 
@@ -21,16 +21,16 @@ Device speed data version:  "PRODUCTION 1.10 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,078 out of 126,800    1%
-    Number used as Flip Flops:               2,075
+  Number of Slice Registers:                 1,955 out of 126,800    1%
+    Number used as Flip Flops:               1,952
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                3
-  Number of Slice LUTs:                      2,410 out of  63,400    3%
-    Number used as logic:                    2,293 out of  63,400    3%
-      Number using O6 output only:           1,775
-      Number using O5 output only:              93
-      Number using O5 and O6:                  425
+  Number of Slice LUTs:                      2,342 out of  63,400    3%
+    Number used as logic:                    2,216 out of  63,400    3%
+      Number using O6 output only:           1,733
+      Number using O5 output only:              92
+      Number using O5 and O6:                  391
       Number used as ROM:                        0
     Number used as Memory:                      80 out of  19,000    1%
       Number used as Dual Port RAM:             80
@@ -39,17 +39,17 @@ Slice Logic Utilization:
         Number using O5 and O6:                 80
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     37
-      Number with same-slice register load:     34
+    Number used exclusively as route-thrus:     46
+      Number with same-slice register load:     43
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   950 out of  15,850    5%
-  Number of LUT Flip Flop pairs used:        2,942
-    Number with an unused Flip Flop:         1,063 out of   2,942   36%
-    Number with an unused LUT:                 532 out of   2,942   18%
-    Number of fully used LUT-FF pairs:       1,347 out of   2,942   45%
+  Number of occupied Slices:                   912 out of  15,850    5%
+  Number of LUT Flip Flop pairs used:        2,800
+    Number with an unused Flip Flop:         1,046 out of   2,800   37%
+    Number with an unused LUT:                 458 out of   2,800   16%
+    Number of fully used LUT-FF pairs:       1,296 out of   2,800   46%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -62,8 +62,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        63 out of     210   30%
-    Number of LOCed IOBs:                       63 out of      63  100%
+  Number of bonded IOBs:                        15 out of     210    7%
+    Number of LOCed IOBs:                       15 out of      15  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                 15 out of     135   11%
@@ -78,10 +78,7 @@ Specific Feature Utilization:
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
   Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
-  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        6 out of     300    2%
-    Number used as OLOGICE2s:                    6
-    Number used as OLOGICE3s:                    0
-    Number used as OSERDESE2s:                   0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
   Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
   Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
   Number of BSCANs:                              0 out of       4    0%
@@ -115,27 +112,27 @@ Finished initial Timing Analysis.  REAL time: 12 secs
 Starting Router
 
 
-Phase  1  : 17507 unrouted;      REAL time: 14 secs 
+Phase  1  : 16974 unrouted;      REAL time: 14 secs 
 
-Phase  2  : 14575 unrouted;      REAL time: 14 secs 
+Phase  2  : 14123 unrouted;      REAL time: 14 secs 
 
-Phase  3  : 5382 unrouted;      REAL time: 18 secs 
+Phase  3  : 5273 unrouted;      REAL time: 17 secs 
 
-Phase  4  : 5383 unrouted; (Setup:0, Hold:41569, Component Switching Limit:0)     REAL time: 20 secs 
+Phase  4  : 5273 unrouted; (Setup:0, Hold:36103, Component Switching Limit:0)     REAL time: 20 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:35559, Component Switching Limit:0)     REAL time: 25 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:35559, Component Switching Limit:0)     REAL time: 25 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:35559, Component Switching Limit:0)     REAL time: 25 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:35559, Component Switching Limit:0)     REAL time: 25 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
-Total REAL time to Router completion: 26 secs 
-Total CPU time to Router completion: 27 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+Total REAL time to Router completion: 25 secs 
+Total CPU time to Router completion: 26 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -153,9 +150,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|        clk100_BUFGP |BUFGCTRL_X0Y31| No   |  710 |  0.197     |  1.794      |
+|        clk100_BUFGP |BUFGCTRL_X0Y31| No   |  667 |  0.211     |  1.812      |
 +---------------------+--------------+------+------+------------+-------------+
-|          dna_cnt<0> |         Local|      |    6 |  0.000     |  0.832      |
+|          dna_cnt<0> |         Local|      |    6 |  0.000     |  0.950      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -175,7 +172,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TSclk100 = PERIOD TIMEGRP "PRDclk100" 10  | SETUP       |     0.381ns|     9.619ns|       0|           0
+  TSclk100 = PERIOD TIMEGRP "PRDclk100" 10  | SETUP       |     0.049ns|     9.951ns|       0|           0
   ns HIGH 50%                               | HOLD        |     0.000ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -187,10 +184,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 27 secs 
-Total CPU time to PAR completion: 28 secs 
+Total REAL time to PAR completion: 26 secs 
+Total CPU time to PAR completion: 27 secs 
 
-Peak Memory Usage:  1147 MB
+Peak Memory Usage:  1145 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

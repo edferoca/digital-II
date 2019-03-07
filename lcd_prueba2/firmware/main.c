@@ -109,7 +109,7 @@ unsigned int READ_LENGTH  = (1 << 24);
 
 static void lcd_config(void)
 {
-	lcd_xfer_write(1 | 16*WRITE_LENGTH); //180001
+	lcd_xfer_write(1 | 0x100000); //100001
 	lcd_config_write(0x10300000); //5000 Khz
 }
 static void lcd_write( unsigned char rs, unsigned int info)

@@ -7,19 +7,17 @@ from litex.build.xilinx import XilinxPlatform
 
 from litex.soc.integration.soc_core import *
 from litex.soc.integration.builder import *
-
+from litex.soc.cores import dna, xadc
 from litex.soc.cores.spi import SPIMaster
 
 from ios import Led, RGBLed, Button, Switch
-
+from display import Display
 
 from litesdcard import *
 from litesdcard.common import *
 from litesdcard.phy import SDPHY
 from litesdcard.core import SDCore
 from litesdcard.bist import BISTBlockGenerator, BISTBlockChecker
-
-
 
 
 #
@@ -29,11 +27,15 @@ from litesdcard.bist import BISTBlockGenerator, BISTBlockChecker
 _io = [
 
 
+
     ("user_btn", 0, Pins("N17"), IOStandard("LVCMOS33")),
     ("user_btn", 1, Pins("P18"), IOStandard("LVCMOS33")),
     ("user_btn", 2, Pins("P17"), IOStandard("LVCMOS33")),
     ("user_btn", 3, Pins("M17"), IOStandard("LVCMOS33")),
     ("user_btn", 4, Pins("M18"), IOStandard("LVCMOS33")),
+
+
+
 
     ("clk100", 0, Pins("E3"), IOStandard("LVCMOS33")),
 
@@ -47,7 +49,7 @@ _io = [
 
     ("lcd_spi", 0,
         Subsignal("cs_n", Pins("C17")),
-        Subsignal("mosi", Pins("D18")),
+        Subsignal("mosi", Pins("G17")),
         Subsignal("miso", Pins("E17")),
         Subsignal("clk", Pins("D17")),
         IOStandard("LVCMOS33")
@@ -85,6 +87,7 @@ platform = Platform()
 class BaseSoC(SoCCore):
     # Peripherals CSR declaration
     csr_peripherals = [
+        "dna",
         "buttons",
         "lcd",
         "rs",
@@ -105,6 +108,9 @@ class BaseSoC(SoCCore):
         # Clock Reset Generation
         self.submodules.crg = CRG(platform.request("clk100"), ~platform.request("cpu_reset"))
 
+        # FPGA identification
+        self.submodules.dna = dna.DNA()
+
 
 
         # Buttons
@@ -115,6 +121,8 @@ class BaseSoC(SoCCore):
         self.submodules.lcd = SPIMaster(platform.request("lcd_spi"))
         self.submodules.rs = Led(platform.request("rs_lcd"))
         self.submodules.rst = Led(platform.request("rst_lcd"))
+        #sdcard
+        #self.submodules.sdcard = SDCore(platform.request("sd_spi"))
 
 
 soc = BaseSoC(platform)
