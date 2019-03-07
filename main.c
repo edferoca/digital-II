@@ -6,7 +6,7 @@
 #include <uart.h>
 #include <console.h>
 #include <generated/csr.h>
-cvxcvxcvxcv  ads
+cvxcvxcvxcv
 static void busy_wait(unsigned int ds)
 {
 	timer0_en_write(0);
@@ -16,7 +16,7 @@ static void busy_wait(unsigned int ds)
 	timer0_update_value_write(1);
 	while(timer0_value_read()) timer0_update_value_write(1);
 }
-
+//aaa
 //test edit
 static char *readstr(void)
 {
