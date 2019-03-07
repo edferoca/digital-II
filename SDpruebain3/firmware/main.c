@@ -71,7 +71,8 @@ static void sd_do (void){
 		SD_write_16(0x0095);//00000000 10010101
 		busy_wait(0.001);
 		printf("miso data: %x\n",SD_miso_data_read());
-		if(SD_miso_data_read() == 1){
+		printf("miso data: %u\n",SD_miso_data_read());
+		if(SD_miso_data_read() == 0x01){
 			SD_write_16(0X4800);
 			SD_write_16(0X0001);
 			SD_write_16(0XAA0F);
