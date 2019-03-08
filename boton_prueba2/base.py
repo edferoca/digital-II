@@ -9,7 +9,8 @@ from litex.soc.integration.soc_core import *
 from litex.soc.integration.builder import *
 
 
-from ios import Led, RGBLed, Button, Switch
+from ios import Led, RGBLed, Button, Switch, Buttoninter
+from btn_itrupt import*
 
 
 
@@ -28,16 +29,11 @@ _io = [
     ("user_led",  6, Pins("U17"), IOStandard("LVCMOS33")),
     ("user_led",  7, Pins("U16"), IOStandard("LVCMOS33")),
 
-
-    ("user_sw",  0, Pins("K1"), IOStandard("LVCMOS33")),
-    ("user_sw",  1, Pins("F6"), IOStandard("LVCMOS33")),
-    ("user_sw",  2, Pins("J2"), IOStandard("LVCMOS33")),
-    ("user_sw",  3, Pins("G6"), IOStandard("LVCMOS33")),
-    ("user_sw",  4, Pins("E7"), IOStandard("LVCMOS33")),
-    ("user_sw",  5, Pins("j3"), IOStandard("LVCMOS33")),
-    ("user_sw",  6, Pins("J4"), IOStandard("LVCMOS33")),
-    ("user_sw",  7, Pins("E6"), IOStandard("LVCMOS33")),
-
+    ("user_btnint",  0, Pins("N17"), IOStandard("LVCMOS33")),
+    ("user_btn",  0, Pins("P18"), IOStandard("LVCMOS33")),
+    ("user_btn",  1, Pins("P17"), IOStandard("LVCMOS33")),
+    ("user_btn",  2, Pins("M17"), IOStandard("LVCMOS33")),
+    ("user_btn",  3, Pins("M18"), IOStandard("LVCMOS33")),
 
 
 
@@ -84,7 +80,7 @@ class BaseSoC(SoCCore):
     csr_peripherals = [
 
         "leds",
-        "switches"
+        "buttoniner"
 
     ]
     csr_map_update(SoCCore.csr_map, csr_peripherals)
@@ -106,9 +102,13 @@ class BaseSoC(SoCCore):
         user_leds = Cat(*[platform.request("user_led", i) for i in range(8)])
         self.submodules.leds = Led(user_leds)
 
-        # Switches
-        user_switches = Cat(*[platform.request("user_sw", i) for i in range(8)])
-        self.submodules.switches = Switch(user_switches)
+        # Buttons interrupcion
+        self.submodules.buttoniner = btnintrupt(platform.request("user_btnint"))
+        # interrupts declaration
+        interrupt_map = {
+            "buttoniner" : 4,
+        }
+        SoCCore.interrupt_map.update(interrupt_map)
 
 
 

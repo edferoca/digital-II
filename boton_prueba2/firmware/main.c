@@ -82,10 +82,8 @@ static void help(void)
 	puts("Available commands:");
 	puts("help                            - this command");
 	puts("reboot                          - reboot CPU");
-	puts("display                         - display test");
-	puts("led                             - led test");
-	puts("sw->led										  		-led->sw");
-	puts("acele										  		-celerometro");
+	puts("prueba										  		-led->sw");
+
 }
 
 static void reboot(void)
@@ -93,15 +91,14 @@ static void reboot(void)
 	asm("call r0");
 }
 
-static void sw_led_test(void)
+static void prueba(void)
 {
-	int i=1;
-	printf("sw_led_test...\n");
+	buttoniner_ev_pending_write(1); //flag
+	buttoniner_ev_enable_write(1);
 
-	while (i) {
-			leds_out_write(switches_in_read());
-			busy_wait(1);
-	}
+	irq_setmask(irq_getmask() | (1 << 2));
+
+
 }
 
 
@@ -117,8 +114,8 @@ static void console_service(void)
 		help();
 	else if(strcmp(token, "reboot") == 0)
 		reboot();
-	else if(strcmp(token,"sw->led")==0)
-		sw_led_test();
+	else if(strcmp(token,"p")==0)
+		prueba();
 
 	prompt();
 }
@@ -127,14 +124,17 @@ int main(void)
 {
 	irq_setmask(0);
 	irq_setie(1);
+	prueba();
 	uart_init();
+	printf("get maska %d \n",irq_getmask());
 
+ printf("get masko %x \n",UART_INTERRUPT);
 	puts("\nLab004 - CPU testing software built "__DATE__" "__TIME__"\n");
-	help();
-	prompt();
+	//help();
+	//prompt();
 
 	while(1) {
-		console_service();
+
 	}
 
 	return 0;

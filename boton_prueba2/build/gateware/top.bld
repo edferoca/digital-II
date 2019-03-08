@@ -5,8 +5,8 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -uc
 top.ucf top.ngc top.ngd
 
 Reading NGO file
-"/home/edferoca/Documentos/digital2/poryecto_Dig_II/boton_prueba1/build/gateware
-/top.ngc" ...
+"/home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/gateware/t
+op.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,7 +28,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 480392 kilobytes
+Total memory usage is 480252 kilobytes
 
 Writing NGD file "top.ngd" ...
 Total REAL time to NGDBUILD completion:  10 sec

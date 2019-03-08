@@ -8,23 +8,23 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -1
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Tue Mar  5 20:10:16 2019
+Mapped Date    : Thu Mar  7 20:09:17 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,676 out of 126,800    1%
-    Number used as Flip Flops:               1,673
+  Number of Slice Registers:                 1,658 out of 126,800    1%
+    Number used as Flip Flops:               1,655
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                3
-  Number of Slice LUTs:                      2,099 out of  63,400    3%
-    Number used as logic:                    2,000 out of  63,400    3%
-      Number using O6 output only:           1,540
+  Number of Slice LUTs:                      2,128 out of  63,400    3%
+    Number used as logic:                    1,999 out of  63,400    3%
+      Number using O6 output only:           1,541
       Number using O5 output only:              91
-      Number using O5 and O6:                  369
+      Number using O5 and O6:                  367
       Number used as ROM:                        0
     Number used as Memory:                      80 out of  19,000    1%
       Number used as Dual Port RAM:             80
@@ -33,20 +33,20 @@ Slice Logic Utilization:
         Number using O5 and O6:                 80
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     19
-      Number with same-slice register load:     16
+    Number used exclusively as route-thrus:     49
+      Number with same-slice register load:     46
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   817 out of  15,850    5%
-  Number of LUT Flip Flop pairs used:        2,474
-    Number with an unused Flip Flop:           981 out of   2,474   39%
-    Number with an unused LUT:                 375 out of   2,474   15%
-    Number of fully used LUT-FF pairs:       1,118 out of   2,474   45%
+  Number of occupied Slices:                   743 out of  15,850    4%
+  Number of LUT Flip Flop pairs used:        2,388
+    Number with an unused Flip Flop:           945 out of   2,388   39%
+    Number with an unused LUT:                 260 out of   2,388   10%
+    Number of fully used LUT-FF pairs:       1,183 out of   2,388   49%
     Number of unique control sets:              62
     Number of slice register sites lost
-      to control set restrictions:             111 out of 126,800    1%
+      to control set restrictions:             113 out of 126,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -57,8 +57,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        20 out of     210    9%
-    Number of LOCed IOBs:                       20 out of      20  100%
+  Number of bonded IOBs:                        13 out of     210    6%
+    Number of LOCed IOBs:                       13 out of      13  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                 15 out of     135   11%
@@ -97,11 +97,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.88
+Average Fanout of Non-Clock Nets:                3.90
 
-Peak Memory Usage:  1341 MB
-Total REAL time to MAP completion:  1 mins 34 secs 
-Total CPU time to MAP completion:   1 mins 34 secs 
+Peak Memory Usage:  1342 MB
+Total REAL time to MAP completion:  1 mins 29 secs 
+Total CPU time to MAP completion:   1 mins 29 secs 
 
 Table of Contents
 -----------------
@@ -127,14 +127,14 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network Mram_storage_13/SPO has no load.
+INFO:LIT:243 - Logical network Mram_storage3/SPO has no load.
 INFO:LIT:395 - The above info message is repeated 79 more times for the
    following (max. 5 shown):
-   Mram_storage_11/SPO,
-   Mram_storage_12/SPO,
-   Mram_storage_16/SPO,
-   Mram_storage_14/SPO,
-   Mram_storage_15/SPO
+   Mram_storage1/SPO,
+   Mram_storage2/SPO,
+   Mram_storage6/SPO,
+   Mram_storage4/SPO,
+   Mram_storage5/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -188,6 +188,7 @@ Section 6 - IOB Properties
 | cpu_reset                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | serial_rx                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | serial_tx                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| user_btnint                        | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | user_led0                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | user_led1                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | user_led2                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
@@ -196,14 +197,6 @@ Section 6 - IOB Properties
 | user_led5                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | user_led6                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | user_led7                          | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| user_sw0                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw1                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw2                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw3                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw4                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw5                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw6                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| user_sw7                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

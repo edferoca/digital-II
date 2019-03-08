@@ -12,6 +12,42 @@ extern uint32_t csr_readl(uint32_t addr);
 #include <hw/common.h>
 #endif /* ! CSR_ACCESSORS_DEFINED */
 
+/* buttoniner */
+#define CSR_BUTTONINER_BASE 0xe0004800
+#define CSR_BUTTONINER_IN_ADDR 0xe0004800
+#define CSR_BUTTONINER_IN_SIZE 1
+static inline unsigned char buttoniner_in_read(void) {
+	unsigned char r = csr_readl(0xe0004800);
+	return r;
+}
+#define CSR_BUTTONINER_EV_STATUS_ADDR 0xe0004804
+#define CSR_BUTTONINER_EV_STATUS_SIZE 1
+static inline unsigned char buttoniner_ev_status_read(void) {
+	unsigned char r = csr_readl(0xe0004804);
+	return r;
+}
+static inline void buttoniner_ev_status_write(unsigned char value) {
+	csr_writel(value, 0xe0004804);
+}
+#define CSR_BUTTONINER_EV_PENDING_ADDR 0xe0004808
+#define CSR_BUTTONINER_EV_PENDING_SIZE 1
+static inline unsigned char buttoniner_ev_pending_read(void) {
+	unsigned char r = csr_readl(0xe0004808);
+	return r;
+}
+static inline void buttoniner_ev_pending_write(unsigned char value) {
+	csr_writel(value, 0xe0004808);
+}
+#define CSR_BUTTONINER_EV_ENABLE_ADDR 0xe000480c
+#define CSR_BUTTONINER_EV_ENABLE_SIZE 1
+static inline unsigned char buttoniner_ev_enable_read(void) {
+	unsigned char r = csr_readl(0xe000480c);
+	return r;
+}
+static inline void buttoniner_ev_enable_write(unsigned char value) {
+	csr_writel(value, 0xe000480c);
+}
+
 /* ctrl */
 #define CSR_CTRL_BASE 0xe0000000
 #define CSR_CTRL_RESET_ADDR 0xe0000000
@@ -64,15 +100,6 @@ static inline unsigned char leds_out_read(void) {
 }
 static inline void leds_out_write(unsigned char value) {
 	csr_writel(value, 0xe0004000);
-}
-
-/* switches */
-#define CSR_SWITCHES_BASE 0xe0004800
-#define CSR_SWITCHES_IN_ADDR 0xe0004800
-#define CSR_SWITCHES_IN_SIZE 1
-static inline unsigned char switches_in_read(void) {
-	unsigned char r = csr_readl(0xe0004800);
-	return r;
 }
 
 /* timer0 */

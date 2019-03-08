@@ -10,14 +10,7 @@ NET "user_led4" LOC=R18 | IOSTANDARD=LVCMOS33; # user_led:4
 NET "user_led5" LOC=V17 | IOSTANDARD=LVCMOS33; # user_led:5
 NET "user_led6" LOC=U17 | IOSTANDARD=LVCMOS33; # user_led:6
 NET "user_led7" LOC=U16 | IOSTANDARD=LVCMOS33; # user_led:7
-NET "user_sw0" LOC=K1 | IOSTANDARD=LVCMOS33; # user_sw:0
-NET "user_sw1" LOC=F6 | IOSTANDARD=LVCMOS33; # user_sw:1
-NET "user_sw2" LOC=J2 | IOSTANDARD=LVCMOS33; # user_sw:2
-NET "user_sw3" LOC=G6 | IOSTANDARD=LVCMOS33; # user_sw:3
-NET "user_sw4" LOC=E7 | IOSTANDARD=LVCMOS33; # user_sw:4
-NET "user_sw5" LOC=j3 | IOSTANDARD=LVCMOS33; # user_sw:5
-NET "user_sw6" LOC=J4 | IOSTANDARD=LVCMOS33; # user_sw:6
-NET "user_sw7" LOC=E6 | IOSTANDARD=LVCMOS33; # user_sw:7
+NET "user_btnint" LOC=N17 | IOSTANDARD=LVCMOS33; # user_btnint:0
 
 
 NET "clk100" TNM_NET = "PRDclk100";

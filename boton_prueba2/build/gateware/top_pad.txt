@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Mar  5 20:12:23 2019
+Thu Mar  7 20:11:19 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -97,8 +97,8 @@ Pinout by Pin Number:
 |E3        |clk100     |IOB33    |IO_L12P_T1_MRCC_35          |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |E4        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |E5        |           |IOB33S   |IO_L5N_T0_AD13N_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
-|E6        |user_sw7   |IOB33    |IO_L5P_T0_AD13P_35          |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|E7        |user_sw4   |IOB33    |IO_L6P_T0_35                |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|E6        |           |IOB33M   |IO_L5P_T0_AD13P_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|E7        |           |IOB33M   |IO_L6P_T0_35                |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |E8        |           |         |VCCBATT_0                   |         |           |              |          |         |           |         |         |          |           |                |
 |E9        |           |         |CCLK_0                      |         |           |              |          |         |           |         |         |          |           |                |
 |E10       |           |         |TCK_0                       |         |           |              |          |         |           |         |         |          |           |                |
@@ -115,7 +115,7 @@ Pinout by Pin Number:
 |F3        |           |IOB33S   |IO_L13N_T2_MRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |F4        |           |IOB33M   |IO_L13P_T2_MRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |F5        |           |IOB33    |IO_0_35                     |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
-|F6        |user_sw1   |IOB33    |IO_L19N_T3_VREF_35          |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|F6        |           |IOB33S   |IO_L19N_T3_VREF_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |F7        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |F8        |           |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
 |F9        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
@@ -133,7 +133,7 @@ Pinout by Pin Number:
 |G3        |           |IOB33S   |IO_L20N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |G4        |           |IOB33M   |IO_L20P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |G5        |           |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
-|G6        |user_sw3   |IOB33    |IO_L19P_T3_35               |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|G6        |           |IOB33M   |IO_L19P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |G7        |           |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
 |G8        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |G9        |           |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
@@ -165,9 +165,9 @@ Pinout by Pin Number:
 |H17       |user_led0  |IOB33    |IO_L18P_T2_A24_15           |OUTPUT   |LVCMOS33   |15            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |H18       |           |         |VCCO_15                     |         |           |15            |          |         |           |         |3.30     |          |           |                |
 |J1        |           |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
-|J2        |user_sw2   |IOB33    |IO_L22N_T3_35               |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|J3        |user_sw5   |IOB33    |IO_L22P_T3_35               |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|J4        |user_sw6   |IOB33    |IO_L21P_T3_DQS_35           |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|J2        |           |IOB33S   |IO_L22N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|J3        |           |IOB33M   |IO_L22P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|J4        |           |IOB33M   |IO_L21P_T3_DQS_35           |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |J5        |           |IOB33    |IO_25_35                    |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |J6        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |J7        |           |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
@@ -182,7 +182,7 @@ Pinout by Pin Number:
 |J16       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |J17       |           |IOB33M   |IO_L23P_T3_FOE_B_15         |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |J18       |           |IOB33S   |IO_L23N_T3_FWE_B_15         |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
-|K1        |user_sw0   |IOB33    |IO_L23N_T3_35               |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|K1        |           |IOB33S   |IO_L23N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |K2        |           |IOB33M   |IO_L23P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |K3        |           |IOB33M   |IO_L2P_T0_34                |UNUSED   |           |34            |          |         |           |         |         |          |           |                |
 |K4        |           |         |VCCO_34                     |         |           |34            |          |         |           |         |any******|          |           |                |
@@ -252,7 +252,7 @@ Pinout by Pin Number:
 |N14       |user_led3  |IOB33    |IO_L8P_T1_D11_14            |OUTPUT   |LVCMOS33   |14            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |N15       |           |IOB33M   |IO_L11P_T1_SRCC_14          |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
 |N16       |           |IOB33S   |IO_L11N_T1_SRCC_14          |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
-|N17       |           |IOB33M   |IO_L9P_T1_DQS_14            |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|N17       |user_btnint|IOB33    |IO_L9P_T1_DQS_14            |INPUT    |LVCMOS33   |14            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |N18       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |P1        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |P2        |           |IOB33M   |IO_L15P_T2_DQS_34           |UNUSED   |           |34            |          |         |           |         |         |          |           |                |
