@@ -35,11 +35,11 @@ static void SD_configure(void) {
   unsigned config = 0*OFFLINE;
   config |= 0*CS_POLARITY | 0*CLK_POLARITY | 0*CLK_PHASE;
   config |= 0*LSB_FIRST | 0*HALF_DUPLEX;
-  config |= 248*DIV_READ | 248*DIV_WRITE;//Divisior para
-	//																			reloj de 5MHz(16)
-	//				100M/400k = div_write + 2
+  config |= 248*DIV_READ | 248*DIV_WRITE;
+	//			div_write	== f_clk/f_spi_write - 2
+	//
   SD_config_write(config);
-	SD_xfer_write(1 | 16*WRITE_LENGTH | 16*READ_LENGTH);
+	SD_xfer_write(1 | 48*WRITE_LENGTH | 48*READ_LENGTH);
 }
 
 static void SD_write_16(unsigned short int value){
@@ -54,6 +54,13 @@ static void SD_write_16(unsigned short int value){
 	}
 }
 
+static void SD_write_48(unsigned short int value1,unsigned short int value2,unsigned short int value3){
+
+	double value = (value1 << 48) | (value2 << 32) | value3
+	SD_mosi_data_write(value);
+	SD_start_write(1);
+	while (SD_active_read() & 0x1){}
+}
 
 
 static void sd_do (void){
@@ -70,8 +77,11 @@ static void sd_do (void){
 		SD_write_16(0x0000);//00000000 00000000
 		SD_write_16(0x0095);//00000000 10010101
 		busy_wait(0.001);
+		SD_write_16(0x4000);//01000000 00000000
+		SD_write_16(0x0000);//00000000 00000000
+		SD_write_16(0x0095);//00000000 10010101
+		printf("mosi data: %x\n",SD_mosi_data_read());
 		printf("miso data: %x\n",SD_miso_data_read());
-		printf("miso data: %u\n",SD_miso_data_read());
 		if(SD_miso_data_read() == 0x01){
 			SD_write_16(0X4800);
 			SD_write_16(0X0001);
