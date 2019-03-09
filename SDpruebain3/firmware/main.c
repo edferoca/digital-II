@@ -37,7 +37,7 @@ static void SD_configure(void) {
   config |= 0*LSB_FIRST | 0*HALF_DUPLEX;
   config |= 248*DIV_READ | 248*DIV_WRITE;
 	//			div_write	== f_clk/f_spi_write - 2
-	//
+	//			248 = 100MHz/400kz - 2
   SD_config_write(config);
 	SD_xfer_write(1 | 48*WRITE_LENGTH | 48*READ_LENGTH);
 }
@@ -64,15 +64,15 @@ static void SD_write_48(unsigned short int value1,unsigned short int value2,unsi
 
 
 static void sd_do (void){
+
 		printf("Inicializando SD...\n");
 		SD_configure();
-		busy_wait(0.01);
+		busy_wait(0.01); //1ms
 	//tiempo muerto para energizar correctamente la SD
-//CMD0
 		busy_wait(0.01);
 		printf("Power sequence complete...\n");
 
-		//busy_wait(15);
+	//CMD0: Comando Reset, establece el modo de comunicación de la tarjeta en SPI
 		SD_write_16(0x4000);//01000000 00000000
 		SD_write_16(0x0000);//00000000 00000000
 		SD_write_16(0x0095);//00000000 10010101
@@ -80,15 +80,56 @@ static void sd_do (void){
 		SD_write_16(0x4000);//01000000 00000000
 		SD_write_16(0x0000);//00000000 00000000
 		SD_write_16(0x0095);//00000000 10010101
-		printf("mosi data: %x\n",SD_mosi_data_read());
-		printf("miso data: %x\n",SD_miso_data_read());
-		if(SD_miso_data_read() == 0x01){
-			SD_write_16(0X4800);
-			SD_write_16(0X0001);
-			SD_write_16(0XAA0F);
+
+		unsigned short int miso = SD_miso_data_read();
+		//printf("mosi data: %x\n",SD_mosi_data_read());
+		printf("Respuesta comando 0: %x\n",miso);
+		if(miso == 0X01){
+
+		//CMD8: comando para probar si hay comunicación con la tarjeta
+			SD_write_16(0X4800);//01001000 00000000
+			SD_write_16(0X0001);//00000000 00000001
+			SD_write_16(0XAA0F);//10101010 00001111
 			busy_wait(0.001);
-			printf("miso data: %x\n",SD_miso_data_read());
-		}
+			miso = SD_miso_data_read();
+			printf("Respuesta comando 8: %x\n",miso);
+
+			if(miso == 0X1AA){
+
+			//ACMD41:es un comando de sincronización especial utilizado para negociar el rango de voltaje de operación y para sondear la tarjeta hasta que esté fuera de su secuencia de encendido
+				SD_write_16(0X6900);//01101001 00000000
+				SD_write_16(0X0000);//00000000 00000000
+				SD_write_16(0X00FF);//00000000 11111111
+				miso = SD_miso_data_read();
+				if(miso == 0X00){
+					for(int i=0;i<1000;i++){
+						//Se repite varias veces el comando ACMD41
+						SD_write_16(0X6900);//01101001 00000000
+						SD_write_16(0X0000);//00000000 00000000
+						SD_write_16(0X00FF);//00000000 11111111
+						miso = SD_miso_data_read();
+						if(miso == 1){break;}
+					}
+				}else if(miso == 0X01){
+					//CMD58: Lee el registro OCR
+					SD_write_16(0X7A00);//01111010 00000000
+					SD_write_16(0X0000);//00000000 00000000
+					SD_write_16(0X00FD);//00000000 11111101
+					miso = SD_miso_data_read();
+					if(miso == 1){printf("Block adress");}
+					else if(miso == 0){
+						printf("Byte adress");
+
+						//CMD16: Fuerza el tamaño del bloque a 512 bytes
+						SD_write_16(0X5000);//01010000 00000000
+						SD_write_16(0X0002);//00000000 00000000
+						SD_write_16(0X0015);//00000000 00010101
+					}
+				}
+
+			}
+		}else{printf("Unknow card")}
+
 printf("Inicialización terminada.\n" );
 }
 
