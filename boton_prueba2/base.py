@@ -88,6 +88,10 @@ class BaseSoC(SoCCore):
     def __init__(self, platform):
         sys_clk_freq = int(100e6)
         # SoC with CPU
+        interrupt_map = {
+            "buttoniner" : 4,
+        }
+        SoCCore.interrupt_map.update(interrupt_map)
         SoCCore.__init__(self, platform,
             cpu_type="lm32",
             clk_freq=100e6,
@@ -105,10 +109,6 @@ class BaseSoC(SoCCore):
         # Buttons interrupcion
         self.submodules.buttoniner = btnintrupt(platform.request("user_btnint"))
         # interrupts declaration
-        interrupt_map = {
-            "buttoniner" : 4,
-        }
-        SoCCore.interrupt_map.update(interrupt_map)
 
 
 

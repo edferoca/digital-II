@@ -31,6 +31,7 @@ csr_register,uart_phy_tuning_word,0xe0001000,4,rw
 constant,nmi_interrupt,0,,
 constant,timer0_interrupt,1,,
 constant,uart_interrupt,2,,
+constant,buttoniner_interrupt,4,,
 constant,csr_data_width,8,,
 constant,system_clock_frequency,100000000,,
 constant,config_clock_frequency,100000000,,

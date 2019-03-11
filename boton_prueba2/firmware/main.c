@@ -93,10 +93,10 @@ static void reboot(void)
 
 static void prueba(void)
 {
+
 	buttoniner_ev_pending_write(1); //flag
 	buttoniner_ev_enable_write(1);
-
-	irq_setmask(irq_getmask() | (1 << 2));
+	irq_setmask(irq_getmask() | (1 << 4));
 
 
 }
@@ -123,10 +123,13 @@ static void console_service(void)
 int main(void)
 {
 	irq_setmask(0);
-	irq_setie(1);
+	irq_setie(1); //habilita las interrupciones
+
 	prueba();
 	uart_init();
-	printf("get maska %d \n",irq_getmask());
+	printf("get maska %X \n",irq_getmask());
+	printf("get maski %X \n",irq_pending());
+	printf("get maske %x \n",(irq_getmask() | (1 << 4)));
 
  printf("get masko %x \n",UART_INTERRUPT);
 	puts("\nLab004 - CPU testing software built "__DATE__" "__TIME__"\n");
@@ -134,7 +137,7 @@ int main(void)
 	//prompt();
 
 	while(1) {
-
+//	printf("get maski %X \n",irq_pending());
 	}
 
 	return 0;

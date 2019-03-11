@@ -286,6 +286,10 @@ static inline int timer0_interrupt_read(void) {
 static inline int uart_interrupt_read(void) {
 	return 2;
 }
+#define BUTTONINER_INTERRUPT 4
+static inline int buttoniner_interrupt_read(void) {
+	return 4;
+}
 #define CSR_DATA_WIDTH 8
 static inline int csr_data_width_read(void) {
 	return 8;

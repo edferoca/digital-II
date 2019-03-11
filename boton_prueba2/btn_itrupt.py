@@ -12,6 +12,6 @@ class btnintrupt(Module, AutoCSR):
 
         self.submodules.ev = EventManager()
         self.ev.zero = EventSourceProcess()
-        self.ev.finalize()
+    #    self.ev.finalize()
 
-        self.comb += self.ev.zero.trigger.eq(self._in.status != 1)
+        self.comb += self.ev.zero.trigger.eq(signal)
