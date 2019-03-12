@@ -6,6 +6,8 @@
 #include <uart.h>
 #include <console.h>
 #include <generated/csr.h>
+#include "LCD.h"
+#include "lcdraw.h"
 
 static void busy_wait(unsigned int ds)
 {
@@ -18,78 +20,6 @@ static void busy_wait(unsigned int ds)
 }
 
 
-static char *readstr(void)
-{
-	char c[2];
-	static char s[64];
-	static int ptr = 0;
-
-	if(readchar_nonblock()) {
-		c[0] = readchar();
-		c[1] = 0;
-		switch(c[0]) {
-			case 0x7f:
-			case 0x08:
-				if(ptr > 0) {
-					ptr--;
-					putsnonl("\x08 \x08");
-				}
-				break;
-			case 0x07:
-				break;
-			case '\r':
-			case '\n':
-				s[ptr] = 0x00;
-				putsnonl("\n");
-				ptr = 0;
-				return s;
-			default:
-				if(ptr >= (sizeof(s) - 1))
-					break;
-				putsnonl(c);
-				s[ptr] = c[0];
-				ptr++;
-				break;
-		}
-	}
-
-	return NULL;
-}
-
-static char *get_token(char **str)
-{
-	char *c, *d;
-
-	c = (char *)strchr(*str, ' ');
-	if(c == NULL) {
-		d = *str;
-		*str = *str+strlen(*str);
-		return d;
-	}
-	*c = 0;
-	d = *str;
-	*str = c+1;
-	return d;
-}
-
-static void prompt(void)
-{
-	printf("RUNTIME>");
-}
-
-static void help(void)
-{
-	puts("Available commands:");
-	puts("help                            - this command");
-	puts("reboot                          - reboot CPU");
-	puts("prueba										  		-led->sw");
-
-}
-
-static void reboot(void)
-{
-	asm("call r0");
-}
 
 static void prueba(void)
 {
@@ -98,26 +28,25 @@ static void prueba(void)
 	buttoniner_ev_enable_write(1);
 	irq_setmask(irq_getmask() | (1 << 4));
 
-
 }
+//creacion de constantes para spi
+unsigned int WRITE_LENGTH = (1 << 16); //tamaño de como va ha escribir datos
+unsigned int READ_LENGTH  = (1 << 24);
 
 
-static void console_service(void)
+static void pantalla(void)
 {
-	char *str;
-	char *token;
+	lcd_config();
+	int i=0;
+	lcd_inic();
 
-	str = readstr();
-	if(str == NULL) return;
-	token = get_token(&str);
-	if(strcmp(token, "help") == 0)
-		help();
-	else if(strcmp(token, "reboot") == 0)
-		reboot();
-	else if(strcmp(token,"p")==0)
-		prueba();
+	i=0;
+	while(i<56360){
+		lcd_write(1,0x001f);// amarillo
+		i++;
+	}
+	moverse(0X0010,0x0010,0x0015,0x0015,0X0000);
 
-	prompt();
 }
 
 int main(void)
@@ -132,12 +61,9 @@ int main(void)
 	printf("get maske %x \n",(irq_getmask() | (1 << 4)));
 
  printf("get masko %x \n",UART_INTERRUPT);
-	puts("\nLab004 - CPU testing software built "__DATE__" "__TIME__"\n");
-	//help();
-	//prompt();
 
 	while(1) {
-//	printf("get maski %X \n",irq_pending());
+		pantalla();
 	}
 
 	return 0;

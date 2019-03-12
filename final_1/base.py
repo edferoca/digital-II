@@ -10,7 +10,7 @@ from litex.soc.integration.builder import *
 from litex.soc.cores.spi import SPIMaster
 
 
-from ios import Led, RGBLed, Button, Switch, Buttoninter
+from ios import Led, RGBLed, Button, Switch
 from btn_itrupt import*
 
 
