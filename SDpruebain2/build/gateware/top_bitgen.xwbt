@@ -1,7 +1,7 @@
-INFILE=/home/edferoca/Documentos/digital2/fpga_101-master/SDpruebain2/build/gateware/top.ncd
-OUTFILE=/home/edferoca/Documentos/digital2/fpga_101-master/SDpruebain2/build/gateware/top.bit
+INFILE=/home/hector/digital-II/SDpruebain2/build/gateware/top.ncd
+OUTFILE=/home/hector/digital-II/SDpruebain2/build/gateware/top.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=/home/edferoca/Documentos/digital2/fpga_101-master/SDpruebain2/build/gateware
+WORKINGDIR=/home/hector/digital-II/SDpruebain2/build/gateware
 LICENSE=WebPack
-USER_INFO=211480600_0_0_212
+USER_INFO=211483832_0_0_073

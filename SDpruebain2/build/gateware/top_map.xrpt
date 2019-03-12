@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon Mar  4 20:08:00 2019">
+  <application stringID="Map" timeStamp="Mon Mar 11 16:22:11 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -32,20 +32,20 @@
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/home/edferoca/lm32-toolchain/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/lm32/bin"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/lm32/bin"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 18.04.2 LTS"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 18.04.1 LTS"/>
       </item>
-      <item stringID="User_EnvHost" value="edferoca"/>
+      <item stringID="User_EnvHost" value="hector-HP-Notebook"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz"/>
-          <item stringID="speed" value="3500.036 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz"/>
+          <item stringID="speed" value="2700.883 MHz"/>
         </row>
       </table>
     </section>
@@ -108,9 +108,9 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1387016"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="1 mins 16 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="1 mins 16 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1342332"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="1 mins 42 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="1 mins 35 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
         <item AVAILABLE="126800" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="2114">
@@ -119,7 +119,7 @@
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCHLOGIC" value="3"/>
         </item>
-        <item AVAILABLE="63400" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="2346">
+        <item AVAILABLE="63400" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="2338">
           <item dataType="int" label="Number using O5 output only" stringID="MAP_NUM_LOGIC_O5ONLY" value="93"/>
           <item dataType="int" label="Number using O6 output only" stringID="MAP_NUM_LOGIC_O6ONLY" value="1712"/>
           <item dataType="int" label="Number using O5 and O6" stringID="MAP_NUM_LOGIC_O5ANDO6" value="442"/>
@@ -136,20 +136,20 @@
           <item dataType="int" stringID="MAP_NUM_SRL_O6ONLY" value="0"/>
           <item dataType="int" stringID="MAP_NUM_SRL_O5ANDO6" value="0"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO6" value="3"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO5" value="16"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO5" value="8"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_FLOP" value="16"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_FLOP" value="8"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="3"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="15850" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="925">
-          <item AVAILABLE="11100" dataType="int" stringID="MAP_NUM_SLICEL" value="905"/>
+        <item AVAILABLE="15850" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="937">
+          <item AVAILABLE="11100" dataType="int" stringID="MAP_NUM_SLICEL" value="917"/>
           <item AVAILABLE="4750" dataType="int" stringID="MAP_NUM_SLICEM" value="20"/>
         </item>
-        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="2920">
-          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="1019"/>
-          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="574"/>
-          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="1327"/>
+        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="2941">
+          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="1027"/>
+          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="603"/>
+          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="1311"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
