@@ -1,0 +1,17 @@
+NET "serial_tx" LOC=D4 | IOSTANDARD=LVCMOS33; # serial:0.tx
+NET "serial_rx" LOC=C4 | IOSTANDARD=LVCMOS33; # serial:0.rx
+NET "clk100" LOC=E3 | IOSTANDARD=LVCMOS33; # clk100:0
+NET "cpu_reset" LOC=C12 | IOSTANDARD=LVCMOS33; # cpu_reset:0
+NET "user_led0" LOC=H17 | IOSTANDARD=LVCMOS33; # user_led:0
+NET "user_led1" LOC=K15 | IOSTANDARD=LVCMOS33; # user_led:1
+NET "user_led2" LOC=J13 | IOSTANDARD=LVCMOS33; # user_led:2
+NET "user_led3" LOC=N14 | IOSTANDARD=LVCMOS33; # user_led:3
+NET "user_led4" LOC=R18 | IOSTANDARD=LVCMOS33; # user_led:4
+NET "user_led5" LOC=V17 | IOSTANDARD=LVCMOS33; # user_led:5
+NET "user_led6" LOC=U17 | IOSTANDARD=LVCMOS33; # user_led:6
+NET "user_led7" LOC=U16 | IOSTANDARD=LVCMOS33; # user_led:7
+NET "user_btnint" LOC=N17 | IOSTANDARD=LVCMOS33; # user_btnint:0
+
+
+NET "clk100" TNM_NET = "PRDclk100";
+TIMESPEC "TSclk100" = PERIOD "PRDclk100" 10.0 ns HIGH 50%;

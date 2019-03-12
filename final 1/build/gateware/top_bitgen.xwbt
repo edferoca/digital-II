@@ -1,0 +1,7 @@
+INFILE=/home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/gateware/top.ncd
+OUTFILE=/home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/gateware/top.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/gateware
+LICENSE=WebPack
+USER_INFO=211480600_0_0_212
