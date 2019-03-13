@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-edferoca::  Wed Mar 06 20:35:36 2019
+edferoca::  Mon Mar 11 19:16:07 2019
 
 par -ol high -w top_map.ncd top.ncd top.pcf 
 
@@ -118,17 +118,17 @@ Phase  2  : 14123 unrouted;      REAL time: 14 secs
 
 Phase  3  : 5273 unrouted;      REAL time: 17 secs 
 
-Phase  4  : 5273 unrouted; (Setup:0, Hold:36103, Component Switching Limit:0)     REAL time: 20 secs 
+Phase  4  : 5273 unrouted; (Setup:0, Hold:36099, Component Switching Limit:0)     REAL time: 19 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:31855, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:31855, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:31855, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:31888, Component Switching Limit:0)     REAL time: 24 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:31855, Component Switching Limit:0)     REAL time: 24 secs 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
 Total REAL time to Router completion: 25 secs 

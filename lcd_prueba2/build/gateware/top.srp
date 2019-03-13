@@ -31,7 +31,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input File Name                    : "top.prj"
 Input Format                       : MIXED
-Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }
+Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }
 
 ---- Target Parameters
 Output File Name                   : "top.ngc"
@@ -53,193 +53,193 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
-WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
-Parsing module <lm32_icache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
+WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
 Parsing module <lm32_load_store_unit>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
 Parsing module <lm32_dp_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_adder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Parsing module <lm32_addsub>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
 Parsing module <lm32_cpu>.
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
-Parsing module <lm32_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
-Parsing module <lm32_decoder>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_shifter>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" into library work
-Parsing module <top>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_interrupt>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
-Parsing module <lm32_addsub>.
+Parsing module <lm32_logic_op>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" into library work
+Parsing module <top>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
+Parsing module <lm32_icache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_adder>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_multiplier>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2339: Port I_LOCK_O is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2339: Port I_LOCK_O is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <$unit_1>.
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 56: Using initial value of basesoc_ctrl_reset_reset_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 100: Using initial value of basesoc_rom_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 113: Using initial value of basesoc_sram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 128: Using initial value of basesoc_main_ram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 147: Using initial value of basesoc_bus_wishbone_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 164: Using initial value of basesoc_uart_phy_source_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 165: Using initial value of basesoc_uart_phy_source_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 201: Using initial value of basesoc_uart_tx_fifo_sink_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 202: Using initial value of basesoc_uart_tx_fifo_sink_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 218: Using initial value of basesoc_uart_tx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 255: Using initial value of basesoc_uart_rx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 273: Using initial value of basesoc_uart_reset since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 285: Using initial value of basesoc_timer0_update_value_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 388: Using initial value of lcd_start_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 409: Using initial value of display_write_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 422: Using initial value of display_enable since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 56: Using initial value of basesoc_ctrl_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 100: Using initial value of basesoc_rom_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 113: Using initial value of basesoc_sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 128: Using initial value of basesoc_main_ram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 147: Using initial value of basesoc_bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 164: Using initial value of basesoc_uart_phy_source_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 165: Using initial value of basesoc_uart_phy_source_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 201: Using initial value of basesoc_uart_tx_fifo_sink_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 202: Using initial value of basesoc_uart_tx_fifo_sink_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 218: Using initial value of basesoc_uart_tx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 255: Using initial value of basesoc_uart_rx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 273: Using initial value of basesoc_uart_reset since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 285: Using initial value of basesoc_timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 388: Using initial value of lcd_start_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 409: Using initial value of display_write_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 422: Using initial value of display_enable since it is never assigned
 Reading initialization file \"mem.init\".
-WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2380: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2380: Signal <mem> in initial block is partially initialized.
 Reading initialization file \"mem_2.init\".
-WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2416: Signal <mem_2> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2416: Signal <mem_2> in initial block is partially initialized.
 Reading initialization file \"mem_3.init\".
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 764: Assignment to basesoc_uart_phy_sink_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 765: Assignment to basesoc_uart_phy_sink_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 769: Assignment to basesoc_uart_phy_source_ready ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 815: Assignment to basesoc_uart_tx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 840: Assignment to basesoc_uart_rx_fifo_source_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 841: Assignment to basesoc_uart_rx_fifo_source_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 845: Assignment to basesoc_uart_rx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 877: Assignment to lcd_config_padding0 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 878: Assignment to lcd_xfer_padding0 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 891: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 973: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 976: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 979: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 982: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 985: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 988: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1069: Assignment to basesoc_rom_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1070: Assignment to basesoc_rom_bus_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1072: Assignment to basesoc_rom_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1073: Assignment to basesoc_rom_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1074: Assignment to basesoc_rom_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1080: Assignment to basesoc_sram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1081: Assignment to basesoc_sram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1087: Assignment to basesoc_main_ram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1088: Assignment to basesoc_main_ram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1091: Assignment to basesoc_bus_wishbone_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1094: Assignment to basesoc_bus_wishbone_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1095: Assignment to basesoc_bus_wishbone_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1116: Assignment to csrbank0_in_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1117: Assignment to csrbank0_in_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1120: Assignment to basesoc_ctrl_reset_reset_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1130: Assignment to csrbank1_bus_errors3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1131: Assignment to csrbank1_bus_errors3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1132: Assignment to csrbank1_bus_errors2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1133: Assignment to csrbank1_bus_errors2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1134: Assignment to csrbank1_bus_errors1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1135: Assignment to csrbank1_bus_errors1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1136: Assignment to csrbank1_bus_errors0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1137: Assignment to csrbank1_bus_errors0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1138: Assignment to basesoc_ctrl_storage ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1152: Assignment to display_write_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1159: Assignment to csrbank3_id7_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1160: Assignment to csrbank3_id7_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1161: Assignment to csrbank3_id6_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1162: Assignment to csrbank3_id6_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1163: Assignment to csrbank3_id5_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1164: Assignment to csrbank3_id5_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1165: Assignment to csrbank3_id4_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1166: Assignment to csrbank3_id4_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1167: Assignment to csrbank3_id3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1168: Assignment to csrbank3_id3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1169: Assignment to csrbank3_id2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1170: Assignment to csrbank3_id2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1171: Assignment to csrbank3_id1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1172: Assignment to csrbank3_id1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1173: Assignment to csrbank3_id0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1174: Assignment to csrbank3_id0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1210: Assignment to csrbank4_active_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1211: Assignment to csrbank4_active_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1212: Assignment to csrbank4_pending_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1213: Assignment to csrbank4_pending_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1222: Assignment to csrbank4_miso_data3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1223: Assignment to csrbank4_miso_data3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1224: Assignment to csrbank4_miso_data2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1225: Assignment to csrbank4_miso_data2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1226: Assignment to csrbank4_miso_data1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1227: Assignment to csrbank4_miso_data1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1228: Assignment to csrbank4_miso_data0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1229: Assignment to csrbank4_miso_data0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1270: Assignment to csrbank8_in1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1271: Assignment to csrbank8_in1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1272: Assignment to csrbank8_in0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1273: Assignment to csrbank8_in0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1295: Assignment to basesoc_timer0_update_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1297: Assignment to csrbank9_value3_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1298: Assignment to csrbank9_value3_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1299: Assignment to csrbank9_value2_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1300: Assignment to csrbank9_value2_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1301: Assignment to csrbank9_value1_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1302: Assignment to csrbank9_value1_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1303: Assignment to csrbank9_value0_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1304: Assignment to csrbank9_value0_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1305: Assignment to basesoc_timer0_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1306: Assignment to basesoc_timer0_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1332: Assignment to csrbank10_txfull_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1333: Assignment to csrbank10_txfull_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1334: Assignment to csrbank10_rxempty_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1335: Assignment to csrbank10_rxempty_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1336: Assignment to basesoc_uart_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1337: Assignment to basesoc_uart_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1385: Assignment to sram_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1398: Assignment to sram_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1490: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1490: Assignment to xilinxmultiregimpl1 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1492: Result of 5-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1492: Assignment to xilinxmultiregimpl2 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1517: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1518: Result of 30-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1690: Result of 58-bit expression is truncated to fit in 57-bit target.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 1498: Assignment to basesoc_ctrl_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 764: Assignment to basesoc_uart_phy_sink_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 765: Assignment to basesoc_uart_phy_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 769: Assignment to basesoc_uart_phy_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 815: Assignment to basesoc_uart_tx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 840: Assignment to basesoc_uart_rx_fifo_source_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 841: Assignment to basesoc_uart_rx_fifo_source_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 845: Assignment to basesoc_uart_rx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 877: Assignment to lcd_config_padding0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 878: Assignment to lcd_xfer_padding0 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 891: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 973: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 976: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 979: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 982: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 985: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 988: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1069: Assignment to basesoc_rom_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1070: Assignment to basesoc_rom_bus_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1072: Assignment to basesoc_rom_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1073: Assignment to basesoc_rom_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1074: Assignment to basesoc_rom_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1080: Assignment to basesoc_sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1081: Assignment to basesoc_sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1087: Assignment to basesoc_main_ram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1088: Assignment to basesoc_main_ram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1091: Assignment to basesoc_bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1094: Assignment to basesoc_bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1095: Assignment to basesoc_bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1116: Assignment to csrbank0_in_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1117: Assignment to csrbank0_in_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1120: Assignment to basesoc_ctrl_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1130: Assignment to csrbank1_bus_errors3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1131: Assignment to csrbank1_bus_errors3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1132: Assignment to csrbank1_bus_errors2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1133: Assignment to csrbank1_bus_errors2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1134: Assignment to csrbank1_bus_errors1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1135: Assignment to csrbank1_bus_errors1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1136: Assignment to csrbank1_bus_errors0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1137: Assignment to csrbank1_bus_errors0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1138: Assignment to basesoc_ctrl_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1152: Assignment to display_write_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1159: Assignment to csrbank3_id7_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1160: Assignment to csrbank3_id7_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1161: Assignment to csrbank3_id6_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1162: Assignment to csrbank3_id6_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1163: Assignment to csrbank3_id5_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1164: Assignment to csrbank3_id5_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1165: Assignment to csrbank3_id4_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1166: Assignment to csrbank3_id4_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1167: Assignment to csrbank3_id3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1168: Assignment to csrbank3_id3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1169: Assignment to csrbank3_id2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1170: Assignment to csrbank3_id2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1171: Assignment to csrbank3_id1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1172: Assignment to csrbank3_id1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1173: Assignment to csrbank3_id0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1174: Assignment to csrbank3_id0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1210: Assignment to csrbank4_active_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1211: Assignment to csrbank4_active_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1212: Assignment to csrbank4_pending_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1213: Assignment to csrbank4_pending_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1222: Assignment to csrbank4_miso_data3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1223: Assignment to csrbank4_miso_data3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1224: Assignment to csrbank4_miso_data2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1225: Assignment to csrbank4_miso_data2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1226: Assignment to csrbank4_miso_data1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1227: Assignment to csrbank4_miso_data1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1228: Assignment to csrbank4_miso_data0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1229: Assignment to csrbank4_miso_data0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1270: Assignment to csrbank8_in1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1271: Assignment to csrbank8_in1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1272: Assignment to csrbank8_in0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1273: Assignment to csrbank8_in0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1295: Assignment to basesoc_timer0_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1297: Assignment to csrbank9_value3_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1298: Assignment to csrbank9_value3_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1299: Assignment to csrbank9_value2_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1300: Assignment to csrbank9_value2_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1301: Assignment to csrbank9_value1_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1302: Assignment to csrbank9_value1_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1303: Assignment to csrbank9_value0_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1304: Assignment to csrbank9_value0_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1305: Assignment to basesoc_timer0_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1306: Assignment to basesoc_timer0_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1332: Assignment to csrbank10_txfull_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1333: Assignment to csrbank10_txfull_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1334: Assignment to csrbank10_rxempty_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1335: Assignment to csrbank10_rxempty_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1336: Assignment to basesoc_uart_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1337: Assignment to basesoc_uart_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1385: Assignment to sram_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1398: Assignment to sram_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1490: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1490: Assignment to xilinxmultiregimpl1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1492: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1492: Assignment to xilinxmultiregimpl2 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1517: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1518: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1690: Result of 58-bit expression is truncated to fit in 57-bit target.
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 1498: Assignment to basesoc_ctrl_re ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu(eba_reset=32'b0)>.
 
@@ -284,19 +284,19 @@ WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/su
 WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to im_csr_read_data ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2433: Assignment to basesoc_uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2450: Assignment to basesoc_uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2433: Assignment to basesoc_uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2450: Assignment to basesoc_uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
 
 Elaborating module <DNA_PORT>.
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2474: Assignment to lcd_cs_n_t_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" Line 2477: Assignment to lcd_clk_t_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2474: Assignment to lcd_cs_n_t_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" Line 2477: Assignment to lcd_clk_t_i ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v".
+    Related source file is "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v".
     Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs0>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs0>.
     Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs1>.
@@ -309,12 +309,12 @@ Synthesizing Unit <top>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs0>.
     Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs1>.
     Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs1>.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/fpga_101-master/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/edferoca/Documentos/digital2/proyecto-dig2/lcd_prueba2/build/gateware/top.v" line 2341: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
 WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
     Found 8192x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
@@ -2012,13 +2012,13 @@ clk100         |    7.319|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 18.63 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.90 secs
  
 --> 
 
 
-Total memory usage is 536272 kilobytes
+Total memory usage is 536264 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  307 (   0 filtered)

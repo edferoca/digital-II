@@ -42,10 +42,10 @@ _io = [
     ("user_led", 14, Pins("V12"), IOStandard("LVCMOS33")),
     ("user_led", 15, Pins("V11"), IOStandard("LVCMOS33")),
 
-    ("user_sw",  0, Pins("J15"), IOStandard("LVCMOS33")),
-    ("user_sw",  1, Pins("L16"), IOStandard("LVCMOS33")),
-    ("user_sw",  2, Pins("M13"), IOStandard("LVCMOS33")),
-    ("user_sw",  3, Pins("R15"), IOStandard("LVCMOS33")),
+    ("user_sw",  0, Pins("D14"), IOStandard("LVCMOS33")),
+    ("user_sw",  1, Pins("F16"), IOStandard("LVCMOS33")),
+    ("user_sw",  2, Pins("G16"), IOStandard("LVCMOS33")),
+    ("user_sw",  3, Pins("H14"), IOStandard("LVCMOS33")),
     ("user_sw",  4, Pins("R17"), IOStandard("LVCMOS33")),
     ("user_sw",  5, Pins("T18"), IOStandard("LVCMOS33")),
     ("user_sw",  6, Pins("U18"), IOStandard("LVCMOS33")),
@@ -85,13 +85,7 @@ _io = [
         IOStandard("LVCMOS33"),
     ),
 
-    ("adxl362_spi", 0,
-        Subsignal("cs_n", Pins("D15")),
-        Subsignal("clk", Pins("F15")),
-        Subsignal("mosi", Pins("F14")),
-        Subsignal("miso", Pins("E15")),
-        IOStandard("LVCMOS33")
-    ),
+
 
     ("sd_spi", 0,
         Subsignal("sdcs_n", Pins("k1")),
@@ -102,7 +96,7 @@ _io = [
     ),
     ("lcd_spi", 0,
         Subsignal("cs_n", Pins("C17")),
-        Subsignal("mosi", Pins("D14")),
+        Subsignal("mosi", Pins("G18")),
         Subsignal("miso", Pins("E17")),
         Subsignal("clk", Pins("D17")),
         IOStandard("LVCMOS33")
