@@ -42,36 +42,24 @@ static void SD_configure(void) {
 	SD_xfer_write(1 | 8*WRITE_LENGTH);
   printf("Configuracion finalizada: %x\n",config);
 }
-static void SD_write(unsigned char addr, unsigned int value){
-	SD_configure();
-	SD_xfer_write(0b1 | 32*WRITE_LENGTH);//32 de longitud
-	SD_mosi_data_write(value);
-	printf("Datos mosi:%x\n",SD_mosi_data_read());
-	SD_start_write(1);
-	printf("Escribiendo...\n");
-	while (SD_active_read() & 0x1){}
-}
+
 static void SD_write_8(unsigned  int value){
 
-	//SD_xfer_write(1 | 16*WRITE_LENGTH);
-	//unsigned char val = (0b00001010 << 16) | ((0 & 0xff) << 8) | (value & 0xff);
 	SD_mosi_data_write(value << 24) ;
 	SD_start_write(1);
 	//while (SD_active_read() & 0x1){}
 	while (SD_pending_read() & 0x1);
-		//break;
-}
-static unsigned int SD_read(unsigned char dato,unsigned char addr){
-//	SD_configure();
-	unsigned int val = ((dato << 16) | ((addr & 0xff) << 8));
-	SD_xfer_write(1 | 0*WRITE_LENGTH | 8*READ_LENGTH);//antes 8 de lectura
-	SD_mosi_data_write(val << (32-24));
-	SD_start_write(1);
-	while (SD_pending_read() & 0x1);
-	return (SD_miso_data_read());// & 0xff
-	// & 0xf0000000
 }
 
+static void SD_write_48(unsigned int value1,unsigned int value2,unsigned int value3,unsigned int value4,unsigned int value5,unsigned int value6){
+
+	SD_write_8(value1);
+	SD_write_8(value2);
+	SD_write_8(value3);
+	SD_write_8(value4);
+	SD_write_8(value5);
+	SD_write_8(value6);
+}
 
 static void sd_do (void){
 	printf("Inicializando SD...\n");
@@ -81,21 +69,20 @@ static void sd_do (void){
 	//HEX: 40 00 00 00 00   95
 	//     sb/cmd/argument/CRC7|1
 	//DEC: 64 00 00 00 00   149
+	//BIN: 01000000 000.. 10010101
 //		printf("2. %x\n",SD_miso_data_read() );
    printf("0. %x\n",SD_miso_data_read() );
+	 int i=1;
+	 while (i==1) {
+	 	SD_write_48(64,00,00,00,00,149);
+		printf("1. %x\n",SD_miso_data_read());
+	 }
 do{
-		printf("4. %x\n",SD_miso_data_read() );
-		leds_out_write(0);//AGREGADO
-		SD_write_8(64);
-		printf("5. %x\n",SD_miso_data_read() );
-		SD_write_8(00);
-		printf("6. %x\n",SD_miso_data_read() );
-		SD_write_8(00);
-		SD_write_8(00);
-		SD_write_8(00);
-		printf("7. %x\n",SD_miso_data_read() );
-		SD_write_8(0x95);
-
+		SD_write_48(64,00,00,00,00,149);
+		printf("1. %x\n",SD_miso_data_read());
+		printf("1. %x\n",SD_miso_data_read());
+		printf("1. %x\n",SD_miso_data_read());
+		printf("1. %x\n",SD_miso_data_read());
 		SD_write_8(0xFF);
 		SD_write_8(0xFF);
 		SD_write_8(0xFF);
