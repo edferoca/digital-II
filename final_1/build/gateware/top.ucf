@@ -6,13 +6,13 @@ NET "user_led0" LOC=H17 | IOSTANDARD=LVCMOS33; # user_led:0
 NET "user_led1" LOC=K15 | IOSTANDARD=LVCMOS33; # user_led:1
 NET "user_led2" LOC=J13 | IOSTANDARD=LVCMOS33; # user_led:2
 NET "user_led3" LOC=N14 | IOSTANDARD=LVCMOS33; # user_led:3
-NET "btnint" LOC=D14 | IOSTANDARD=LVCMOS33; # btnint:0
-NET "direccion0" LOC=E16 | IOSTANDARD=LVCMOS33; # direccion:0
+NET "btnint" LOC=G16 | IOSTANDARD=LVCMOS33; # btnint:0
+NET "direccion0" LOC=g13 | IOSTANDARD=LVCMOS33; # direccion:0
 NET "direccion1" LOC=F13 | IOSTANDARD=LVCMOS33; # direccion:1
-NET "direccion2" LOC=G13 | IOSTANDARD=LVCMOS33; # direccion:2
+NET "direccion2" LOC=E16 | IOSTANDARD=LVCMOS33; # direccion:2
 NET "direccion3" LOC=H16 | IOSTANDARD=LVCMOS33; # direccion:3
 NET "accion0" LOC=F16 | IOSTANDARD=LVCMOS33; # accion:0
-NET "accion1" LOC=G16 | IOSTANDARD=LVCMOS33; # accion:1
+NET "accion1" LOC=D14 | IOSTANDARD=LVCMOS33; # accion:1
 NET "accion2" LOC=H14 | IOSTANDARD=LVCMOS33; # accion:2
 NET "lcd_spi_cs_n" LOC=C17 | IOSTANDARD=LVCMOS33; # lcd_spi:0.cs_n
 NET "lcd_spi_mosi" LOC=G17 | IOSTANDARD=LVCMOS33; # lcd_spi:0.mosi
