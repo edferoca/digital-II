@@ -49,14 +49,14 @@ unsigned int carun(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigne
 
       int ymid;
 
-  		if (direcciones_in_read() & 0x8) {
+  		if (botones_in_read() & 0x8) {
         subir(0,0X8A,0x2A,0x2F,0x0000,0xFFFF);
         subir(0,0X8A,0x6f,0x74,0x0000,0xFFFF);
         subir(0,0X8A,0x43,0x45,0x7BEF,0xFFE0);
         subir(0,0X8A,0x59,0x5b,0x7BEF,0xFFE0);
   			dib_cua(Xmin,Ymin,Xmax,Ymax,color);
   		}
-  		if (direcciones_in_read() & 0x1) {
+  		if (botones_in_read() & 0x1) {
         subir(0,0X8A,0x2A,0x2F,0xFFFF,0x0000);
         subir(0,0X8A,0x6f,0x74,0xFFFF,0x0000);
         subir(0,0X8A,0x43,0x45,0xFFE0,0x7BEF);
@@ -64,7 +64,7 @@ unsigned int carun(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigne
   			dib_cua(Xmin,Ymin,Xmax,Ymax,color);
   		}
 
-  		if (direcciones_in_read() & 0x4) { //izquierda
+  		if (botones_in_read() & 0x4) { //izquierda
   			dib_cua(Xmin,Ymin,Xmax,Ymax,0x7BEF);
         if(Ymin >= 0x32){
           Ymin= Ymin - 0x17;
@@ -73,7 +73,7 @@ unsigned int carun(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigne
   			dib_cua(Xmin,Ymin,Xmax,Ymax,color);
         ymid=(Ymin+Ymax)/2;
   		}
-  		if (direcciones_in_read() & 0x2) { //derecha
+  		if (botones_in_read() & 0x2) { //derecha
         dib_cua(Xmin,Ymin,Xmax,Ymax,0x7BEF);
 
         if(Ymax <= 0x6A){

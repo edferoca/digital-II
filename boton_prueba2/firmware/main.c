@@ -94,8 +94,8 @@ static void reboot(void)
 static void prueba(void)
 {
 
-	buttoniner_ev_pending_write(1); //flag
-	buttoniner_ev_enable_write(1);
+	buttoniner_ev_pending_write(0xff); //flag
+	buttoniner_ev_enable_write(0xff);
 	irq_setmask(irq_getmask() | (1 << 4));
 
 
@@ -137,7 +137,7 @@ int main(void)
 	//prompt();
 
 	while(1) {
-//	printf("get maski %X \n",irq_pending());
+
 	}
 
 	return 0;
