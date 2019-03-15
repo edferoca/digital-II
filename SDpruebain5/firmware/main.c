@@ -35,11 +35,12 @@ static void SD_configure(void) {
   unsigned config = 0*OFFLINE;
   config |= 0*CS_POLARITY | 0*CLK_POLARITY | 0*CLK_PHASE;
   config |= 0*LSB_FIRST | 0*HALF_DUPLEX;
-  config |= 248*DIV_READ | 248*DIV_WRITE;//Divisior para
+	config |= 250*DIV_READ | 250*DIV_WRITE;//Divisior para
+  //config |= 248*DIV_READ | 248*DIV_WRITE;//Divisior para
 	//																			reloj de 5MHz(16)
 	//				100M/400k = div_write + 2...248
   SD_config_write(config);
-	SD_xfer_write(1 | 8*WRITE_LENGTH);
+	SD_xfer_write(1 | 24*WRITE_LENGTH);
   printf("Configuracion finalizada: %x\n",config);
 }
 
@@ -47,30 +48,50 @@ static void SD_write_8(unsigned  int value){
 
 	SD_mosi_data_write(value << 24) ;
 	SD_start_write(1);
-	//while (SD_active_read() & 0x1){}
-	while (SD_pending_read() & 0x1);
+	while (SD_active_read() & 0x1){}
 }
 
-static void SD_write_48(unsigned int value1,unsigned int value2,unsigned int value3,unsigned int value4,unsigned int value5,unsigned int value6){
+static void SD_write_16(unsigned  int value){
 
-	SD_write_8(value1);
-	SD_write_8(value2);
-	SD_write_8(value3);
-	SD_write_8(value4);
-	SD_write_8(value5);
-	SD_write_8(value6);
+	SD_mosi_data_write(value << 16) ;
+	SD_start_write(1);
+	while (SD_active_read() & 0x1){}
 }
-/*
-static void SD_write_48(unsigned short int value1, unsigned short int value2, unsigned short int value3){
 
-	unsigned long int value = (value1 << 16) | (value2 & 0xff);
+static void SD_write_24(unsigned long int value){
+
+	SD_mosi_data_write(value << 8) ;
+	SD_start_write(1);
+	while (SD_active_read() & 0x1){}
+}
+
+static void SD_write_24_parc(unsigned long int value){
+
+	SD_mosi_data_write(value << 8) ;
+	SD_start_write(1);
+}
+
+static void SD_write_32(unsigned long int value){
+
 	SD_mosi_data_write(value);
 	SD_start_write(1);
-	while (SD_active_read) {};
-	SD_mosi_data_write(value3 << 16);
-	SD_start_write(1);
-	while (SD_active_read) {};
-}*/
+	while (SD_active_read( ) & 0x01) {};
+}
+
+
+static void SD_write_48(unsigned long int value1, unsigned long int value2){
+
+	SD_write_24_parc(value1);
+	while (SD_pending_read() & 0x1);
+	SD_write_24_parc(value2);
+	while (SD_active_read() & 0x1){}
+
+}
+
+static void delay(int del){
+	int i=0;
+	while (i < del){
+	    i++;} }
 
 static void sd_do (void){
 	printf("Inicializando SD...\n");
@@ -84,10 +105,13 @@ static void sd_do (void){
 //		printf("2. %x\n",SD_miso_data_read() );
    printf("Miso: %x\n",SD_miso_data_read() );
 
+
 	 int i = 0;
 	 while (i <= 10){
-	 	SD_write_48(64,00,00,00,00,149);
-		//busy_wait(0.12);
+    //delay(10);
+	 	SD_write_48(0X400000, 0x000095); // cmd 0
+    delay(10);
+		/*
 		SD_write_8(255);
 		//unsigned long int Miso1 = SD_miso_data_read();
 		SD_write_8(255);
@@ -97,16 +121,19 @@ static void sd_do (void){
 		SD_write_8(255);
 		//unsigned long int Miso4 = SD_miso_data_read();
 		SD_write_8(255);
+
+		SD_write_8(255);
+		*/
 		//unsigned long int Miso5 = SD_miso_data_read();
 		//SD_write_48(255,255,255,255,255,255);
 		//SD_xfer_write(1);
 		//printf("Miso:  %x\n",SD_miso_data_read());
 		//printf("Miso1: %x\n", Miso1);
 		//printf("Miso2: %x\n", Miso2);
-		printf("Miso3: %x\n", Miso3);
+		//printf("Miso3: %x\n", Miso3);
 		//printf("Miso4: %x\n", Miso4);
 		//printf("Miso5: %x\n", Miso5);
-		i++;
+		//i++;
 	 }
 
 	 /*
@@ -119,6 +146,7 @@ static void sd_do (void){
 
 }
 
+/*
 static void sd_do1 (void){
 	printf("Inicializando SD...\n");
 	SD_configure();
@@ -235,7 +263,7 @@ leds_out_write(1);//AGREGADO
 printf("Inicialización terminada.\n" );
 
 }
-
+*/
 
 static char *readstr(void)
 {
