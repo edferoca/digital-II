@@ -12,6 +12,15 @@ extern uint32_t csr_readl(uint32_t addr);
 #include <hw/common.h>
 #endif /* ! CSR_ACCESSORS_DEFINED */
 
+/* acciones */
+#define CSR_ACCIONES_BASE 0xe0005800
+#define CSR_ACCIONES_IN_ADDR 0xe0005800
+#define CSR_ACCIONES_IN_SIZE 1
+static inline unsigned char acciones_in_read(void) {
+	unsigned char r = csr_readl(0xe0005800);
+	return r;
+}
+
 /* buttoniner */
 #define CSR_BUTTONINER_BASE 0xe0004800
 #define CSR_BUTTONINER_IN_ADDR 0xe0004800
@@ -92,14 +101,11 @@ static inline unsigned int ctrl_bus_errors_read(void) {
 
 /* direcciones */
 #define CSR_DIRECCIONES_BASE 0xe0005000
-#define CSR_DIRECCIONES_OUT_ADDR 0xe0005000
-#define CSR_DIRECCIONES_OUT_SIZE 1
-static inline unsigned char direcciones_out_read(void) {
+#define CSR_DIRECCIONES_IN_ADDR 0xe0005000
+#define CSR_DIRECCIONES_IN_SIZE 1
+static inline unsigned char direcciones_in_read(void) {
 	unsigned char r = csr_readl(0xe0005000);
 	return r;
-}
-static inline void direcciones_out_write(unsigned char value) {
-	csr_writel(value, 0xe0005000);
 }
 
 /* lcd */

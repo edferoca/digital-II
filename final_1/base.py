@@ -22,16 +22,16 @@ _io = [
     ("user_led",  3, Pins("N14"), IOStandard("LVCMOS33")),
 
 
-    ("btnint",  0, Pins("D14"), IOStandard("LVCMOS33")),
+    ("btnint",  0, Pins("G16"), IOStandard("LVCMOS33")),
 
     ("accion",  0, Pins("F16"), IOStandard("LVCMOS33")),
-    ("accion",  1, Pins("G16"), IOStandard("LVCMOS33")),
+    ("accion",  1, Pins("D14"), IOStandard("LVCMOS33")),
     ("accion",  2, Pins("H14"), IOStandard("LVCMOS33")),
 
-    ("direccion",  0, Pins("E16"), IOStandard("LVCMOS33")),
-    ("direccion",  1, Pins("F13"), IOStandard("LVCMOS33")),
-    ("direccion",  2, Pins("G13"), IOStandard("LVCMOS33")),
-    ("direccion",  3, Pins("H16"), IOStandard("LVCMOS33")),
+    ("direccion",  0, Pins("g13"), IOStandard("LVCMOS33")),#E16  /M18
+    ("direccion",  1, Pins("F13"), IOStandard("LVCMOS33")), #F13  / M17
+    ("direccion",  2, Pins("E16"), IOStandard("LVCMOS33")),#G13 /P17
+    ("direccion",  3, Pins("H16 "), IOStandard("LVCMOS33")),#H16      /P18
 
     ("lcd_spi", 0,
         Subsignal("cs_n", Pins("C17")),
@@ -114,10 +114,10 @@ class BaseSoC(SoCCore):
         self.submodules.buttoniner = btnintrupt(platform.request("btnint"))
         #direcciones
         direccioness = Cat(*[platform.request("direccion", i) for i in range(4)])
-        self.submodules.direcciones = Led(direccioness)
+        self.submodules.direcciones = Button(direccioness)
         #acciones
-        direccioness = Cat(*[platform.request("accion", i) for i in range(3)])
-        self.submodules.direcciones = Led(direccioness)
+        accioness = Cat(*[platform.request("accion", i) for i in range(3)])
+        self.submodules.acciones = Button(accioness)
         # lcd
         self.submodules.lcd = SPIMaster(platform.request("lcd_spi"))
         self.submodules.rs = Led(platform.request("rs_lcd"))

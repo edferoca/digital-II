@@ -6,9 +6,10 @@ main.o: main.c /opt/liteX/litex/litex/soc/software/include/base/stdio.h \
   /opt/liteX/litex/litex/soc/software/include/base/system.h \
   /opt/liteX/litex/litex/soc/software/include/base/uart.h \
   /opt/liteX/litex/litex/soc/software/include/base/console.h \
-  /home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/software/include/generated/csr.h \
+  /home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/software/include/generated/csr.h \
   /opt/liteX/litex/litex/soc/software/include/base/stdint.h \
-  /opt/liteX/litex/litex/soc/software/include/hw/common.h
+  /opt/liteX/litex/litex/soc/software/include/hw/common.h LCD.h juego.h \
+  bloques.h
 
 /opt/liteX/litex/litex/soc/software/include/base/stdio.h:
 
@@ -26,8 +27,14 @@ main.o: main.c /opt/liteX/litex/litex/soc/software/include/base/stdio.h \
 
 /opt/liteX/litex/litex/soc/software/include/base/console.h:
 
-/home/edferoca/Documentos/digital2/proyecto-dig2/boton_prueba2/build/software/include/generated/csr.h:
+/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/software/include/generated/csr.h:
 
 /opt/liteX/litex/litex/soc/software/include/base/stdint.h:
 
 /opt/liteX/litex/litex/soc/software/include/hw/common.h:
+
+LCD.h:
+
+juego.h:
+
+bloques.h:

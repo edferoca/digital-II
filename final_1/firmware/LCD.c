@@ -57,7 +57,7 @@ void lcd_inic(void){
   	lcd_write(1,0x0000);
   	//BLANK_PERIOD_CTRL1
   	lcd_write(0,0x0008);//
-  	lcd_write(1,0x0808);
+  	lcd_write(1,0x0802);
   	//FRAME_CYCLE_CTRL
   	lcd_write(0,0x000B);//
   	lcd_write(1,0x1100);
@@ -183,12 +183,9 @@ void lcd_inic(void){
   	 //Inicio de Transferencia de datos
   	 //WRITE DATA TO GRAM
   	 lcd_write(0,0x0022);//
-  	 lcd_write(1,0x8080); //
+  	 lcd_write(1,0x901A); //
 
-
-	 //_____Data[103] = {1'b0,16'h0022};
 }
-
 
 
 void lcd_config(void){
@@ -196,12 +193,27 @@ void lcd_config(void){
 	   lcd_config_write(0x10300000); //5000 Khz
 }
 
+
 void lcd_write( unsigned char rs, unsigned int info){
 		rs_out_write(rs);
 		lcd_mosi_data_write(info<<16);
 		lcd_start_write(1);
 		while (lcd_active_read()){
 		};
+}
+
+void dib_cua(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigned int ymax,unsigned int color){
+	for (unsigned int x = Xmin ; x < Xmax; x++) {
+		lcd_write(0,0x0020);//
+		lcd_write(1,x); //
+		for (unsigned int y = Ymin; y < ymax; y++) {
+				//direccion hoorizontal
+				lcd_write(0,0x0021);//
+				lcd_write(1,y); //
+				lcd_write(0,0x0022);//
+				lcd_write(1,color); //
+		}
+	}
 }
 
 void busy_wait(unsigned int ds){
