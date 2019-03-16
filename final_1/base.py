@@ -53,10 +53,10 @@ _io = [
     ),
 
     ("sd_spi", 0,
-        Subsignal("cs_n", Pins("D14")),
-        Subsignal("mosi", Pins("F16")),
-        Subsignal("miso", Pins("G16")),
-        Subsignal("clk", Pins("H14")),
+        Subsignal("cs_n", Pins("K1")),
+        Subsignal("mosi", Pins("F6")),
+        Subsignal("miso", Pins("J2")),
+        Subsignal("clk", Pins("G6")),
         IOStandard("LVCMOS33")
     ),
 ]

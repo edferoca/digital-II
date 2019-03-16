@@ -37,25 +37,21 @@ void botton_isr(void){
 			while (1) {
 				dib_cua(0x00,0x00,0x8c,0x9c,0x0000);
 				printf("%x\n" ,botones_in_read() );
-				if (botones_in_read() & 1 << 3) {
+				if (botones_in_read() & 1 << 2) {
 					goto termina_pausa;
 				}
 			}
 			termina_pausa:
-			dib_cua(0x00,0xA2,0xaf,0xDB,0xC618);
-			dib_cua(0x00,0x00,0x8c,0x2A,0x03E0);
-			dib_cua(0x00,0x74,0x8c,0x9c,0x03E0 );
-			dib_cua(0x00,0x2f,0x8c,0x6f,0x7BEF);
-			dib_cua(0x000D,0x0047,0x0001c,0x0057,0XC618);
+			margenes();
 
 
 
 		}
-		//00000100
+		//00000100  derechasss
 		if (pednig & 1 << 2) {
 
 		}
-		//00001000
+		//00001000 izqueirdassss
 		if (pednig & 1 << 0x3) {
 
 		}
