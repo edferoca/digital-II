@@ -77,7 +77,75 @@ static void delay(int del){
 	while (i < del){i++;}
 }
 */
+
 static void sd_do (void){
+
+	printf("Inicializando SD...\n");
+	SD_configure(); //configurando el spi de la sd
+
+	//Primer lectura del miso justo antes de enviar cualquier comando (debe ser "0")
+	unsigned long int Miso = SD_miso_data_read();
+  printf("Primer Miso: %x\n",Miso);
+
+	//Mandando el comando cero con basura varias veces
+	int i = 0;
+	while (i <= 10){
+
+	  SD_write_48(0X400000, 0x000095);
+		SD_write_48(0XFFFFFF, 0XFFFFFF);
+		SD_write_48(0X400000, 0x000095);
+		/*
+		Comando 0 (CMD0):
+	- Dec: 64 00 00 00 00 149
+	- Hexa: 40 00 00 00 00 95
+	- Bin: 0100.0000 0000.0000, 0000.0000 0000.0000, 0000.0000 1001.0101
+	- Respuesta:R1: 0000.0001
+		*/
+		i++;
+	}
+
+	SD_write_48(0X480000, 0x01AA0F);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);
+	/*
+	Comando 8 (CMD8):
+	- Dec: 72 00 00 01 170 15
+	- Hexa: 48 00 00 01 AA 0F
+	- Bin: 0100.1000 0000.0000, 0000.0000 0000.0001, 1010.1010 0000.1111
+	- Respuesta:R7: XX... 1 AA, XX... 0001 1010.1010
+	*/
+
+	SD_write_48(0X410000, 0x0000FF);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);
+	/*
+	Comando 1 (CMD1):
+	- Dec: 65 00 00 00 00 255
+	- Hexa: 41 00 00 00 00 FF
+	- Bin: 0100.0001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
+
+	*/
+
+	SD_write_48(0X500000, 0x0008FF);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);
+	/*
+	Comando 16 (CMD16):
+	- Dec: 80 00 00 00 08 255
+	- Hexa: 50 00 00 00 08 FF
+	- Bin: 0101.0000 0000.0000, 0000.0000 0000.0000, 0000.1000 1111.1111
+
+	*/
+
+	SD_write_48(0X500000, 0x0008FF);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);
+	/*
+	Comando 17 (CMD17):
+	- Dec: 81 00 00 00 08 255
+	- Hexa: 51 00 00 00 08 FF
+	- Bin: 0101.0001 0000.0000, 0000.0000 0000.0000, 0000.1000 1111.1111
+	- Respuesta:
+	*/
+}
+
+static void sd_do2 (void){
 	printf("Inicializando SD...\n");
 	SD_configure();
 	leds_out_write(0);//AGREGADO
