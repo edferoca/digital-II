@@ -88,8 +88,8 @@ static void sd_do (void){
   printf("Primer Miso: %x\n",Miso);
 
 	//Mandando el comando cero con basura varias veces
-	int i = 0;
-	while (i <= 10){
+
+	while (Miso == 0XFF){
 
 	  SD_write_48(0X400000, 0x000095);
 		SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -101,8 +101,13 @@ static void sd_do (void){
 	- Bin: 0100.0000 0000.0000, 0000.0000 0000.0000, 0000.0000 1001.0101
 	- Respuesta:R1: 0000.0001
 		*/
+
+		//Respuesta al comando 0
+		Miso = SD_miso_data_read();
 		i++;
 	}
+
+	printf("Respuesta comando 0: %x\n",Miso);
 
 	SD_write_48(0X480000, 0x01AA0F);
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -113,6 +118,8 @@ static void sd_do (void){
 	- Bin: 0100.1000 0000.0000, 0000.0000 0000.0001, 1010.1010 0000.1111
 	- Respuesta:R7: XX... 1 AA, XX... 0001 1010.1010
 	*/
+	Miso = SD_miso_data_read();
+	printf("Respuesta comando 8: %x\n",Miso);
 
 	SD_write_48(0X410000, 0x0000FF);
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -123,6 +130,8 @@ static void sd_do (void){
 	- Bin: 0100.0001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
 
 	*/
+	Miso = SD_miso_data_read();
+	printf("Respuesta comando 1: %x\n",Miso);
 
 	SD_write_48(0X500000, 0x0008FF);
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -133,6 +142,8 @@ static void sd_do (void){
 	- Bin: 0101.0000 0000.0000, 0000.0000 0000.0000, 0000.1000 1111.1111
 
 	*/
+	Miso = SD_miso_data_read();
+	printf("Respuesta comando 16: %x\n",Miso);
 
 	SD_write_48(0X500000, 0x0008FF);
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -143,6 +154,9 @@ static void sd_do (void){
 	- Bin: 0101.0001 0000.0000, 0000.0000 0000.0000, 0000.1000 1111.1111
 	- Respuesta:
 	*/
+	Miso = SD_miso_data_read();
+	printf("Respuesta comando 17: %x\n",Miso);
+	
 }
 
 static void sd_do2 (void){
