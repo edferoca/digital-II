@@ -58,6 +58,13 @@ static void SD_write_8_active(char value){
 	while (SD_active_read() & 0x1){};
 }
 
+static void SD_write_16_pending(unsigned short int value){
+
+	SD_mosi_data_write(value << 16) ;
+	SD_start_write(1);
+	while (SD_pending_read() & 0x1){};
+}
+
 static void SD_write_24(unsigned long int value){
 
 	SD_mosi_data_write(value << 8) ;
@@ -65,7 +72,7 @@ static void SD_write_24(unsigned long int value){
 }
 
 static void SD_write_48(unsigned long int value1, unsigned long int value2){
-	SD_xfer_write(1 | 24*WRITE_LENGTH);
+
 	SD_write_24(value1);
 	while (SD_pending_read() & 0x1){};
 	SD_write_24(value2);
@@ -96,7 +103,7 @@ static void sd_do (void){
 
 		SD_write_48(0XFFFFFF, 0XFFFFFF);
 	  SD_write_48(0X400000, 0x000095);
-		SD_write_8_pending(0xFF); //Espera 8 ciclos de reloj para leer la respuesta
+		SD_write_16_pending(0xFFFF); //Espera 16 ciclos de reloj para leer la respuesta (8 para que la tarjeta empiece a enviarla y 8 para que termine)
 		/*
 		Comando 0 (CMD0):
 	- Dec: 64 00 00 00 00 149
@@ -115,7 +122,7 @@ static void sd_do (void){
 
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
 	SD_write_48(0X480000, 0x01AA0F);
-	SD_write_8_pending(0xFF);
+	SD_write_16_pending(0xFFFF);
 	/*
 	Comando 8 (CMD8):
 	- Dec: 72 00 00 01 170 15
@@ -129,7 +136,7 @@ static void sd_do (void){
 
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
 	SD_write_48(0X7A0000, 0x00007A);
-	SD_write_8_pending(0xFF);
+	SD_write_16_pending(0xFFFF);
 	/*
 	Comando 58 (CMD58):
 	- Dec: 122 00 00 00 00 122
@@ -144,7 +151,7 @@ static void sd_do (void){
 	for (int i = 0; i < 100; i++) {
 		SD_write_48(0XFFFFFF, 0XFFFFFF);
 		SD_write_48(0X690000, 0x0000FF);
-		SD_write_8_pending(0xFF);
+		SD_write_16_pending(0xFFFF);
 		/*
 		Comando 41 (ACMD41):
 		- Dec: 105 00 00 00 00 255
@@ -168,7 +175,7 @@ static void sd_do (void){
 
 			SD_write_48(0XFFFFFF, 0XFFFFFF);
 			SD_write_48(0X410000, 0x0000FF);
-			SD_write_8_pending(0xFF);
+			SD_write_16_pending(0xFFFF);
 			/*
 			Comando 1 (CMD1):
 			- Dec: 65 00 00 00 00 255
