@@ -4,15 +4,25 @@
 #include "LCD.h"
 #include "bloques.h"
 
+unsigned int tempo;
+
 void juego(unsigned int Ymin,unsigned int Ymax,unsigned int color){
   int obscont=0 ;
 
-  for (size_t i = 0x0; i <= 0x8c; i++) {
-    int yobst =bloque(1,obscont);
+  for (tempo = 0x0; tempo <= 0x8; tempo++) {
+    bloque(1,obscont);
     obscont= obscont+1 ;
-    int yrun=carun(0x00,Ymin,0x0014,Ymax,color);
-    Ymin= (yrun*2)-Ymin;
-    Ymax= (yrun*2)-Ymax;
+  }
+}
+
+void crash(unsigned char posbloquey){
+  if (posbloque <= 0x14) {
+    if (posx <= posbloquey) {
+      posx = 0x4f;
+      posbloque = 0x84;
+      margenes();
+      tempo=0;
+    }
   }
 }
 

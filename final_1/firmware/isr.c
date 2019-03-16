@@ -25,7 +25,7 @@ void isr(void)
 }
 void botton_isr(void){
 	// borrador por soft la interrupción del periferico
-	unsigned int pednig = buttoniner_ev_pending_read();
+	unsigned int pednig = botones_ev_pending_read();
 
 	//00000001
 		if (pednig & 1) {
@@ -33,7 +33,7 @@ void botton_isr(void){
 		}
 		//00000010
 		if (pednig & 1 << 0x1) {
-			leds_out_write(0x02);
+
 		}
 		//00000100
 		if (pednig & 1 << 2) {
@@ -45,22 +45,20 @@ void botton_isr(void){
 		}
 		//00010000
 		if (pednig & 1 << 0x04) {
-			leds_out_write(0x10);
+			izquierda(0XC618);
+
 		}
 		//00100000
 		if (pednig & 1 << 0x05) {
-			leds_out_write(0x20);
+			abajo (0XC618);
 		}
 		//0100000
 		if (pednig & 1 << 0x06) {
-			leds_out_write(0x40);
+			derecha(0XC618);
 		}
 		//0100000
 		if (pednig & 1 << 0x07) {
-			subir(0,0X8A,0x2A,0x2F,0x0000,0xFFFF);
-			subir(0,0X8A,0x6f,0x74,0x0000,0xFFFF);
-			subir(0,0X8A,0x43,0x45,0x7BEF,0xFFE0);
-			subir(0,0X8A,0x59,0x5b,0x7BEF,0xFFE0);
+			arriba(0XC618);
 			//dib_cua(Xmin,Ymin,Xmax,Ymax,color);
 		}
   botones_ev_pending_write (0xff);

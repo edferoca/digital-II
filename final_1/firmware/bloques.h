@@ -7,12 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int posx;
+int posbloque;
+int carril;
 
+void  abajo (unsigned int color );
+void  arriba (unsigned int color );
+void izquierda( unsigned int color);
+void derecha( unsigned int color);
 
-unsigned int bloque(unsigned int aleatorio,unsigned int i);
+void bloque(unsigned int aleatorio,unsigned int i);
 
-unsigned int  carun(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigned int Ymax,unsigned int color);
 void subir(unsigned int imin,unsigned int imax,unsigned int omin,unsigned int omax,unsigned int color1,unsigned int color2);
-
 
 #endif

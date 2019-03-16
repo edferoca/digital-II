@@ -15,7 +15,7 @@
 static void botones(void)
 {
 	botones_ev_pending_write(0xff); //flag
-	buttoniner_ev_enable_write(0xff);
+	botones_ev_enable_write(0xff);
 	irq_setmask(irq_getmask() | (1 << BOTONES_INTERRUPT));
 }
 
