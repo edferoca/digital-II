@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Mar 07 08:16:11 2019
+// Written by: Map P.20131013 on Mon Mar 11 15:45:18 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -28,7 +28,7 @@ COMP "display_cs_n<0>" LOCATE = SITE "J17" LEVEL 1;
 COMP "display_cs_n<6>" LOCATE = SITE "T9" LEVEL 1;
 COMP "display_cs_n<5>" LOCATE = SITE "U13" LEVEL 1;
 COMP "display_cs_n<7>" LOCATE = SITE "T14" LEVEL 1;
-COMP "sd_spi_mosi" LOCATE = SITE "G16" LEVEL 1;
+COMP "sd_spi_mosi" LOCATE = SITE "F16" LEVEL 1;
 COMP "user_led0" LOCATE = SITE "H17" LEVEL 1;
 COMP "user_led1" LOCATE = SITE "K15" LEVEL 1;
 COMP "user_led2" LOCATE = SITE "J13" LEVEL 1;
@@ -44,9 +44,9 @@ COMP "user_btn1" LOCATE = SITE "P18" LEVEL 1;
 COMP "user_btn2" LOCATE = SITE "P17" LEVEL 1;
 COMP "user_btn3" LOCATE = SITE "M17" LEVEL 1;
 COMP "user_btn4" LOCATE = SITE "M18" LEVEL 1;
-COMP "sd_spi_miso" LOCATE = SITE "H14" LEVEL 1;
+COMP "sd_spi_miso" LOCATE = SITE "G16" LEVEL 1;
 COMP "serial_tx" LOCATE = SITE "D4" LEVEL 1;
-COMP "sd_spi_clk" LOCATE = SITE "F16" LEVEL 1;
+COMP "sd_spi_clk" LOCATE = SITE "H14" LEVEL 1;
 COMP "serial_rx" LOCATE = SITE "C4" LEVEL 1;
 PIN lm32_cpu/multiplier/Mmult_n00232_pins<117> = BEL
         "lm32_cpu/multiplier/Mmult_n00232" PINNAME CLK;

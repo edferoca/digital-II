@@ -59,28 +59,30 @@ static void SD_write_8(unsigned short int value){
 static void sd_do (void){
 	printf("Inicializando SD...\n");
 	//tiempo muerto para energizar correctamente la SD
+		int i = 1;
+		while (i ==1) {
+			/* code */
 
 			SD_write_8(0x4000);
 			SD_write_8(0x0000);
 			SD_write_8(0x0095);
 
 			SD_write_8(0xFFFF);
-			uint32_t val1= SD_miso_data_read();
 			//uint32_t val4= SD_miso_data_read();
 			SD_write_8(0xFFFF);
 			SD_write_8(0xFFFF);
 
+			printf("%X \n", SD_miso_data_read());
+		}
 
 			SD_write_8(0X4800);
 			SD_write_8(0X0001);
 			SD_write_8(0XAA87);
-			uint32_t val2= SD_miso_data_read();
+			
 			SD_write_8(0xFFFF);
 			SD_write_8(0xFFFF);
 			SD_write_8(0xFFFF);
 
-
-			 printf("%X %x\n", val1, val2 );
 
 	  //Espera
 		//una
