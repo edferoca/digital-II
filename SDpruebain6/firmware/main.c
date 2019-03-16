@@ -35,10 +35,11 @@ static void SD_configure(void) {
   unsigned config = 0*OFFLINE;
   config |= 0*CS_POLARITY | 0*CLK_POLARITY | 0*CLK_PHASE;
   config |= 0*LSB_FIRST | 0*HALF_DUPLEX;
-	config |= 300*DIV_READ | 300*DIV_WRITE;//Divisior para
-  //config |= 248*DIV_READ | 248*DIV_WRITE;//Divisior para
-	//																			reloj de 5MHz(16)
-	//				100M/400k = div_write + 2...248
+	config |= 300*DIV_READ | 300*DIV_WRITE;
+  //config |= 248*DIV_READ | 248*DIV_WRITE;
+	// DIV_READ=DIV_WRITE = clk/frecuenciaDeseada - 2
+	// = 100Mhz/400Khz = 248
+
   SD_config_write(config);
 	SD_xfer_write(1 | 24*WRITE_LENGTH);
   printf("Configuracion finalizada: %x\n",config);
@@ -80,14 +81,16 @@ static void delay(int del){
 
 static void sd_do (void){
 
+	//Se debe esperar por lo menos 1ms
 	printf("Inicializando SD...\n");
 	SD_configure(); //configurando el spi de la sd
+	//Se deben esperar 71 ciclos de reloj con el cs en alto
 
 	//Primer lectura del miso justo antes de enviar cualquier comando (debe ser "0")
 	unsigned long int Miso = SD_miso_data_read();
   printf("Primer Miso: %x\n",Miso);
 
-	//Mandando el comando cero con basura varias veces
+	//Mandando el comando cero con basura varias veces hasta que la sd responda
 
 	while (Miso == 0XFF){
 
@@ -100,6 +103,7 @@ static void sd_do (void){
 	- Hexa: 40 00 00 00 00 95
 	- Bin: 0100.0000 0000.0000, 0000.0000 0000.0000, 0000.0000 1001.0101
 	- Respuesta:R1: 0000.0001
+		Reinicia el software e incia en modo SPI
 		*/
 
 		//Respuesta al comando 0
@@ -117,9 +121,33 @@ static void sd_do (void){
 	- Hexa: 48 00 00 01 AA 0F
 	- Bin: 0100.1000 0000.0000, 0000.0000 0000.0001, 1010.1010 0000.1111
 	- Respuesta:R7: XX... 1 AA, XX... 0001 1010.1010
+	Probando que la tarjeta responde correctamente
 	*/
 	Miso = SD_miso_data_read();
 	printf("Respuesta comando 8: %x\n",Miso);
+
+	SD_write_48(0X7A0000, 0x00007A);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);
+	/*
+	Comando 58 (CMD58):
+	- Dec: 122 00 00 00 00 122
+	- Hexa: 7A 00 00 00 00 7A
+	- Bin: 0111.1010 0000.0000, 0000.0000 0000.0000, 0000.0000 0111.0101
+	Lee el bit OCR para verificar el rango de trabajo de voltaje de la tarjeta
+	*/
+	Miso = SD_miso_data_read();
+	printf("Respuesta comando 58: %x\n",Miso);
+
+	SD_write_48(0X690000, 0x0000FF);
+	SD_write_48(0XFFFFFF, 0XFFFFFF);s
+	/*
+	Comando 41 (ACMD41):
+	- Dec: 105 00 00 00 00 255
+	- Hexa: 69 00 00 00 00 FF
+	- Bin: 0110.1001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
+	- Respuesta:R1: 0000.0001
+	Incia el proceso de incialización de la tarjeta
+	*/
 
 	SD_write_48(0X410000, 0x0000FF);
 	SD_write_48(0XFFFFFF, 0XFFFFFF);
@@ -128,7 +156,8 @@ static void sd_do (void){
 	- Dec: 65 00 00 00 00 255
 	- Hexa: 41 00 00 00 00 FF
 	- Bin: 0100.0001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
-
+	- Respuesta:R1: 0000.0001
+	Incia el proceso de incialización de la tarjeta
 	*/
 	Miso = SD_miso_data_read();
 	printf("Respuesta comando 1: %x\n",Miso);
@@ -156,7 +185,7 @@ static void sd_do (void){
 	*/
 	Miso = SD_miso_data_read();
 	printf("Respuesta comando 17: %x\n",Miso);
-	
+
 }
 
 static void sd_do2 (void){
