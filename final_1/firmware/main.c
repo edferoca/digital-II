@@ -21,12 +21,6 @@ static void botones(void)
 
 
 
-static void pantalla(void)
-{
-
-	juego(0x048,0x0055,0XC618);
-}
-
 int main(void)
 {
 	irq_setmask(0);
@@ -35,16 +29,9 @@ int main(void)
 	uart_init();
 	lcd_config();
 	lcd_inic();
-	margenes();
-
-	printf("qWIIIII%X \n",irq_getmask());
-	printf("get maski %X \n",irq_pending());
-	printf("get maske %x \n",(irq_getmask() | (1 << 4)));
-
- printf("get masko %x \n",UART_INTERRUPT);
-
+	juego(0XC618);
 	while(1) {
-		pantalla();
+
 	}
 
 	return 0;

@@ -5,33 +5,38 @@
 #include "bloques.h"
 
 unsigned int tempo;
+unsigned int vuelta;
 
-void juego(unsigned int Ymin,unsigned int Ymax,unsigned int color){
-  int obscont=0 ;
+void juego(unsigned int color){
+  empezar:
+  margenes();
+  preparacion();
 
-  for (tempo = 0x0; tempo <= 0x8; tempo++) {
-    bloque(1,obscont);
-    obscont= obscont+1 ;
-  }
-}
-
-void crash(unsigned char posbloquey){
-  if (posbloque <= 0x14) {
-    if (posx <= posbloquey) {
-      posx = 0x4f;
-      posbloque = 0x84;
-      margenes();
-      tempo=0;
+  nivel1();
+  busy_wait(20);
+  for (size_t i = 0; i < 16; i++) {
+    if (botones_in_read() & 1 << 0x3) {
+      goto empezar;
     }
+    busy_wait(5);
   }
+
+
+
+
 }
+
 
 void margenes(void){
     //dib morado
-    dib_cua(0x92,0x00,0xaf,0x9c,0x901A);
-    dib_cua(0x00,0x00,0x8c,0x2A,0x07E0);
-    dib_cua(0x00,0x74,0x8c,0x9c,0x07E0);
+    dib_cua(0x92,0x00,0xaf,0x1A,0xC618);
+    dib_cua(0x92,0x82,0xaf,0x9C,0xC618);
+    dib_cua(0x92,0x1A,0xaf,0x82,0x901A);
+    dib_cua(0x00,0xA2,0xaf,0xDB,0xC618);
+    dib_cua(0x00,0x00,0x8c,0x2A,0x03E0);
+    dib_cua(0x00,0x74,0x8c,0x9c,0x03E0 );
     dib_cua(0x00,0x2f,0x8c,0x6f,0x7BEF);
+    dib_cua(0x000D,0x0047,0x0001c,0x0057,0XC618);
 
 
     for(int i=0;i<=0x8A;i++){
@@ -62,4 +67,85 @@ void margenes(void){
     for(int i=0X00;i<=0xAf;i++){
       dib_cua(i-2,0x9c,i+2,0xA2,0x0000);
     }
+}
+
+void nivel1(void){
+  for (vuelta = 1; vuelta <=8; vuelta++) {
+    dib_cua(0x92,(0x0D*vuelta)+0x0D,0xaf,(0x0D*vuelta)+0x1A,0xFEA0);
+      for (tempo = 0; tempo <= 23; tempo++) {
+          if (tempo <= 1) {
+            bloque(1);
+          }
+
+          if ((tempo >= 2) &&(tempo <= 5)) {
+            bloque(3);
+            bloque(1);
+          }
+/*
+          if ((tempo >= 6) &&(tempo <= 7)) {
+            bloque(2);
+            bloque(3);
+            bloque(1);
+          }
+          if ((tempo >= 8) &&(tempo <= 10)) {
+            bloque(2);
+            bloque(3);
+          }
+          if ((tempo >= 11) &&(tempo <= 11)) {
+            bloque(1);
+            bloque(2);
+          }
+
+          if ((tempo >= 12) &&(tempo <= 13)) {
+            bloque(2);
+            bloque(3);
+            bloque(1);
+          }
+          if ((tempo >= 14) &&(tempo <= 15)) {
+            bloque(1);
+            bloque(3);
+          }
+          if ((tempo >= 16) &&(tempo <= 18)) {
+            bloque(1);
+            bloque(2);
+            bloque(3);
+          }
+          if ((tempo >= 19) &&(tempo <= 19)) {
+            bloque(2);
+            bloque(3);
+          }
+          if ((tempo >= 20) &&(tempo <= 23)) {
+            bloque(2);
+          }
+          */
+        }
+
+    printf("vuelta\n" );
+  }
+printf("acabo nivel\n" );
+  dib_cua(0x92,0x1A,0xaf,0x82,0xFFFF);
+  for (int bandera = 1; bandera <= 8; bandera++) {
+    if ( bandera % 2 == 0 ){
+      dib_cua(0xA5,(0x0D*bandera)+0x0D,0xaf,(0x0D*bandera)+0x1A,0x0000);
+      dib_cua(0x92,(0x0D*bandera)+0x0D,0x9B,(0x0D*bandera)+0x1A,0x0000);
+    }else{
+      dib_cua(0x9B,(0x0D*bandera-1)+0x0D,0xA5,(0x0D*bandera-1)+0x1A,0x0000);
+    }
+  }
+  posbloque = 0x84;
+  posbloque2 = 0x84;
+  posbloque3 = 0x84;
+  tempo=0x00;
+}
+
+void preparacion(void){
+  dib_cua(0x92,0x1A,0xaf,0x82,0xF800);
+  busy_wait(30);
+  dib_cua(0x92,0x1A,0xaf,0x82,0xFFE0);
+  busy_wait(20);
+  dib_cua(0x92,0x1A,0xaf,0x82,0x07E0);
+  busy_wait(5);
+
+
+
 }

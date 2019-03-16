@@ -4,12 +4,12 @@
 #include "LCD.h"
 #include <generated/csr.h>
 
-
 unsigned int tempo;
+unsigned int vuelta;
 
-void crash(unsigned char posbloquey);
+void juego(unsigned int color);
+
 void margenes(void);
-
-void juego(unsigned int Ymin,unsigned int Ymax,unsigned int color);
-
+void nivel1(void);
+void preparacion(void);
 #endif
