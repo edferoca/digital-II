@@ -91,6 +91,8 @@ void crash(unsigned char pos, unsigned char posbloquey){
       posbloque = 0x84;
       posbloque2 = 0x84;
       posbloque3 = 0x84;
+      pantallasup();
+      //pantalladerecha();
       margenes();
       tempo=0;
       velocidad=5;

@@ -12,6 +12,96 @@ extern uint32_t csr_readl(uint32_t addr);
 #include <hw/common.h>
 #endif /* ! CSR_ACCESSORS_DEFINED */
 
+/* SD */
+#define CSR_SD_BASE 0xe0006800
+#define CSR_SD_CONFIG_ADDR 0xe0006800
+#define CSR_SD_CONFIG_SIZE 4
+static inline unsigned int SD_config_read(void) {
+	unsigned int r = csr_readl(0xe0006800);
+	r <<= 8;
+	r |= csr_readl(0xe0006804);
+	r <<= 8;
+	r |= csr_readl(0xe0006808);
+	r <<= 8;
+	r |= csr_readl(0xe000680c);
+	return r;
+}
+static inline void SD_config_write(unsigned int value) {
+	csr_writel(value >> 24, 0xe0006800);
+	csr_writel(value >> 16, 0xe0006804);
+	csr_writel(value >> 8, 0xe0006808);
+	csr_writel(value, 0xe000680c);
+}
+#define CSR_SD_XFER_ADDR 0xe0006810
+#define CSR_SD_XFER_SIZE 4
+static inline unsigned int SD_xfer_read(void) {
+	unsigned int r = csr_readl(0xe0006810);
+	r <<= 8;
+	r |= csr_readl(0xe0006814);
+	r <<= 8;
+	r |= csr_readl(0xe0006818);
+	r <<= 8;
+	r |= csr_readl(0xe000681c);
+	return r;
+}
+static inline void SD_xfer_write(unsigned int value) {
+	csr_writel(value >> 24, 0xe0006810);
+	csr_writel(value >> 16, 0xe0006814);
+	csr_writel(value >> 8, 0xe0006818);
+	csr_writel(value, 0xe000681c);
+}
+#define CSR_SD_START_ADDR 0xe0006820
+#define CSR_SD_START_SIZE 1
+static inline unsigned char SD_start_read(void) {
+	unsigned char r = csr_readl(0xe0006820);
+	return r;
+}
+static inline void SD_start_write(unsigned char value) {
+	csr_writel(value, 0xe0006820);
+}
+#define CSR_SD_ACTIVE_ADDR 0xe0006824
+#define CSR_SD_ACTIVE_SIZE 1
+static inline unsigned char SD_active_read(void) {
+	unsigned char r = csr_readl(0xe0006824);
+	return r;
+}
+#define CSR_SD_PENDING_ADDR 0xe0006828
+#define CSR_SD_PENDING_SIZE 1
+static inline unsigned char SD_pending_read(void) {
+	unsigned char r = csr_readl(0xe0006828);
+	return r;
+}
+#define CSR_SD_MOSI_DATA_ADDR 0xe000682c
+#define CSR_SD_MOSI_DATA_SIZE 4
+static inline unsigned int SD_mosi_data_read(void) {
+	unsigned int r = csr_readl(0xe000682c);
+	r <<= 8;
+	r |= csr_readl(0xe0006830);
+	r <<= 8;
+	r |= csr_readl(0xe0006834);
+	r <<= 8;
+	r |= csr_readl(0xe0006838);
+	return r;
+}
+static inline void SD_mosi_data_write(unsigned int value) {
+	csr_writel(value >> 24, 0xe000682c);
+	csr_writel(value >> 16, 0xe0006830);
+	csr_writel(value >> 8, 0xe0006834);
+	csr_writel(value, 0xe0006838);
+}
+#define CSR_SD_MISO_DATA_ADDR 0xe000683c
+#define CSR_SD_MISO_DATA_SIZE 4
+static inline unsigned int SD_miso_data_read(void) {
+	unsigned int r = csr_readl(0xe000683c);
+	r <<= 8;
+	r |= csr_readl(0xe0006840);
+	r <<= 8;
+	r |= csr_readl(0xe0006844);
+	r <<= 8;
+	r |= csr_readl(0xe0006848);
+	return r;
+}
+
 /* botones */
 #define CSR_BOTONES_BASE 0xe0004800
 #define CSR_BOTONES_IN_ADDR 0xe0004800

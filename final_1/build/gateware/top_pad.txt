@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Mar 15 15:07:41 2019
+Sat Mar 16 11:27:47 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -115,7 +115,7 @@ Pinout by Pin Number:
 |F3        |            |IOB33S   |IO_L13N_T2_MRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |F4        |            |IOB33M   |IO_L13P_T2_MRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |F5        |            |IOB33    |IO_0_35                     |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
-|F6        |            |IOB33S   |IO_L19N_T3_VREF_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|F6        |sd_spi_mosi |IOB33    |IO_L19N_T3_VREF_35          |BIDIR    |LVCMOS33   |35            |12        |SLOW     |           |NONE     |         |LOCATED   |NO         |NONE            |
 |F7        |            |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |F8        |            |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
 |F9        |            |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
@@ -133,7 +133,7 @@ Pinout by Pin Number:
 |G3        |            |IOB33S   |IO_L20N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |G4        |            |IOB33M   |IO_L20P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |G5        |            |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
-|G6        |            |IOB33M   |IO_L19P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|G6        |sd_spi_clk  |IOB33    |IO_L19P_T3_35               |TRISTATE |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |G7        |            |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
 |G8        |            |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |G9        |            |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
@@ -165,7 +165,7 @@ Pinout by Pin Number:
 |H17       |user_led0   |IOB33    |IO_L18P_T2_A24_15           |OUTPUT   |LVCMOS33   |15            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |H18       |            |         |VCCO_15                     |         |           |15            |          |         |           |         |3.30     |          |           |                |
 |J1        |            |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
-|J2        |            |IOB33S   |IO_L22N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|J2        |sd_spi_miso |IOB33    |IO_L22N_T3_35               |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |J3        |            |IOB33M   |IO_L22P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |J4        |            |IOB33M   |IO_L21P_T3_DQS_35           |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |J5        |            |IOB33    |IO_25_35                    |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
@@ -182,7 +182,7 @@ Pinout by Pin Number:
 |J16       |            |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |J17       |            |IOB33M   |IO_L23P_T3_FOE_B_15         |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |J18       |            |IOB33S   |IO_L23N_T3_FWE_B_15         |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
-|K1        |            |IOB33S   |IO_L23N_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
+|K1        |sd_spi_cs_n |IOB33    |IO_L23N_T3_35               |TRISTATE |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |K2        |            |IOB33M   |IO_L23P_T3_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |K3        |            |IOB33M   |IO_L2P_T0_34                |UNUSED   |           |34            |          |         |           |         |         |          |           |                |
 |K4        |            |         |VCCO_34                     |         |           |34            |          |         |           |         |any******|          |           |                |

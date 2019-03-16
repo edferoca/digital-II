@@ -11,33 +11,20 @@
 #include "bloques.h"
 
 
-
-static void botones(void)
-{
-	botones_ev_pending_write(0xff); //flag
-	botones_ev_enable_write(0xff);
-	irq_setmask(irq_getmask() | (1 << BOTONES_INTERRUPT));
-}
-
-
-
-int main(void)
-{
-	irq_setmask(0);
-	irq_setie(1); //habilita las interrupciones
-	botones();
-	uart_init();
-	lcd_config();
-	lcd_inic();
-	juego(0XC618);
-	while(1) {
-
-	}
-
-	return 0;
-}
-
 //Funciones para la memoria SD
+unsigned OFFLINE      = (1 << 0);
+unsigned CS_POLARITY  = (1 << 3);
+unsigned CLK_POLARITY = (1 << 4);
+unsigned CLK_PHASE    = (1 << 5);
+unsigned LSB_FIRST    = (1 << 6);
+unsigned HALF_DUPLEX  = (1 << 7);
+unsigned DIV_READ     = (1 << 16);
+unsigned DIV_WRITE    = (1 << 24);
+
+// xfer mapping
+unsigned WRITE_LENGTH = (1 << 16);
+unsigned READ_LENGTH  = (1 << 24);
+
 
 static void SD_configure(void) {
   unsigned config = 0*OFFLINE;
@@ -65,4 +52,29 @@ static void SD_write_48(unsigned long int value1, unsigned long int value2){
 	SD_write_24(value2);
 	while (SD_active_read() & 0x1){};
 
+}
+
+static void botones(void)
+{
+	botones_ev_pending_write(0xff); //flag
+	botones_ev_enable_write(0xff);
+	irq_setmask(irq_getmask() | (1 << BOTONES_INTERRUPT));
+}
+
+
+
+int main(void)
+{
+	irq_setmask(0);
+	irq_setie(1); //habilita las interrupciones
+	botones();
+	uart_init();
+	lcd_config();
+	lcd_inic();
+	juego(0XC618);
+	while(1) {
+
+	}
+
+	return 0;
 }

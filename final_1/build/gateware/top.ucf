@@ -20,6 +20,10 @@ NET "lcd_spi_miso" LOC=E17 | IOSTANDARD=LVCMOS33; # lcd_spi:0.miso
 NET "lcd_spi_clk" LOC=D17 | IOSTANDARD=LVCMOS33; # lcd_spi:0.clk
 NET "rs_lcd" LOC=E18 | IOSTANDARD=LVCMOS33; # rs_lcd:0
 NET "rst_lcd" LOC=D18 | IOSTANDARD=LVCMOS33; # rst_lcd:0
+NET "sd_spi_cs_n" LOC=K1 | IOSTANDARD=LVCMOS33; # sd_spi:0.cs_n
+NET "sd_spi_mosi" LOC=F6 | IOSTANDARD=LVCMOS33; # sd_spi:0.mosi
+NET "sd_spi_miso" LOC=J2 | IOSTANDARD=LVCMOS33; # sd_spi:0.miso
+NET "sd_spi_clk" LOC=G6 | IOSTANDARD=LVCMOS33; # sd_spi:0.clk
 
 
 NET "clk100" TNM_NET = "PRDclk100";

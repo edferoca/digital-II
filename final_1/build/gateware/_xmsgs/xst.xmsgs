@@ -14,271 +14,319 @@
 <msg type="warning" file="HDLCompiler" num="924" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier <arg fmt="%s" index="1">preserve_signal</arg> not found in this scope
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2210: Port <arg fmt="%s" index="1">I_LOCK_O</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2686: Port <arg fmt="%s" index="1">I_LOCK_O</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 29: Using initial value of <arg fmt="%s" index="1">ctrl_reset_reset_w</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 33: Using initial value of <arg fmt="%s" index="1">ctrl_reset_reset_w</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 73: Using initial value of <arg fmt="%s" index="1">rom_bus_err</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 77: Using initial value of <arg fmt="%s" index="1">rom_bus_err</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 86: Using initial value of <arg fmt="%s" index="1">sram_bus_err</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 90: Using initial value of <arg fmt="%s" index="1">sram_bus_err</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 101: Using initial value of <arg fmt="%s" index="1">main_ram_bus_err</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 105: Using initial value of <arg fmt="%s" index="1">main_ram_bus_err</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 120: Using initial value of <arg fmt="%s" index="1">bus_wishbone_err</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 124: Using initial value of <arg fmt="%s" index="1">bus_wishbone_err</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 137: Using initial value of <arg fmt="%s" index="1">uart_phy_source_first</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 141: Using initial value of <arg fmt="%s" index="1">uart_phy_source_first</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 138: Using initial value of <arg fmt="%s" index="1">uart_phy_source_last</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 142: Using initial value of <arg fmt="%s" index="1">uart_phy_source_last</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 174: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_first</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 178: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_first</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 175: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_last</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 179: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_last</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 191: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_replace</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 195: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_replace</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 228: Using initial value of <arg fmt="%s" index="1">uart_rx_fifo_replace</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 232: Using initial value of <arg fmt="%s" index="1">uart_rx_fifo_replace</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 246: Using initial value of <arg fmt="%s" index="1">uart_reset</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 250: Using initial value of <arg fmt="%s" index="1">uart_reset</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 258: Using initial value of <arg fmt="%s" index="1">timer0_update_value_w</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 262: Using initial value of <arg fmt="%s" index="1">timer0_update_value_w</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 398: Using initial value of <arg fmt="%s" index="1">start_w</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 402: Using initial value of <arg fmt="%s" index="1">lcd_start_w</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2251: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; in initial block is partially initialized.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 488: Using initial value of <arg fmt="%s" index="1">SD_start_w</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2287: Signal &lt;<arg fmt="%s" index="1">mem_2</arg>&gt; in initial block is partially initialized.
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2727: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; in initial block is partially initialized.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 711: Assignment to <arg fmt="%s" index="1">uart_phy_sink_first</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2763: Signal &lt;<arg fmt="%s" index="1">mem_2</arg>&gt; in initial block is partially initialized.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 712: Assignment to <arg fmt="%s" index="1">uart_phy_sink_last</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 856: Assignment to <arg fmt="%s" index="1">uart_phy_sink_first</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 716: Assignment to <arg fmt="%s" index="1">uart_phy_source_ready</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 857: Assignment to <arg fmt="%s" index="1">uart_phy_sink_last</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 762: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_level1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 861: Assignment to <arg fmt="%s" index="1">uart_phy_source_ready</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 787: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_first</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 907: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_level1</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 788: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_last</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 932: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_first</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 792: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_level1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 933: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_last</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 911: Assignment to <arg fmt="%s" index="1">config_padding0</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 937: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_level1</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 912: Assignment to <arg fmt="%s" index="1">xfer_padding0</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1056: Assignment to <arg fmt="%s" index="1">lcd_config_padding0</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 925: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1057: Assignment to <arg fmt="%s" index="1">lcd_xfer_padding0</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1022: Assignment to <arg fmt="%s" index="1">rom_bus_dat_w</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1070: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1023: Assignment to <arg fmt="%s" index="1">rom_bus_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1144: Assignment to <arg fmt="%s" index="1">SD_config_padding0</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1025: Assignment to <arg fmt="%s" index="1">rom_bus_we</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1145: Assignment to <arg fmt="%s" index="1">SD_xfer_padding0</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1026: Assignment to <arg fmt="%s" index="1">rom_bus_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1158: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1027: Assignment to <arg fmt="%s" index="1">rom_bus_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1253: Assignment to <arg fmt="%s" index="1">rom_bus_dat_w</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1033: Assignment to <arg fmt="%s" index="1">sram_bus_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1254: Assignment to <arg fmt="%s" index="1">rom_bus_sel</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1034: Assignment to <arg fmt="%s" index="1">sram_bus_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1256: Assignment to <arg fmt="%s" index="1">rom_bus_we</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1040: Assignment to <arg fmt="%s" index="1">main_ram_bus_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1257: Assignment to <arg fmt="%s" index="1">rom_bus_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1041: Assignment to <arg fmt="%s" index="1">main_ram_bus_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1258: Assignment to <arg fmt="%s" index="1">rom_bus_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1044: Assignment to <arg fmt="%s" index="1">bus_wishbone_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1264: Assignment to <arg fmt="%s" index="1">sram_bus_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1047: Assignment to <arg fmt="%s" index="1">bus_wishbone_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1265: Assignment to <arg fmt="%s" index="1">sram_bus_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1048: Assignment to <arg fmt="%s" index="1">bus_wishbone_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1271: Assignment to <arg fmt="%s" index="1">main_ram_bus_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1069: Assignment to <arg fmt="%s" index="1">csrbank0_in_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1272: Assignment to <arg fmt="%s" index="1">main_ram_bus_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1070: Assignment to <arg fmt="%s" index="1">csrbank0_in_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1275: Assignment to <arg fmt="%s" index="1">bus_wishbone_sel</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1071: Assignment to <arg fmt="%s" index="1">status_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1278: Assignment to <arg fmt="%s" index="1">bus_wishbone_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1072: Assignment to <arg fmt="%s" index="1">status_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1279: Assignment to <arg fmt="%s" index="1">bus_wishbone_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1081: Assignment to <arg fmt="%s" index="1">ctrl_reset_reset_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1318: Assignment to <arg fmt="%s" index="1">csrbank0_active_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1091: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors3_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1319: Assignment to <arg fmt="%s" index="1">csrbank0_active_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1092: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors3_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1320: Assignment to <arg fmt="%s" index="1">csrbank0_pending_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1093: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors2_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1321: Assignment to <arg fmt="%s" index="1">csrbank0_pending_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1094: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors2_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1330: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data3_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1095: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors1_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1331: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data3_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1096: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors1_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1332: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data2_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1097: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors0_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1333: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data2_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1098: Assignment to <arg fmt="%s" index="1">csrbank1_bus_errors0_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1334: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data1_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1099: Assignment to <arg fmt="%s" index="1">ctrl_storage</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1335: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data1_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1135: Assignment to <arg fmt="%s" index="1">csrbank2_active_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1336: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data0_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1136: Assignment to <arg fmt="%s" index="1">csrbank2_active_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1337: Assignment to <arg fmt="%s" index="1">csrbank0_miso_data0_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1137: Assignment to <arg fmt="%s" index="1">csrbank2_pending_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1360: Assignment to <arg fmt="%s" index="1">csrbank1_in_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1138: Assignment to <arg fmt="%s" index="1">csrbank2_pending_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1361: Assignment to <arg fmt="%s" index="1">csrbank1_in_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1147: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data3_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1362: Assignment to <arg fmt="%s" index="1">status_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1148: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data3_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1363: Assignment to <arg fmt="%s" index="1">status_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1149: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data2_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1372: Assignment to <arg fmt="%s" index="1">ctrl_reset_reset_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1150: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data2_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1382: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors3_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1151: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data1_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1383: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors3_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1152: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data1_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1384: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors2_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1153: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data0_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1385: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors2_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1154: Assignment to <arg fmt="%s" index="1">csrbank2_miso_data0_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1386: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors1_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1210: Assignment to <arg fmt="%s" index="1">timer0_update_value_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1387: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors1_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1212: Assignment to <arg fmt="%s" index="1">csrbank6_value3_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1388: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors0_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1213: Assignment to <arg fmt="%s" index="1">csrbank6_value3_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1389: Assignment to <arg fmt="%s" index="1">csrbank2_bus_errors0_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1214: Assignment to <arg fmt="%s" index="1">csrbank6_value2_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1390: Assignment to <arg fmt="%s" index="1">ctrl_storage</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1215: Assignment to <arg fmt="%s" index="1">csrbank6_value2_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1426: Assignment to <arg fmt="%s" index="1">csrbank3_active_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1216: Assignment to <arg fmt="%s" index="1">csrbank6_value1_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1427: Assignment to <arg fmt="%s" index="1">csrbank3_active_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1217: Assignment to <arg fmt="%s" index="1">csrbank6_value1_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1428: Assignment to <arg fmt="%s" index="1">csrbank3_pending_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1218: Assignment to <arg fmt="%s" index="1">csrbank6_value0_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1429: Assignment to <arg fmt="%s" index="1">csrbank3_pending_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1219: Assignment to <arg fmt="%s" index="1">csrbank6_value0_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1438: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data3_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1220: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1439: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data3_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1221: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1440: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data2_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1247: Assignment to <arg fmt="%s" index="1">csrbank7_txfull_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1441: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data2_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1248: Assignment to <arg fmt="%s" index="1">csrbank7_txfull_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1442: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data1_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1249: Assignment to <arg fmt="%s" index="1">csrbank7_rxempty_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1443: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data1_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1250: Assignment to <arg fmt="%s" index="1">csrbank7_rxempty_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1444: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data0_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1251: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1445: Assignment to <arg fmt="%s" index="1">csrbank3_miso_data0_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1252: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1501: Assignment to <arg fmt="%s" index="1">timer0_update_value_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1294: Assignment to <arg fmt="%s" index="1">sram_bus_we1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1503: Assignment to <arg fmt="%s" index="1">csrbank7_value3_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1304: Assignment to <arg fmt="%s" index="1">sram_bus_dat_w1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1504: Assignment to <arg fmt="%s" index="1">csrbank7_value3_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1404: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1505: Assignment to <arg fmt="%s" index="1">csrbank7_value2_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1404: Assignment to <arg fmt="%s" index="1">xilinxmultiregimpl1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1506: Assignment to <arg fmt="%s" index="1">csrbank7_value2_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1429: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1507: Assignment to <arg fmt="%s" index="1">csrbank7_value1_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1430: Result of <arg fmt="%d" index="1">30</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1508: Assignment to <arg fmt="%s" index="1">csrbank7_value1_re</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1410: Assignment to <arg fmt="%s" index="1">re</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1509: Assignment to <arg fmt="%s" index="1">csrbank7_value0_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1510: Assignment to <arg fmt="%s" index="1">csrbank7_value0_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1511: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1512: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1538: Assignment to <arg fmt="%s" index="1">csrbank8_txfull_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1539: Assignment to <arg fmt="%s" index="1">csrbank8_txfull_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1540: Assignment to <arg fmt="%s" index="1">csrbank8_rxempty_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1541: Assignment to <arg fmt="%s" index="1">csrbank8_rxempty_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1542: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1543: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1587: Assignment to <arg fmt="%s" index="1">sram_bus_we1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1598: Assignment to <arg fmt="%s" index="1">sram_bus_dat_w1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1698: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1698: Assignment to <arg fmt="%s" index="1">xilinxmultiregimpl1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1723: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1724: Result of <arg fmt="%d" index="1">30</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 1704: Assignment to <arg fmt="%s" index="1">SD_config_re</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 910: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
@@ -320,34 +368,40 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2304: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2780: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2321: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2797: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2337: Assignment to <arg fmt="%s" index="1">cs_n_t_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2813: Assignment to <arg fmt="%s" index="1">lcd_cs_n_t_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2340: Assignment to <arg fmt="%s" index="1">clk_t_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2816: Assignment to <arg fmt="%s" index="1">lcd_clk_t_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2822: Assignment to <arg fmt="%s" index="1">SD_cs_n_t_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v" Line 2825: Assignment to <arg fmt="%s" index="1">SD_clk_t_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2212</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/edferoca/Documentos/digital2/proyecto-dig2/final_1/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">2688</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">mem</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">top</arg>&apos;, is tied to its initial value.
@@ -419,12 +473,12 @@
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_storage_1</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-</msg>
-
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_2</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_storage_2</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_storage_1</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
@@ -540,16 +594,16 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_n00233</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lm32_multiplier</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_110</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_210</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_210</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_110</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mram_storage_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memop_pc_w_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lm32_cpu</arg>&gt;.
@@ -654,7 +708,7 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">d_cti_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">lm32_load_store_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -666,91 +720,136 @@
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface5_bank_bus_dat_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface4_bank_bus_dat_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface3_bank_bus_dat_r_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface3_bank_bus_dat_r_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface3_bank_bus_dat_r_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface3_bank_bus_dat_r_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">interface6_bank_bus_dat_r_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cs_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lcd_cs_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SD_cs_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_cti_o_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">lm32_instruction_unit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_cti_o_2&gt; </arg>
@@ -864,7 +963,10 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">lm32_cpu/load_store_unit/dcache/refill_address_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">machine_cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">lcd_machine_cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">SD_machine_cnt_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/ra_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/ra_2&gt; </arg>
