@@ -12,11 +12,11 @@
 
 
 
-static void prueba(void)
+static void botones(void)
 {
-	buttoniner_ev_pending_write(1); //flag
-	buttoniner_ev_enable_write(1);
-	irq_setmask(irq_getmask() | (1 << 4));
+	botones_ev_pending_write(0xff); //flag
+	botones_ev_enable_write(0xff);
+	irq_setmask(irq_getmask() | (1 << BOTONES_INTERRUPT));
 }
 
 
@@ -31,7 +31,7 @@ int main(void)
 {
 	irq_setmask(0);
 	irq_setie(1); //habilita las interrupciones
-	prueba();
+	botones();
 	uart_init();
 	lcd_config();
 	lcd_inic();

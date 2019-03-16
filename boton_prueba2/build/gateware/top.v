@@ -12,7 +12,14 @@ module top(
 	output user_led5,
 	output user_led6,
 	output user_led7,
-	input user_btnint
+	input user_btn0,
+	input user_btn1,
+	input user_btn2,
+	input user_btn3,
+	input user_btn4,
+	input user_btn5,
+	input user_btn6,
+	input user_btn7
 );
 
 wire __main___ctrl_reset_reset_re;
@@ -271,21 +278,56 @@ reg __main___int_rst = 1'd1;
 reg [7:0] __main___storage_full = 8'd0;
 wire [7:0] __main___storage;
 reg __main___re = 1'd0;
-wire __main___in_status;
+wire [7:0] __main___in_status;
 wire __main___irq;
-wire __main___zero_status;
-reg __main___zero_pending = 1'd0;
-wire __main___zero_trigger;
-reg __main___zero_clear = 1'd0;
-reg __main___zero_old_trigger = 1'd0;
+wire __main___cero_status;
+reg __main___cero_pending = 1'd0;
+wire __main___cero_trigger;
+reg __main___cero_clear = 1'd0;
+reg __main___cero_old_trigger = 1'd0;
+wire __main___uno_status;
+reg __main___uno_pending = 1'd0;
+wire __main___uno_trigger;
+reg __main___uno_clear = 1'd0;
+reg __main___uno_old_trigger = 1'd0;
+wire __main___dos_status;
+reg __main___dos_pending = 1'd0;
+wire __main___dos_trigger;
+reg __main___dos_clear = 1'd0;
+reg __main___dos_old_trigger = 1'd0;
+wire __main___tres_status;
+reg __main___tres_pending = 1'd0;
+wire __main___tres_trigger;
+reg __main___tres_clear = 1'd0;
+reg __main___tres_old_trigger = 1'd0;
+wire __main___cuatro_status;
+reg __main___cuatro_pending = 1'd0;
+wire __main___cuatro_trigger;
+reg __main___cuatro_clear = 1'd0;
+reg __main___cuatro_old_trigger = 1'd0;
+wire __main___cinco_status;
+reg __main___cinco_pending = 1'd0;
+wire __main___cinco_trigger;
+reg __main___cinco_clear = 1'd0;
+reg __main___cinco_old_trigger = 1'd0;
+wire __main___seis_status;
+reg __main___seis_pending = 1'd0;
+wire __main___seis_trigger;
+reg __main___seis_clear = 1'd0;
+reg __main___seis_old_trigger = 1'd0;
+wire __main___siete_status;
+reg __main___siete_pending = 1'd0;
+wire __main___siete_trigger;
+reg __main___siete_clear = 1'd0;
+reg __main___siete_old_trigger = 1'd0;
 wire builder_status_re;
-wire builder_status_r;
-wire builder_status_w;
+wire [7:0] builder_status_r;
+reg [7:0] builder_status_w = 8'd0;
 wire builder_pending_re;
-wire builder_pending_r;
-wire builder_pending_w;
-reg builder_storage_full = 1'd0;
-wire builder_storage;
+wire [7:0] builder_pending_r;
+reg [7:0] builder_pending_w = 8'd0;
+reg [7:0] builder_storage_full = 8'd0;
+wire [7:0] builder_storage;
 reg builder_re = 1'd0;
 wire [29:0] builder_shared_adr;
 wire [31:0] builder_shared_dat_w;
@@ -311,11 +353,11 @@ wire builder_interface0_bank_bus_we;
 wire [7:0] builder_interface0_bank_bus_dat_w;
 reg [7:0] builder_interface0_bank_bus_dat_r = 8'd0;
 wire builder_csrbank0_in_re;
-wire builder_csrbank0_in_r;
-wire builder_csrbank0_in_w;
+wire [7:0] builder_csrbank0_in_r;
+wire [7:0] builder_csrbank0_in_w;
 wire builder_csrbank0_ev_enable0_re;
-wire builder_csrbank0_ev_enable0_r;
-wire builder_csrbank0_ev_enable0_w;
+wire [7:0] builder_csrbank0_ev_enable0_r;
+wire [7:0] builder_csrbank0_ev_enable0_w;
 wire builder_csrbank0_sel;
 wire [13:0] builder_interface1_bank_bus_adr;
 wire builder_interface1_bank_bus_we;
@@ -440,6 +482,14 @@ wire builder_csrbank5_tuning_word0_re;
 wire [7:0] builder_csrbank5_tuning_word0_r;
 wire [7:0] builder_csrbank5_tuning_word0_w;
 wire builder_csrbank5_sel;
+wire [7:0] builder_slice_proxy0;
+wire [7:0] builder_slice_proxy1;
+wire [7:0] builder_slice_proxy2;
+wire [7:0] builder_slice_proxy3;
+wire [7:0] builder_slice_proxy4;
+wire [7:0] builder_slice_proxy5;
+wire [7:0] builder_slice_proxy6;
+wire [7:0] builder_slice_proxy7;
 reg [29:0] builder_array_muxed0 = 30'd0;
 reg [31:0] builder_array_muxed1 = 32'd0;
 reg [3:0] builder_array_muxed2 = 4'd0;
@@ -450,8 +500,9 @@ reg [2:0] builder_array_muxed6 = 3'd0;
 reg [1:0] builder_array_muxed7 = 2'd0;
 (* register_balancing = "no", shreg_extract = "no" *) reg builder_xilinxmultiregimpl0_regs0 = 1'd0;
 (* register_balancing = "no", shreg_extract = "no" *) reg builder_xilinxmultiregimpl0_regs1 = 1'd0;
-(* register_balancing = "no", shreg_extract = "no" *) reg builder_xilinxmultiregimpl1_regs0 = 1'd0;
-(* register_balancing = "no", shreg_extract = "no" *) reg builder_xilinxmultiregimpl1_regs1 = 1'd0;
+(* register_balancing = "no", shreg_extract = "no" *) reg [7:0] builder_xilinxmultiregimpl1_regs0 = 8'd0;
+(* register_balancing = "no", shreg_extract = "no" *) reg [7:0] builder_xilinxmultiregimpl1_regs1 = 8'd0;
+wire builder_xilinxmultiregimpl1;
 
 assign __main___lm32_reset = __main___ctrl_reset;
 assign __main___ctrl_bus_error = builder_error;
@@ -605,17 +656,93 @@ assign sys_clk = clk100;
 assign por_clk = clk100;
 assign sys_rst = __main___int_rst;
 assign {user_led7, user_led6, user_led5, user_led4, user_led3, user_led2, user_led1, user_led0} = __main___storage;
-assign __main___zero_trigger = user_btnint;
-assign builder_status_w = __main___zero_status;
+assign __main___cero_trigger = builder_slice_proxy0[1];
+assign __main___uno_trigger = builder_slice_proxy1[0];
+assign __main___dos_trigger = builder_slice_proxy2[2];
+assign __main___tres_trigger = builder_slice_proxy3[3];
+assign __main___cuatro_trigger = builder_slice_proxy4[4];
+assign __main___cinco_trigger = builder_slice_proxy5[5];
+assign __main___seis_trigger = builder_slice_proxy6[6];
+assign __main___siete_trigger = builder_slice_proxy7[7];
 always @(*) begin
-	__main___zero_clear <= 1'd0;
-	if ((builder_pending_re & builder_pending_r)) begin
-		__main___zero_clear <= 1'd1;
+	__main___cero_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[0])) begin
+		__main___cero_clear <= 1'd1;
 	end
 end
-assign builder_pending_w = __main___zero_pending;
-assign __main___irq = (builder_pending_w & builder_storage);
-assign __main___zero_status = __main___zero_trigger;
+always @(*) begin
+	__main___uno_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[1])) begin
+		__main___uno_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	__main___dos_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[2])) begin
+		__main___dos_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	__main___tres_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[3])) begin
+		__main___tres_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	__main___cuatro_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[4])) begin
+		__main___cuatro_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	__main___cinco_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[5])) begin
+		__main___cinco_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	__main___seis_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[6])) begin
+		__main___seis_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	builder_status_w <= 8'd0;
+	builder_status_w[0] <= __main___cero_status;
+	builder_status_w[1] <= __main___uno_status;
+	builder_status_w[2] <= __main___dos_status;
+	builder_status_w[3] <= __main___tres_status;
+	builder_status_w[4] <= __main___cuatro_status;
+	builder_status_w[5] <= __main___cinco_status;
+	builder_status_w[6] <= __main___seis_status;
+	builder_status_w[7] <= __main___siete_status;
+end
+always @(*) begin
+	__main___siete_clear <= 1'd0;
+	if ((builder_pending_re & builder_pending_r[7])) begin
+		__main___siete_clear <= 1'd1;
+	end
+end
+always @(*) begin
+	builder_pending_w <= 8'd0;
+	builder_pending_w[0] <= __main___cero_pending;
+	builder_pending_w[1] <= __main___uno_pending;
+	builder_pending_w[2] <= __main___dos_pending;
+	builder_pending_w[3] <= __main___tres_pending;
+	builder_pending_w[4] <= __main___cuatro_pending;
+	builder_pending_w[5] <= __main___cinco_pending;
+	builder_pending_w[6] <= __main___seis_pending;
+	builder_pending_w[7] <= __main___siete_pending;
+end
+assign __main___irq = ((((((((builder_pending_w[0] & builder_storage[0]) | (builder_pending_w[1] & builder_storage[1])) | (builder_pending_w[2] & builder_storage[2])) | (builder_pending_w[3] & builder_storage[3])) | (builder_pending_w[4] & builder_storage[4])) | (builder_pending_w[5] & builder_storage[5])) | (builder_pending_w[6] & builder_storage[6])) | (builder_pending_w[7] & builder_storage[7]));
+assign __main___cero_status = __main___cero_trigger;
+assign __main___uno_status = __main___uno_trigger;
+assign __main___dos_status = __main___dos_trigger;
+assign __main___tres_status = __main___tres_trigger;
+assign __main___cuatro_status = __main___cuatro_trigger;
+assign __main___cinco_status = __main___cinco_trigger;
+assign __main___seis_status = __main___seis_trigger;
+assign __main___siete_status = __main___siete_trigger;
 assign builder_shared_adr = builder_array_muxed0;
 assign builder_shared_dat_w = builder_array_muxed1;
 assign builder_shared_sel = builder_array_muxed2;
@@ -686,17 +813,17 @@ always @(*) begin
 end
 assign builder_done = (builder_count == 1'd0);
 assign builder_csrbank0_sel = (builder_interface0_bank_bus_adr[13:9] == 4'd9);
-assign builder_csrbank0_in_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_in_r = builder_interface0_bank_bus_dat_w[7:0];
 assign builder_csrbank0_in_re = ((builder_csrbank0_sel & builder_interface0_bank_bus_we) & (builder_interface0_bank_bus_adr[1:0] == 1'd0));
-assign builder_status_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_status_r = builder_interface0_bank_bus_dat_w[7:0];
 assign builder_status_re = ((builder_csrbank0_sel & builder_interface0_bank_bus_we) & (builder_interface0_bank_bus_adr[1:0] == 1'd1));
-assign builder_pending_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_pending_r = builder_interface0_bank_bus_dat_w[7:0];
 assign builder_pending_re = ((builder_csrbank0_sel & builder_interface0_bank_bus_we) & (builder_interface0_bank_bus_adr[1:0] == 2'd2));
-assign builder_csrbank0_ev_enable0_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_ev_enable0_r = builder_interface0_bank_bus_dat_w[7:0];
 assign builder_csrbank0_ev_enable0_re = ((builder_csrbank0_sel & builder_interface0_bank_bus_we) & (builder_interface0_bank_bus_adr[1:0] == 2'd3));
-assign builder_csrbank0_in_w = __main___in_status;
-assign builder_storage = builder_storage_full;
-assign builder_csrbank0_ev_enable0_w = builder_storage_full;
+assign builder_csrbank0_in_w = __main___in_status[7:0];
+assign builder_storage = builder_storage_full[7:0];
+assign builder_csrbank0_ev_enable0_w = builder_storage_full[7:0];
 assign builder_csrbank1_sel = (builder_interface1_bank_bus_adr[13:9] == 1'd0);
 assign __main___ctrl_reset_reset_r = builder_interface1_bank_bus_dat_w[0];
 assign __main___ctrl_reset_reset_re = ((builder_csrbank1_sel & builder_interface1_bank_bus_we) & (builder_interface1_bank_bus_adr[3:0] == 1'd0));
@@ -844,6 +971,14 @@ assign builder_interface4_bank_bus_dat_w = __main___interface_dat_w;
 assign builder_interface5_bank_bus_dat_w = __main___interface_dat_w;
 assign builder_sram_bus_dat_w = __main___interface_dat_w;
 assign __main___interface_dat_r = ((((((builder_interface0_bank_bus_dat_r | builder_interface1_bank_bus_dat_r) | builder_interface2_bank_bus_dat_r) | builder_interface3_bank_bus_dat_r) | builder_interface4_bank_bus_dat_r) | builder_interface5_bank_bus_dat_r) | builder_sram_bus_dat_r);
+assign builder_slice_proxy0 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy1 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy2 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy3 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy4 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy5 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy6 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
+assign builder_slice_proxy7 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
 always @(*) begin
 	builder_array_muxed0 <= 30'd0;
 	case (builder_grant)
@@ -934,6 +1069,7 @@ always @(*) begin
 end
 assign __main___uart_phy_rx = builder_xilinxmultiregimpl0_regs1;
 assign __main___in_status = builder_xilinxmultiregimpl1_regs1;
+assign builder_xilinxmultiregimpl1 = {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
 
 always @(posedge por_clk) begin
 	__main___int_rst <= (~cpu_reset);
@@ -1128,12 +1264,61 @@ always @(posedge sys_clk) begin
 	if (((~__main___timer0_zero_trigger) & __main___timer0_zero_old_trigger)) begin
 		__main___timer0_zero_pending <= 1'd1;
 	end
-	if (__main___zero_clear) begin
-		__main___zero_pending <= 1'd0;
+	if (__main___cero_clear) begin
+		__main___cero_pending <= 1'd0;
 	end
-	__main___zero_old_trigger <= __main___zero_trigger;
-	if (((~__main___zero_trigger) & __main___zero_old_trigger)) begin
-		__main___zero_pending <= 1'd1;
+	__main___cero_old_trigger <= __main___cero_trigger;
+	if (((~__main___cero_trigger) & __main___cero_old_trigger)) begin
+		__main___cero_pending <= 1'd1;
+	end
+	if (__main___uno_clear) begin
+		__main___uno_pending <= 1'd0;
+	end
+	__main___uno_old_trigger <= __main___uno_trigger;
+	if (((~__main___uno_trigger) & __main___uno_old_trigger)) begin
+		__main___uno_pending <= 1'd1;
+	end
+	if (__main___dos_clear) begin
+		__main___dos_pending <= 1'd0;
+	end
+	__main___dos_old_trigger <= __main___dos_trigger;
+	if (((~__main___dos_trigger) & __main___dos_old_trigger)) begin
+		__main___dos_pending <= 1'd1;
+	end
+	if (__main___tres_clear) begin
+		__main___tres_pending <= 1'd0;
+	end
+	__main___tres_old_trigger <= __main___tres_trigger;
+	if (((~__main___tres_trigger) & __main___tres_old_trigger)) begin
+		__main___tres_pending <= 1'd1;
+	end
+	if (__main___cuatro_clear) begin
+		__main___cuatro_pending <= 1'd0;
+	end
+	__main___cuatro_old_trigger <= __main___cuatro_trigger;
+	if (((~__main___cuatro_trigger) & __main___cuatro_old_trigger)) begin
+		__main___cuatro_pending <= 1'd1;
+	end
+	if (__main___cinco_clear) begin
+		__main___cinco_pending <= 1'd0;
+	end
+	__main___cinco_old_trigger <= __main___cinco_trigger;
+	if (((~__main___cinco_trigger) & __main___cinco_old_trigger)) begin
+		__main___cinco_pending <= 1'd1;
+	end
+	if (__main___seis_clear) begin
+		__main___seis_pending <= 1'd0;
+	end
+	__main___seis_old_trigger <= __main___seis_trigger;
+	if (((~__main___seis_trigger) & __main___seis_old_trigger)) begin
+		__main___seis_pending <= 1'd1;
+	end
+	if (__main___siete_clear) begin
+		__main___siete_pending <= 1'd0;
+	end
+	__main___siete_old_trigger <= __main___siete_trigger;
+	if (((~__main___siete_trigger) & __main___siete_old_trigger)) begin
+		__main___siete_pending <= 1'd1;
 	end
 	case (builder_grant)
 		1'd0: begin
@@ -1177,7 +1362,7 @@ always @(posedge sys_clk) begin
 		endcase
 	end
 	if (builder_csrbank0_ev_enable0_re) begin
-		builder_storage_full <= builder_csrbank0_ev_enable0_r;
+		builder_storage_full[7:0] <= builder_csrbank0_ev_enable0_r;
 	end
 	builder_re <= builder_csrbank0_ev_enable0_re;
 	builder_interface1_bank_bus_dat_r <= 1'd0;
@@ -1443,9 +1628,23 @@ always @(posedge sys_clk) begin
 		__main___timer0_value <= 32'd0;
 		__main___storage_full <= 8'd0;
 		__main___re <= 1'd0;
-		__main___zero_pending <= 1'd0;
-		__main___zero_old_trigger <= 1'd0;
-		builder_storage_full <= 1'd0;
+		__main___cero_pending <= 1'd0;
+		__main___cero_old_trigger <= 1'd0;
+		__main___uno_pending <= 1'd0;
+		__main___uno_old_trigger <= 1'd0;
+		__main___dos_pending <= 1'd0;
+		__main___dos_old_trigger <= 1'd0;
+		__main___tres_pending <= 1'd0;
+		__main___tres_old_trigger <= 1'd0;
+		__main___cuatro_pending <= 1'd0;
+		__main___cuatro_old_trigger <= 1'd0;
+		__main___cinco_pending <= 1'd0;
+		__main___cinco_old_trigger <= 1'd0;
+		__main___seis_pending <= 1'd0;
+		__main___seis_old_trigger <= 1'd0;
+		__main___siete_pending <= 1'd0;
+		__main___siete_old_trigger <= 1'd0;
+		builder_storage_full <= 8'd0;
 		builder_re <= 1'd0;
 		builder_grant <= 1'd0;
 		builder_slave_sel_r <= 4'd0;
@@ -1460,7 +1659,7 @@ always @(posedge sys_clk) begin
 	end
 	builder_xilinxmultiregimpl0_regs0 <= serial_rx;
 	builder_xilinxmultiregimpl0_regs1 <= builder_xilinxmultiregimpl0_regs0;
-	builder_xilinxmultiregimpl1_regs0 <= user_btnint;
+	builder_xilinxmultiregimpl1_regs0 <= {user_btn7, user_btn6, user_btn5, user_btn4, user_btn3, user_btn2, user_btn1, user_btn0};
 	builder_xilinxmultiregimpl1_regs1 <= builder_xilinxmultiregimpl1_regs0;
 end
 

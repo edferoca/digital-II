@@ -29,11 +29,15 @@ _io = [
     ("user_led",  6, Pins("U17"), IOStandard("LVCMOS33")),
     ("user_led",  7, Pins("U16"), IOStandard("LVCMOS33")),
 
-    ("user_btnint",  0, Pins("N17"), IOStandard("LVCMOS33")),
-    ("user_btn",  0, Pins("P18"), IOStandard("LVCMOS33")),
-    ("user_btn",  1, Pins("P17"), IOStandard("LVCMOS33")),
-    ("user_btn",  2, Pins("M17"), IOStandard("LVCMOS33")),
-    ("user_btn",  3, Pins("M18"), IOStandard("LVCMOS33")),
+    ("user_btn",  0, Pins("N17"), IOStandard("LVCMOS33")),
+    ("user_btn",  1, Pins("P18"), IOStandard("LVCMOS33")),
+    ("user_btn",  2, Pins("P17"), IOStandard("LVCMOS33")),
+    ("user_btn",  3, Pins("M17"), IOStandard("LVCMOS33")),
+    ("user_btn",  4, Pins("M18"), IOStandard("LVCMOS33")),
+    ("user_btn",  5, Pins("J15"), IOStandard("LVCMOS33")),
+    ("user_btn",  6, Pins("L16"), IOStandard("LVCMOS33")),
+    ("user_btn",  7, Pins("M13"), IOStandard("LVCMOS33")),
+    
 
 
 
@@ -107,8 +111,9 @@ class BaseSoC(SoCCore):
         self.submodules.leds = Led(user_leds)
 
         # Buttons interrupcion
-        self.submodules.buttoniner = btnintrupt(platform.request("user_btnint"))
-        # interrupts declaration
+        bten = Cat(*[platform.request("user_btn", i) for i in range(8)])
+        self.submodules.buttoniner =btnintrupt(bten)
+
 
 
 
