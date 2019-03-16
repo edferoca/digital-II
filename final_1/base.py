@@ -51,6 +51,14 @@ _io = [
         Subsignal("rx", Pins("C4")),
         IOStandard("LVCMOS33"),
     ),
+
+    ("sd_spi", 0,
+        Subsignal("cs_n", Pins("D14")),
+        Subsignal("mosi", Pins("F16")),
+        Subsignal("miso", Pins("G16")),
+        Subsignal("clk", Pins("H14")),
+        IOStandard("LVCMOS33")
+    ),
 ]
 
 
@@ -82,7 +90,8 @@ class BaseSoC(SoCCore):
         "botones",
         "lcd",
         "rs",
-        "rst"
+        "rst",
+        "SD"
     ]
     csr_map_update(SoCCore.csr_map, csr_peripherals)
 
@@ -114,8 +123,8 @@ class BaseSoC(SoCCore):
         self.submodules.lcd = SPIMaster(platform.request("lcd_spi"))
         self.submodules.rs = Led(platform.request("rs_lcd"))
         self.submodules.rst = Led(platform.request("rst_lcd"))
-
-
+        #Memoria SD
+        self.submodules.SD = SPIMaster(platform.request("sd_spi"))
 
 soc = BaseSoC(platform)
 
