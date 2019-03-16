@@ -76,24 +76,24 @@ static unsigned int SD_read(unsigned char dato,unsigned char addr){
 static void sd_do (void){
 	printf("Inicializando SD...\n");
 	SD_configure();
-	leds_out_write(0);//AGREGADO
+	//leds_out_write(0);//AGREGADO
 	//SD en estado IDLE(CMD0)
 	//HEX: 40 00 00 00 00   95
 	//     sb/cmd/argument/CRC7|1
 	//DEC: 64 00 00 00 00   149
 //		printf("2. %x\n",SD_miso_data_read() );
-   printf("0. %x\n",SD_miso_data_read() );
+   //printf("0. %x\n",SD_miso_data_read() );
 do{
-		printf("4. %x\n",SD_miso_data_read() );
-		leds_out_write(0);//AGREGADO
+		//printf("4. %x\n",SD_miso_data_read() );
+		//leds_out_write(0);//AGREGADO
 		SD_write_8(64);
-		printf("5. %x\n",SD_miso_data_read() );
+		//printf("5. %x\n",SD_miso_data_read() );
 		SD_write_8(00);
-		printf("6. %x\n",SD_miso_data_read() );
+		//printf("6. %x\n",SD_miso_data_read() );
 		SD_write_8(00);
 		SD_write_8(00);
 		SD_write_8(00);
-		printf("7. %x\n",SD_miso_data_read() );
+		//printf("7. %x\n",SD_miso_data_read() );
 		SD_write_8(0x95);
 
 		SD_write_8(0xFF);
@@ -103,42 +103,42 @@ do{
 		SD_write_8(0xFF);
 		SD_write_8(0xFF);
 		//SD_read(149,255);
-		printf("8. %x\n",SD_miso_data_read() );
+		//printf("8. %x\n",SD_miso_data_read() );
 		//SD_read(255,255);//Espera
-		printf("9. %x\n",SD_miso_data_read() );
+		//printf("9. %x\n",SD_miso_data_read() );
 		//SD_read(255,255);//Espera
 		printf("%x \n",SD_miso_data_read());
 	} while (SD_miso_data_read()==0xFFFF);
-	leds_out_write(1);//AGREGADO
+	//leds_out_write(1);//AGREGADO
 	printf("FINAL :%x\n",SD_miso_data_read() );
 	//Envía condiciones de operación(CMD8)
 	// HEX: 48 00 00 00 00 FF
 	// DEC: 72 00 00 00 00 255
 	//Dicen que el CRC7 es 0x87 en lugar de FF
 	// arg: 0x00 00 01 AA ?
-	leds_out_write(0);//AGREGADO
+	//leds_out_write(0);//AGREGADO
 	printf("Coincide? :%x\n",SD_miso_data_read() );
 	SD_write_8(72);
-	printf("FF: %x\n",SD_miso_data_read() );
+	//printf("FF: %x\n",SD_miso_data_read() );
 	SD_write_8(00);
-	printf("FF: %x\n",SD_miso_data_read() );
+	//printf("FF: %x\n",SD_miso_data_read() );
 	SD_write_8(00);
-	printf("FF: %x\n",SD_miso_data_read() );
+	//printf("FF: %x\n",SD_miso_data_read() );
 	SD_write_8(1);
-	printf("FF: %x\n",SD_miso_data_read() );
+	//printf("FF: %x\n",SD_miso_data_read() );
 	SD_write_8(170);
-	printf("FF: %x\n",SD_miso_data_read() );
+	//printf("FF: %x\n",SD_miso_data_read() );
 	SD_write_8(0x87);//0x87
-	printf("CRC FF: %x\n",SD_miso_data_read() );
+	//printf("CRC FF: %x\n",SD_miso_data_read() );
 	SD_write_8(255);
-	printf("BA: %x\n",SD_miso_data_read() );
-	SD_write_8(255);
-	SD_write_8(255);
+	//printf("BA: %x\n",SD_miso_data_read() );
 	SD_write_8(255);
 	SD_write_8(255);
 	SD_write_8(255);
-	printf("CMD8: voltage %x\n",SD_miso_data_read () << 24);
-	printf("CMD8: voltage %x\n",SD_miso_data_read ()<< 24);
+	SD_write_8(255);
+	SD_write_8(255);
+	//printf("CMD8: voltage %x\n",SD_miso_data_read () << 24);
+	//printf("CMD8: voltage %x\n",SD_miso_data_read ()<< 24);
 
 	//AGREGADO
 	// printf("1. %x\n",SD_miso_data_read() );
@@ -202,16 +202,16 @@ while (SD_miso_data_read() != 80000000) {
 	printf("ACMD :%x\n",SD_miso_data_read() );
 }
 */
-printf("4. %x\n",SD_miso_data_read() );
-leds_out_write(0);//AGREGADO
+//printf("4. %x\n",SD_miso_data_read() );
+//leds_out_write(0);//AGREGADO
 SD_write_8(65);
-printf("5. %x\n",SD_miso_data_read() );
+//printf("5. %x\n",SD_miso_data_read() );
 SD_write_8(00);
-printf("6. %x\n",SD_miso_data_read() );
+//printf("6. %x\n",SD_miso_data_read() );
 SD_write_8(00);
 SD_write_8(00);
 SD_write_8(00);
-printf("cmd1. %x\n",SD_miso_data_read() );
+//printf("cmd1. %x\n",SD_miso_data_read() );
 SD_write_8(0xff);
 
 SD_write_8(0xFF);
@@ -253,7 +253,7 @@ SD_write_8(0);
 SD_write_8(8);
 SD_write_8(255);
 printf("DEFINIR LONGITUD. %x\n",SD_miso_data_read() );
-leds_out_write(1);//AGREGADO
+//leds_out_write(1);//AGREGADO
 printf("Inicialización terminada.\n" );
 }
 

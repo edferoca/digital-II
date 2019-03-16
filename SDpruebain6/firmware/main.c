@@ -40,7 +40,7 @@ static void SD_configure(void) {
 	//																			reloj de 5MHz(16)
 	//				100M/400k = div_write + 2...248
   SD_config_write(config);
-	SD_xfer_write(1 | 24*WRITE_LENGTH);
+	//SD_xfer_write(1 | 24*WRITE_LENGTH);
   printf("Configuracion finalizada: %x\n",config);
 }
 static void SD_write_8_pending(char value){
@@ -64,7 +64,7 @@ static void SD_write_24(unsigned long int value){
 }
 
 static void SD_write_48(unsigned long int value1, unsigned long int value2){
-
+	SD_xfer_write(1 | 24*WRITE_LENGTH);
 	SD_write_24(value1);
 	while (SD_pending_read() & 0x1){};
 	SD_write_24(value2);
@@ -87,34 +87,43 @@ static void sd_do (void){
 	//DEC: 64 00 00 00 00   149
 	//BIN: 01000000 000..*32 10010101
 //		printf("2. %x\n",SD_miso_data_read() );
-   printf("Miso: %x\n",SD_miso_data_read() );
+	 unsigned long int Miso = SD_miso_data_read();
+   printf("Miso: %x\n",Miso);
 
 
 	 int i = 0;
-	 while (i <= 100){
+	 while (i <= 10){
     //delay(10);
-	 	//SD_write_48(0X400000, 0x000095); // cmd 0
-		//unsigned long int Mosi1 = SD_mosi_data_read();
-		//SD_write_48(0XFFFFFF, 0XFFFFFF); // cmd 0
-		//unsigned long int Mosi1 = SD_mosi_data_read();
-		//SD_write_48(0X400000, 0x000095); // cmd 0
+	  SD_write_48(0X400000, 0x000095); // cmd 0
+		//if (Miso1 == 0x01) {
+		//	printf("Miso: %x\n",Miso1);
+		//	break;
+		//}else{Miso1 = SD_miso_data_read();}
+		//SD_xfer_write(1 | 24*READ_LENGTH);
+		unsigned long int Miso1 = SD_miso_data_read();
+		//unsigned long int Miso2 = SD_miso_data_read();
+		//unsigned long int Miso3 = SD_miso_data_read();
+		SD_write_48(0XFFFFFF, 0XFFFFFF); // cmd 0
+		unsigned long int Miso2 = SD_miso_data_read();
+		SD_write_48(0X400000, 0x000095); // cmd 0
+		unsigned long int Miso3 = SD_miso_data_read();
 		//SD_write_48(0XFFFFFF, 0XFFFFFF); // cmd 0
     //delay(10);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
 		//unsigned long int Miso1 = SD_miso_data_read();
-		//printf("Miso1: %x, Mosi1: %x\n", Miso1, Mosi1);
+		printf("Miso1: %x, Miso2: %x, Miso3: %x\n", Miso1, Miso2, Miso3);
 
-		SD_write_8_pending(0x40);
+		//SD_write_8_pending(0x40);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
-		SD_write_8_pending(0x00);
+		//SD_write_8_pending(0x00);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
-		SD_write_8_pending(0x00);
+		//SD_write_8_pending(0x00);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
-		SD_write_8_pending(0x00);
+		//SD_write_8_pending(0x00);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
-		SD_write_8_pending(0x00);
+		//SD_write_8_pending(0x00);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
-		SD_write_8_active(0x95);
+		//SD_write_8_active(0x95);
 		//unsigned long int Mosi1 = SD_mosi_data_read();
 		//SD_write_48(0XFFFFFF, 0XFFFFFF); // cmd 0
 		//SD_write_48(0X400000, 0x000095); // cmd 0
@@ -153,111 +162,7 @@ static void sd_do1 (void){
 	//     sb/cmd/argument/CRC7|1
 	//DEC: 64 00 00 00 00   149
 	//BIN: 01000000 000..*32 10010101
-//		printf("2. %x\n",SD_miso_data_read() );
-   printf("0. %x\n",SD_miso_data_read() );
-
-	 for (int i = 0; i < 1000; i++){
-	 	SD_write_48(64,00,00,00,00,149);
-		printf("Miso: %x\n",SD_miso_data_read());
-		printf("Mosi: %x\n",SD_mosi_data_read());
-	 }
-
-do{
-		SD_write_48(64,00,00,00,00,149);
-		printf("1. %x\n",SD_miso_data_read());
-		printf("1. %x\n",SD_miso_data_read());
-		printf("1. %x\n",SD_miso_data_read());
-		printf("1. %x\n",SD_miso_data_read());
-		SD_write_48(255,255,255,255,255,255);
-		printf("8. %x\n",SD_miso_data_read() );
-		printf("9. %x\n",SD_miso_data_read() );
-
-		printf("%x \n",SD_miso_data_read());
-	} while (SD_miso_data_read()==0xFFFF);
-	leds_out_write(1);//AGREGADO
-	printf("FINAL :%x\n",SD_miso_data_read() );
-	//Envía condiciones de operación(CMD8)
-	// HEX: 48 00 00 00 00 FF
-	// DEC: 72 00 00 00 00 255
-	//Dicen que el CRC7 es 0x87 en lugar de FF
-	// arg: 0x00 00 01 AA ?
-	leds_out_write(0);//AGREGADO
-	printf("Coincide? :%x\n",SD_miso_data_read() );
-	SD_write_8(72);
-	printf("FF: %x\n",SD_miso_data_read() );
-	SD_write_8(00);
-	printf("FF: %x\n",SD_miso_data_read() );
-	SD_write_8(00);
-	printf("FF: %x\n",SD_miso_data_read() );
-	SD_write_8(1);
-	printf("FF: %x\n",SD_miso_data_read() );
-	SD_write_8(170);
-	printf("FF: %x\n",SD_miso_data_read() );
-	SD_write_8(0x87);//0x87
-	printf("CRC FF: %x\n",SD_miso_data_read() );
-	SD_write_8(255);
-	printf("BA: %x\n",SD_miso_data_read() );
-	SD_write_8(255);
-	SD_write_8(255);
-	SD_write_8(255);
-	SD_write_8(255);
-	SD_write_8(255);
-	printf("CMD8: voltage %x\n",SD_miso_data_read () << 24);
-	printf("CMD8: voltage %x\n",SD_miso_data_read ()<< 24);
-
-printf("4. %x\n",SD_miso_data_read() );
-leds_out_write(0);//AGREGADO
-SD_write_8(65);
-printf("5. %x\n",SD_miso_data_read() );
-SD_write_8(00);
-printf("6. %x\n",SD_miso_data_read() );
-SD_write_8(00);
-SD_write_8(00);
-SD_write_8(00);
-printf("cmd1. %x\n",SD_miso_data_read() );
-SD_write_8(0xff);
-
-SD_write_8(0xFF);
-SD_write_8(0xFF);
-SD_write_8(0xFF);
-SD_write_8(0xFF);
-SD_write_8(0xFF);
-SD_write_8(0xFF);
-//SD_read(149,255);
-printf("8. %x\n",SD_miso_data_read() );
-
-
-
-	//La respuesta debe ser 00, si es 1 se debe reenviar
-	//la orde y si es 5 se puede usar cmd1 en lugar de acmd41
-
-
-
-
-//Configura longitud de o
-//HEX: 50 00 00 00 08 FF (CMD16)
-//DEC: 80 00 00 00 08 255
-SD_write_8(80);
-SD_write_8(0);
-SD_write_8(0);
-SD_write_8(0);
-SD_write_8(8);
-SD_write_8(255);
-printf("DEFINIR LONGITUD. %x\n",SD_miso_data_read() );
-leds_out_write(1);//AGREGADO
-
-//LEER
-//HEX: 51 00 00 00 08 FF (CMD17)
-//DEC: 81 00 00 00 08 255
-SD_write_8(81);
-SD_write_8(0);
-SD_write_8(0);
-SD_write_8(0);
-SD_write_8(8);
-SD_write_8(255);
-printf("DEFINIR LONGITUD. %x\n",SD_miso_data_read() );
-leds_out_write(1);//AGREGADO
-printf("Inicialización terminada.\n" );
+//
 
 }
 */
