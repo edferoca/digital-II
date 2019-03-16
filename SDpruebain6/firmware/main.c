@@ -189,7 +189,7 @@ static void sd_do (void){
 	- Dec: 80 00 00 00 08 255
 	- Hexa: 50 00 00 00 08 FF
 	- Bin: 0101.0000 0000.0000, 0000.0000 0000.0000, 0000.1000 1111.1111
-
+	Fuerza el tamaño del bloque a 512 bytes para trabajar con archivos FAT
 	*/
 	Miso = SD_miso_data_read();
 	printf("Respuesta comando 16: %x\n",Miso);
