@@ -11,7 +11,7 @@ void juego(unsigned int color){
   star:
   /*while(1){
     if (botones_in_read) {
-
+hola
     }
   }
   */
