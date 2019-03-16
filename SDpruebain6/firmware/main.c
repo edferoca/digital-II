@@ -148,7 +148,7 @@ static void sd_do (void){
 		- Hexa: 69 00 00 00 00 FF
 		- Bin: 0110.1001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
 		- Respuesta:R1: 0000.0000
-		Incia el proceso de incialización de la tarjeta
+		Incia el proceso de inicialización de la tarjeta
 		*/
 		Miso = SD_miso_data_read();
 
@@ -158,19 +158,26 @@ static void sd_do (void){
 	}
 	printf("Respuesta comando 58: %x\n",Miso);
 
-	//Si el comado 41 no funciona se prueba con el comado 1
+	//Si el comado 41 no funciona se prueba con el comando 1
 	if (Miso == 0x01) {
-		SD_write_48(0X410000, 0x0000FF);
-		SD_write_48(0XFFFFFF, 0XFFFFFF);
-		/*
-		Comando 1 (CMD1):
-		- Dec: 65 00 00 00 00 255
-		- Hexa: 41 00 00 00 00 FF
-		- Bin: 0100.0001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
-		- Respuesta:R1: 0000.0001
-		Incia el proceso de incialización de la tarjeta
-		*/
-		Miso = SD_miso_data_read();
+
+		for (int = 0; i < 100; i++) {
+			SD_write_48(0X410000, 0x0000FF);
+			SD_write_48(0XFFFFFF, 0XFFFFFF);
+			/*
+			Comando 1 (CMD1):
+			- Dec: 65 00 00 00 00 255
+			- Hexa: 41 00 00 00 00 FF
+			- Bin: 0100.0001 0000.0000, 0000.0000 0000.0000, 0000.0000 1111.1111
+			- Respuesta:R1: 0000.0001
+			Incia el proceso de inicialización de la tarjeta
+			*/
+			Miso = SD_miso_data_read();
+
+			if (Miso == 0X00) {
+				break;
+			}
+		}
 		printf("Respuesta comando 1: %x\n",Miso);
 	}
 
