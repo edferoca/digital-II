@@ -40,7 +40,7 @@ static void SD_configure(void) {
 	//																			reloj de 5MHz(16)
 	//				100M/400k = div_write + 2...248
   SD_config_write(config);
-	//SD_xfer_write(1 | 24*WRITE_LENGTH);
+	SD_xfer_write(1 | 24*WRITE_LENGTH);
   printf("Configuracion finalizada: %x\n",config);
 }
 static void SD_write_8_pending(char value){
