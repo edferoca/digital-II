@@ -26,9 +26,9 @@ module top(
 	input user_btn3,
 	input user_btn4,
 	inout sd_spi_cs_n,
+	inout sd_spi_clk,
 	inout sd_spi_mosi,
 	input sd_spi_miso,
-	inout sd_spi_clk,
 	output [7:0] display_cs_n,
 	output [7:0] display_abcdefg
 );

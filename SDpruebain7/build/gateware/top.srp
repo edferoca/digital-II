@@ -31,7 +31,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input File Name                    : "top.prj"
 Input Format                       : MIXED
-Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }
+Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }
 
 ---- Target Parameters
 Output File Name                   : "top.ngc"
@@ -53,49 +53,24 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
 WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
-Parsing module <lm32_interrupt>.
+Parsing module <lm32_addsub>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
 Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
 Parsing module <lm32_cpu>.
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_shifter>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
-Parsing module <lm32_addsub>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
-Parsing module <lm32_decoder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
-Parsing module <lm32_icache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
-Parsing module <lm32_dp_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
 Parsing module <lm32_load_store_unit>.
@@ -104,12 +79,37 @@ Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodul
 Parsing module <lm32_multiplier>.
 Analyzing Verilog file "/home/edferoca/Documentos/digital2/proyecto-dig2/SDpruebain7/build/gateware/top.v" into library work
 Parsing module <top>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
+Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_logic_op>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_adder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
+Parsing module <lm32_icache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_mc_arithmetic>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -1750,13 +1750,13 @@ clk100         |    7.319|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 18.22 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.33 secs
  
 --> 
 
 
-Total memory usage is 532292 kilobytes
+Total memory usage is 532304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  315 (   0 filtered)
