@@ -225,17 +225,15 @@ void dib_cua(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigned int 
 void dib_tiles(unsigned int Xmin,unsigned int Ymin, Matriz matris){
   unsigned int m=0;
   unsigned int n=0;
-  for (unsigned int x = Xmin ; x < Xmin+0x8; x++) {
+  for (unsigned int x = Xmin ; x <= Xmin+0xD; x++) {
 		lcd_write(0,0x0020);//
 		lcd_write(1,x); //
 
-		for (unsigned int y = Ymin; y < Ymin+0x8; y++) {
+		for (unsigned int y = Ymin; y <= Ymin+0xD; y++) {
 				//direccion hoorizontal
 				lcd_write(0,0x0021);//
 				lcd_write(1,y); //ss
 				lcd_write(0,0x0022);
-
-        printf("%d  %d\n",m,n );
        lcd_write(1,matris[m][n]);
        n++;
 		}

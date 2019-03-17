@@ -55,19 +55,19 @@ _io = [
         IOStandard("LVCMOS33"),
     ),
 
-
-    ("sd_spi", 0,
-        Subsignal("cs_n", Pins("D2")),
-        Subsignal("clk", Pins("B1")),
-        Subsignal("mosi", Pins("C2")),
-        Subsignal("miso", Pins("c1")),
-        IOStandard("LVCMOS33")
-    ),
+#
+#    ("sd_spi", 0,
+#        Subsignal("cs_n", Pins("D2")),
+#        Subsignal("clk", Pins("B1")),
+#        Subsignal("mosi", Pins("C2")),
+#        Subsignal("miso", Pins("c1")),
+#        IOStandard("LVCMOS33")
+#    ),
     ("SD", 0,
-        Subsignal("cs_n", Pins("F1")),
+        Subsignal("cs_n", Pins("E1")),
         Subsignal("clk", Pins("B1")),
-        Subsignal("mosi", Pins("C2")),
-        Subsignal("miso", Pins("E1")),
+        Subsignal("mosi", Pins("C1")),
+        Subsignal("miso", Pins("D2")),
         IOStandard("LVCMOS33")
     ),
     ("uCD", 0, Pins("A1"), IOStandard("LVCMOS33"))

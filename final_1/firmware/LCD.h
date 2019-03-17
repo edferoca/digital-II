@@ -4,10 +4,9 @@
 #include <stdio.h>
 #include <generated/csr.h>
 
-#define M 8
-#define N 8
-
-typedef int Matriz[N][M];
+#define M 14
+#define N 13
+typedef int Matriz [M][M];
 
 void lcd_config(void);
 

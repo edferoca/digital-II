@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Mar 17 00:50:40 2019">
+  <application stringID="Xst" timeStamp="Sun Mar 17 06:57:45 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -45,7 +45,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz"/>
-          <item stringID="speed" value="3500.319 MHz"/>
+          <item stringID="speed" value="3488.461 MHz"/>
         </row>
       </table>
     </section>
@@ -57,7 +57,7 @@
       <item DEFAULT="No" label="-register_balancing" stringID="XST_REGISTERBALANCING" value="yes"/>
       <item DEFAULT="" label="-ofn" stringID="XST_OFN" value="top.ngc"/>
       <item DEFAULT="" label="-p" stringID="XST_P" value="xc7a100t-CSG324-1"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }"/>
     </section>
     <section stringID="XST_HDL_SYNTHESIS_REPORT">
       <item dataType="int" stringID="XST_RAMS" value="12"></item>

@@ -4,18 +4,21 @@
 #include <uart.h>
 #include "LCD.h"
 #include "juego.h"
+#include "matrices.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 
 int posx=0x4F;
 int posbloque = 0x84;
 int posbloque2 = 0x84;
 int posbloque3 = 0x84;
 int velocidad=5;
+int muertes=3;
 
-unsigned int corazon[8][8]={{0xC618,0xF800,0xC618,0xC618,0xC618,0xC618,0xF800,0xC618},{0xF800,0xF800,0xF800,0xC618,0xC618,0xF800,0xF800,0xF800},{0xF800,0xF800,0xF800,0xF800,0xF800,0xF800,0xF800,0xF800},{0xC618,0xF800,0xF800,0xF800,0xF800,0xF800,0xF800,0xC618},{0xC618,0xC618,0xF800,0xF800,0xF800,0xF800,0xC618,0xC618},{0xC618,0xC618,0xC618,0xF800,0xF800,0xC618,0xC618,0xC618},{0xC618,0xC618,0xC618,0xF800,0xF800,0xC618,0xC618,0xC618},{0xC618,0xC618,0xC618,0xC618,0xC618,0xC618,0xC618,0xC618}};
+
 
 void bloque(unsigned int carril){
 
@@ -27,7 +30,8 @@ void bloque(unsigned int carril){
       }else{
         posbloque = 0x84;
       }
-      dib_cua(posbloque-0x8,0x0030,posbloque+0x8,0x0042,0x7BE0);
+      //dib_cua(posbloque-0x8,0x0030,posbloque+0x8,0x0042,0x7BE0);
+      dib_tiles(posbloque-0x8,0x0030,carrito1);
       busy_wait(velocidad);
     }
     if (carril == 2) {
@@ -38,7 +42,7 @@ void bloque(unsigned int carril){
           }else{
             posbloque2 = 0x84;
           }
-          dib_cua(posbloque2-0x8,0x0047,posbloque2+0x8,0x0057,0x7BE0);
+          dib_tiles(posbloque2-0x8,0x0047,carrito1);
           busy_wait(velocidad);
     }
     if (carril == 3) {
@@ -49,40 +53,42 @@ void bloque(unsigned int carril){
         }else{
           posbloque3 = 0x84;
         }
-        dib_cua(posbloque3-0x8,0x005E,posbloque3+0x8,0x006C,0x7BE0);
+
+        dib_tiles(posbloque3-0x8,0x005E,carrito1);
         busy_wait(velocidad);
     }
 }
 
-void  arriba (unsigned int color ){
+void  arriba (void){
   subir(0,0X8A,0x2A,0x2F,0x0000,0xFFFF);
   subir(0,0X8A,0x6f,0x74,0xFFFF,0x0000);
   subir(0,0X8A,0x43,0x45,0x7BEF,0xFFE0);
   subir(0,0X8A,0x59,0x5b,0x7BEF,0xFFE0);
-  dib_cua(0x000D,posx-0x8,0x0001c,posx+0x8,color);
+  dib_tiles(0x000D,posx-0x8,carrito);
+  //dib_cua(0x000D,posx-0x8,0x0001c,posx+0x8,color);
   busy_wait(1);
 
 }
-void  abajo (unsigned int color ){
+void  abajo (void){
   subir(0,0X8A,0x2A,0x2F,0x0000,0xFFFF);
   subir(0,0X8A,0x6f,0x74,0xFFFF,0x0000);
   subir(0,0X8A,0x43,0x45,0x7BEF,0xFFE0);
   subir(0,0X8A,0x59,0x5b,0x7BEF,0xFFE0);
-  dib_cua(0x000D,posx-0x8,0x0001c,posx+0x8,color);
+  dib_tiles(0x000D,posx-0x8,carrito);
 }
-void izquierda( unsigned int color){
+void izquierda(void){
   dib_cua(0x000D,posx-8,0x0001c,posx+8,0x7BEF);
   if(posx -0xc >= 0x2f ){
     posx = posx-0x16;
   }
-  dib_cua(0x000D,posx-8,0x0001c,posx+8,color);
+  dib_tiles(0x000D,posx-0x8,carrito);
 }
-void derecha( unsigned int color){
+void derecha( void){
   dib_cua(0x000D,posx-8,0x0001c,posx+8,0x7BEF);
   if(posx +0xc  <= 0x6f ){
     posx = posx+0x16;
   }
-  dib_cua(0x000D,posx-8,0x0001c,posx+8,color);
+  dib_tiles(0x000D,posx-0x8,carrito);
 }
 
 void crash(unsigned char pos, unsigned char posbloquey){
@@ -94,11 +100,40 @@ void crash(unsigned char pos, unsigned char posbloquey){
       posbloque2 = 0x84;
       posbloque3 = 0x84;
       pantallasup();
-      //pantalladerecha();
+      switch (muertes) {
+        case 3:
+              pantalladerecha();
+              dib_tiles(0x84,0xA5,corazon);
+              dib_tiles(0x84,0xB4,corazon);
+
+              break;
+        case 2:
+              pantalladerecha();
+              dib_tiles(0x84,0xA5,corazon);
+              dib_tiles(0x84,0xB4,corazon);
+              break;
+        case 1:
+              pantalladerecha();
+
+              break;
+        case 0:
+              muertes=3;
+              while (1) {
+                dib_cua(0x00,0x00,0x8c,0x9c,0xFFFF);
+                printf("%x\n" ,botones_in_read() );
+                if (botones_in_read() & 1 << 2) {
+                  goto termina_pausa;
+                }
+              }
+              termina_pausa:
+              break;
+
+      }
       margenes();
       tempo=0;
       velocidad=5;
       vuelta=0;
+      muertes=muertes-1;
     }
   }
 }

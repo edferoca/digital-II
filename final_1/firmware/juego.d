@@ -7,7 +7,7 @@ juego.o: juego.c juego.h LCD.h \
   /opt/liteX/litex/litex/soc/software/include/base/irq.h \
   /opt/liteX/litex/litex/soc/software/include/base/system.h \
   /opt/liteX/litex/litex/soc/software/include/base/uart.h bloques.h \
-  /opt/liteX/litex/litex/soc/software/include/base/stdlib.h
+  /opt/liteX/litex/litex/soc/software/include/base/stdlib.h matrices.h
 
 juego.h:
 
@@ -32,3 +32,5 @@ LCD.h:
 bloques.h:
 
 /opt/liteX/litex/litex/soc/software/include/base/stdlib.h:
+
+matrices.h:

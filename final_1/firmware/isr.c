@@ -36,7 +36,6 @@ void botton_isr(void){
 
 			while (1) {
 				dib_cua(0x00,0x00,0x8c,0x9c,0x0000);
-				printf("%x\n" ,botones_in_read() );
 				if (botones_in_read() & 1 << 2) {
 					goto termina_pausa;
 				}
@@ -57,22 +56,22 @@ void botton_isr(void){
 		}
 		//00010000
 		if (pednig & 1 << 0x04) {
-			izquierda(0XC618);
+			izquierda();
 		}
 		//00100000
 		if (pednig & 1 << 0x05) {
-			abajo (0XC618);
+			abajo ();
 			if(velocidad  >= 0.4 ){
 				velocidad =5;
 			}
 		}
 		//0100000
 		if (pednig & 1 << 0x06) {
-			derecha(0XC618);
+			derecha();
 		}
 		//0100000
 		if (pednig & 1 << 0x07) {
-			arriba(0XC618);
+			arriba();
 			if(velocidad  >= 0x00 ){
 				velocidad =1;
 			}

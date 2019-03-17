@@ -1,8 +1,10 @@
 #include "juego.h"
+
 #include <irq.h>
 #include <uart.h>
 #include "LCD.h"
 #include "bloques.h"
+#include "matrices.h"
 
 unsigned int tempo;
 unsigned int vuelta;
@@ -12,36 +14,30 @@ void juego(unsigned int color){
   while(1){
     if (botones_in_read () & 1 << 0x1 ) {
       goto empezar;
-      printf("epieza" );
-
     }
-    printf("%x\n" ,botones_in_read() );
     dib_cua(0x00,0x00,0xaf,0xDB,0x001F);
   }
 
   empezar:
+  //dibujar pantalla con lteras
+  //busy_wait(20)
   margenes();
   pantallasup();
   pantalladerecha();
   dib_tiles(0x84,0xA5,corazon);
-  dib_tiles(0x84,0xAF,corazon);
-  dib_tiles(0x84,0xb8,corazon);
+  dib_tiles(0x84,0xB4,corazon);
+  dib_tiles(0x84,0xc3,corazon);
   preparacion();
-
-
   nivel1();
 
   while (1) {
     if (botones_in_read() & 1 << 0x3) {
-      goto empezar;
-    }
-     if (botones_in_read() & 1 << 0x4) {
       goto start;
     }
+     if (botones_in_read() & 1 << 0x2) {
+      goto empezar;
+    }
   }
-
-
-
 
 }
 
@@ -58,9 +54,10 @@ void pantallasup(void){
 void margenes(void){
     //dib morado
     dib_cua(0x00,0x00,0x8c,0x2A,0x03E0);
-    dib_cua(0x00,0x74,0x8c,0x9c,0x03E0 );
-    dib_cua(0x00,0x2f,0x8c,0x6f,0x7BEF);
-    dib_cua(0x000D,0x0047,0x0001c,0x0057,0XC618);
+    dib_cua(0x00,0x74,0x8c,0x9c,0x03E0 ); //past0
+    dib_cua(0x00,0x2f,0x8c,0x6f,0x7BEF); //pista
+    //dib_cua(0x000D,0x0047,0x0001c,0x0055,0XC618);
+    dib_tiles(0x000D,0x0047,carrito);
 
 
     for(int i=0;i<=0x8A;i++){
@@ -93,6 +90,16 @@ void margenes(void){
     }
 }
 
+
+void preparacion(void){
+  dib_cua(0x92,0x1A,0xaf,0x82,0xF800);
+  busy_wait(30);
+  dib_cua(0x92,0x1A,0xaf,0x82,0xFFE0);
+  busy_wait(20);
+  dib_cua(0x92,0x1A,0xaf,0x82,0x07E0);
+  busy_wait(5);
+}
+
 void nivel1(void){
   for (vuelta = 1; vuelta <=8; vuelta++) {
     dib_cua(0x92,(0x0D*vuelta)+0x0D,0xaf,(0x0D*vuelta)+0x1A,0xFEA0);
@@ -105,7 +112,7 @@ void nivel1(void){
             bloque(3);
             bloque(1);
           }
-/*
+
           if ((tempo >= 6) &&(tempo <= 7)) {
             bloque(2);
             bloque(3);
@@ -141,12 +148,9 @@ void nivel1(void){
           if ((tempo >= 20) &&(tempo <= 23)) {
             bloque(2);
           }
-          */
         }
 
-    printf("vuelta\n" );
   }
-printf("acabo nivel\n" );
   dib_cua(0x92,0x1A,0xaf,0x82,0xFFFF);
   for (int bandera = 1; bandera <= 8; bandera++) {
     if ( bandera % 2 == 0 ){
@@ -160,16 +164,4 @@ printf("acabo nivel\n" );
   posbloque2 = 0x84;
   posbloque3 = 0x84;
   tempo=0x00;
-}
-
-void preparacion(void){
-  dib_cua(0x92,0x1A,0xaf,0x82,0xF800);
-  busy_wait(30);
-  dib_cua(0x92,0x1A,0xaf,0x82,0xFFE0);
-  busy_wait(20);
-  dib_cua(0x92,0x1A,0xaf,0x82,0x07E0);
-  busy_wait(5);
-
-
-
 }

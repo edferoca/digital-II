@@ -14,4 +14,5 @@ void pantallasup(void);
 void margenes(void);
 void nivel1(void);
 void preparacion(void);
+
 #endif

@@ -1,27 +1,27 @@
 #ifndef BLOQUES_H
 #define BLOQUES_H
 
-#include "LCD.h"
-#include "juego.h"
 #include <generated/csr.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 
 int posx;
 int posbloque;
 int posbloque2 ;
 int posbloque3 ;
-unsigned int corazon[8][8];
+int muertes;
+
 unsigned int tempo;
 
 int velocidad;
 
 void bloque(unsigned int aleatorio);
 
-void  abajo (unsigned int color );
-void  arriba (unsigned int color );
-void izquierda( unsigned int color);
-void derecha( unsigned int color);
+void  abajo (void);
+void  arriba (void);
+void izquierda( void);
+void derecha( void);
 
 void crash(unsigned char pos,unsigned char posbloquey);
 

@@ -7,7 +7,7 @@ LCD.o: LCD.c LCD.h \
   /opt/liteX/litex/litex/soc/software/include/base/irq.h \
   /opt/liteX/litex/litex/soc/software/include/base/system.h \
   /opt/liteX/litex/litex/soc/software/include/base/uart.h bloques.h \
-  juego.h /opt/liteX/litex/litex/soc/software/include/base/stdlib.h
+  /opt/liteX/litex/litex/soc/software/include/base/stdlib.h
 
 LCD.h:
 
@@ -28,7 +28,5 @@ LCD.h:
 /opt/liteX/litex/litex/soc/software/include/base/uart.h:
 
 bloques.h:
-
-juego.h:
 
 /opt/liteX/litex/litex/soc/software/include/base/stdlib.h:

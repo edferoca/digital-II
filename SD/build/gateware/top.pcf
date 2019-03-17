@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Mar 17 00:52:35 2019
+// Written by: Map P.20131013 on Sun Mar 17 06:59:52 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -29,9 +29,9 @@ COMP "user_btn2" LOCATE = SITE "P17" LEVEL 1;
 COMP "user_btn3" LOCATE = SITE "M17" LEVEL 1;
 COMP "user_btn4" LOCATE = SITE "M18" LEVEL 1;
 COMP "serial_tx" LOCATE = SITE "D4" LEVEL 1;
-COMP "SD_miso" LOCATE = SITE "E1" LEVEL 1;
-COMP "SD_cs_n" LOCATE = SITE "F1" LEVEL 1;
-COMP "SD_mosi" LOCATE = SITE "C2" LEVEL 1;
+COMP "SD_miso" LOCATE = SITE "D2" LEVEL 1;
+COMP "SD_cs_n" LOCATE = SITE "E1" LEVEL 1;
+COMP "SD_mosi" LOCATE = SITE "C1" LEVEL 1;
 COMP "serial_rx" LOCATE = SITE "C4" LEVEL 1;
 PIN lm32_cpu/multiplier/Mmult_n00232_pins<117> = BEL
         "lm32_cpu/multiplier/Mmult_n00232" PINNAME CLK;
