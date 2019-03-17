@@ -11,7 +11,7 @@ int posx;
 int posbloque;
 int posbloque2 ;
 int posbloque3 ;
-
+unsigned int corazon[8][8];
 unsigned int tempo;
 
 int velocidad;

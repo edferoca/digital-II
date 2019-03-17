@@ -27,11 +27,11 @@ void botton_isr(void){
 	// borrador por soft la interrupción del periferico
 	unsigned int pednig = botones_ev_pending_read();
 
-	//00000001
+	//00000001		start
 		if (pednig & 1) {
 			leds_out_write(0x01);
 		}
-		//00000010
+		//00000010  reset
 		if (pednig & 1 << 0x1) {
 
 			while (1) {
@@ -58,7 +58,6 @@ void botton_isr(void){
 		//00010000
 		if (pednig & 1 << 0x04) {
 			izquierda(0XC618);
-
 		}
 		//00100000
 		if (pednig & 1 << 0x05) {

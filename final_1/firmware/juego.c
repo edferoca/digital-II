@@ -8,22 +8,35 @@ unsigned int tempo;
 unsigned int vuelta;
 
 void juego(unsigned int color){
-  star:
-  /*while(1){
-    if (botones_in_read) {
-hola
+  start:
+  while(1){
+    if (botones_in_read () & 1 << 0x1 ) {
+      goto empezar;
+      printf("epieza" );
+
     }
+    printf("%x\n" ,botones_in_read() );
+    dib_cua(0x00,0x00,0xaf,0xDB,0x001F);
   }
-  */
+
   empezar:
   margenes();
+  pantallasup();
+  pantalladerecha();
+  dib_tiles(0x84,0xA5,corazon);
+  dib_tiles(0x84,0xAF,corazon);
+  dib_tiles(0x84,0xb8,corazon);
   preparacion();
+
 
   nivel1();
 
   while (1) {
     if (botones_in_read() & 1 << 0x3) {
       goto empezar;
+    }
+     if (botones_in_read() & 1 << 0x4) {
+      goto start;
     }
   }
 
