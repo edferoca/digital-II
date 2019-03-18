@@ -176,9 +176,9 @@ Un dato importante es el hecho de que  hay muy pocas matrices debido a que, al r
 ![ram_llena](https://user-images.githubusercontent.com/47976279/54498780-45f07380-48d9-11e9-905b-324330fd61bb.png)
 
 ### el juego no esta escrito dentro en el main.c
-Esta parte crucial para  estandarizar el proyecto;  ya que permite poder desarrollar otros juegos  e implementarlos en el proyecto a continuación se muestra la función mai.c, note ce que esta funciona no tiene nada del juego en si; solo llama otra función que es _juego_ en donde esta implementado todo.
+Esta parte es crucial para  estandarizar el proyecto;  ya que permite el poder desarrollar otros juegos  e implementarlos en el proyecto.A continuación se muestra la función main.c, notese que esta funciona no tiene nada del juego en si; solo llama otra función que es _juego_ en donde esta implementado todo lo referente al juego.
 
 ### flujo del juego
-por ultimo a continuacion se  muestra un driagrama de flujo con el desarrollo del juego.
+por ultimo, a continuacion se  muestra un driagrama de flujo con el desarrollo del juego.
 
 ![flujo2](https://user-images.githubusercontent.com/47976279/54499816-fa8f9280-48e3-11e9-9e3c-93de88f5d81d.png)
