@@ -112,7 +112,7 @@ Como se menciono al comienzo , todo nuestro desarrollo de software se encontrara
 
  ### configurar, iniciar y dibujar en la lcd
  
-ya que el periférico spi que da **LiteX** no se modifico, la configuración inicial tuvo que ser hecha desde software; ademas  el dibujo fue echo gracias a una función que coloreaba pixel por pixel.
+ya que el periférico spi que da **LiteX** no se modifico, la configuración inicial tuvo que ser hecha desde software; ademas  el dibujo fue hecho gracias a una función que coloreaba pixel por pixel.
 
 Todas las funciones para este fin se encuentran en  lcd.h, y se especifican en lcd.c
 ```h
