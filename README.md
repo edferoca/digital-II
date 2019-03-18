@@ -175,7 +175,7 @@ Un dato importante es el echo de que  hay muy pocas matrices debido a que, al re
 
 ![ram_llena](https://user-images.githubusercontent.com/47976279/54498780-45f07380-48d9-11e9-905b-324330fd61bb.png)
 
-### el main.c no tiene escrito dentor de si el jeugo
+### el jeugo no esta escrito dentro en el main.c
 Esta parte crucial para  estandarizar el proyecto;  ya que permite poder desarrollar otros juegos  e implementarlos en el proyecto a continuación se muestra la función mai.c, note ce que esta funciona no tiene nada del juego en si; solo llama otra función que es _juego_ en donde esta implementado todo.
 
 ### flujo del juego
