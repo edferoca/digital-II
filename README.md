@@ -14,7 +14,7 @@ como se observa en la imagen:
 
 El proyecto se encuentra separado en dos carpetas, final_1 y pruebas_periféricos; en el primero 
 estará albergado la implementación final y completa del  proyecto. En pruebas_periféricos  
-se encontrara todas las carpetas con cada prueba en lo diferente periférico ; esto con el fin 
+se encontrara todas las carpetas con cada prueba en los diferentes periféricos ; esto con el fin 
 de que pueda ver el recorrido que se hizo para armar el proyecto en su totalidad.
 
 Ya dentro de final_1 usted encontrara la siguiente distribución:
