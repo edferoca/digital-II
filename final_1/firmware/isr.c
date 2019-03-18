@@ -29,7 +29,7 @@ void botton_isr(void){
 
 	//00000001		start
 		if (pednig & 1) {
-			leds_out_write(0x01);
+			
 		}
 		//00000010  reset
 		if (pednig & 1 << 0x1) {

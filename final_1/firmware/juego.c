@@ -112,7 +112,7 @@ void nivel1(void){
             bloque(3);
             bloque(1);
           }
-
+/*
           if ((tempo >= 6) &&(tempo <= 7)) {
             bloque(2);
             bloque(3);
@@ -148,6 +148,7 @@ void nivel1(void){
           if ((tempo >= 20) &&(tempo <= 23)) {
             bloque(2);
           }
+          */
         }
 
   }

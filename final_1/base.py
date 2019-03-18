@@ -16,10 +16,7 @@ from btn_itrupt import*
 
 #salidas para nexys 4 ddr
 _io = [
-    ("user_led",  0, Pins("H17"), IOStandard("LVCMOS33")),
-    ("user_led",  1, Pins("K15"), IOStandard("LVCMOS33")),
-    ("user_led",  2, Pins("J13"), IOStandard("LVCMOS33")),
-    ("user_led",  3, Pins("N14"), IOStandard("LVCMOS33")),
+
 
 
     ("boton",  0, Pins("G16"), IOStandard("LVCMOS33")),
@@ -86,7 +83,7 @@ class BaseSoC(SoCCore):
     # Peripherals CSR declaration
     csr_peripherals = [
 
-        "leds",
+
         "botones",
         "lcd",
         "rs",
@@ -113,9 +110,7 @@ class BaseSoC(SoCCore):
         # Clock Reset Generation
         self.submodules.crg = CRG(platform.request("clk100"), ~platform.request("cpu_reset"))
 
-        # Led
-        user_leds = Cat(*[platform.request("user_led", i) for i in range(4)])
-        self.submodules.leds = Led(user_leds)
+
         #botones con interrupcion
         bot = Cat(*[platform.request("boton", i) for i in range(8)])
         self.submodules.botones = btnintrupt(bot)

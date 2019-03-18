@@ -14,7 +14,7 @@ void lcd_inic(void);
 
 void lcd_write( unsigned char rs, unsigned int info);  //escribe pixel
 
-void dib_cua(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigned int ymax,unsigned int color); //dibuja region rectangular
+void dib_cua(unsigned int Xmin,unsigned int Ymin,unsigned int Xmax,unsigned int ymax,unsigned int color); 
 void dib_tiles(unsigned int Xmin,unsigned int Ymin,Matriz matris); //dibuja tiles
 
 void busy_wait(unsigned int ds);

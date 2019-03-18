@@ -2,10 +2,6 @@ NET "serial_tx" LOC=D4 | IOSTANDARD=LVCMOS33; # serial:0.tx
 NET "serial_rx" LOC=C4 | IOSTANDARD=LVCMOS33; # serial:0.rx
 NET "clk100" LOC=E3 | IOSTANDARD=LVCMOS33; # clk100:0
 NET "cpu_reset" LOC=C12 | IOSTANDARD=LVCMOS33; # cpu_reset:0
-NET "user_led0" LOC=H17 | IOSTANDARD=LVCMOS33; # user_led:0
-NET "user_led1" LOC=K15 | IOSTANDARD=LVCMOS33; # user_led:1
-NET "user_led2" LOC=J13 | IOSTANDARD=LVCMOS33; # user_led:2
-NET "user_led3" LOC=N14 | IOSTANDARD=LVCMOS33; # user_led:3
 NET "boton0" LOC=G16 | IOSTANDARD=LVCMOS33; # boton:0
 NET "boton1" LOC=F16 | IOSTANDARD=LVCMOS33; # boton:1
 NET "boton2" LOC=D14 | IOSTANDARD=LVCMOS33; # boton:2
