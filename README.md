@@ -23,7 +23,7 @@ Ya dentro de final_1 usted encontrara la siguiente distribución:
 
 La carpeta **test** contiene el archivo _csr.csv_  el cual es una ayuda para que usted entienda 
 el mapa de memoria. En la carpeta **firmware** esta escrito el main.c, y demás archivos necesarios 
-para nuestro software (explicación mas adelante). Luego se encuentran el archivo base.py donde se encuentra  
+para nuestro software (explicación mas adelante). Luego se encuentran el archivo base.py donde se encuentra 
 implementado nuestro **SOC**; los demás archivos .py a excepción de load.py son algunas 
 implementaciones de hardware que serán usados por el soc para construir los periféricos pertinentes.
 
