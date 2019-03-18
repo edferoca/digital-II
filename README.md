@@ -31,7 +31,7 @@ implementaciones de hardware que serán usados por el soc para construir los per
 
 ## Especificaciones de Hardware
 
-Como se dijo anterior mente  el SoC esta implementado en el archivo _ base.py_   
+Como se dijo anteriormente  el SoC esta implementado en el archivo _ base.py_   
 
 ```python
 platform = Platform()
