@@ -21,7 +21,7 @@ Ya dentro de final_1 usted encontrara la siguiente distribución:
 
 ![final_1](https://user-images.githubusercontent.com/47976279/54495807-5858b600-48b5-11e9-98d4-0cfd5121cfa2.png)
 
-La carpeta **test** contiene el archivo _csr.csv_  el cual es una ayuda par aque usted entienda 
+La carpeta **test** contiene el archivo _csr.csv_  el cual es una ayuda para que usted entienda 
 el mapa de memoria. En la carpeta **firmware** esta escrito el main.c, y demás archivos necesarios 
 para nuestro software (explicación mas adelante). Luego se encuentran el archivo base.py donde se encuentra  
 implementado nuestro **SOC**; los demás archivos .py a excepción de load.py son algunas 
