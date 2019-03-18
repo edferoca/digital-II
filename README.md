@@ -142,7 +142,7 @@ void busy_wait(unsigned int ds);
  
  el juego fue desarrollado en su totalidad en software y se divide en dos partes: la construcción del decorado/ambiente y la construcción de los objetos.
 
-Para este fin se uso las funciones  de dibujado dib_cua (dibuja un cuadrado de un colo en una zona que se especifique y dib_tiles (en una zona de 15X15 dibuja una matriz que se especifica mas adelante).
+Para este fin se uso las funciones  de dibujado dib_cua (dibuja un cuadrado de un color en una zona que se especifique y dib_tiles (en una zona de 15X15 dibuja una matriz que se especifica mas adelante).
 
 El archivo juego.c tiene la función  _Juego_ en la cual se desarrolla todo el juego; cada nivel es una función diferente (ej. nivel1(void))
 
