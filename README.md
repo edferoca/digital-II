@@ -146,7 +146,7 @@ Para este fin se uso las funciones  de dibujado dib_cua (dibuja un cuadrado de u
 
 El archivo juego.c tiene la función  _Juego_ en la cual se desarrolla todo el juego; cada nivel es una función diferente (ej. nivel1(void))
 
-por ultimo cabe resaltar que el juego no tienen indicaciones ni mas dibujos debido a un satura miento de la memoria (se explicara a continuación)
+por ultimo cabe resaltar que el juego no tienen indicaciones ni mas dibujos debido a un saturamiento de la memoria (se explicara a continuación)
 
  ### dibujo de tiles
  
@@ -171,7 +171,7 @@ unsigned int carrito1[14][14]={{0x0000, 0x0000, 0x0000, 0x0000, 0x7BEF, 0x7BEF, 
 
 ```
 
-Un dato importante es el echo de que  hay muy pocas matrices debido a que, al realizar esta tarea en software, se lleno la memoria .
+Un dato importante es el hecho de que  hay muy pocas matrices debido a que, al realizar esta tarea en software, se lleno la memoria .
 
 ![ram_llena](https://user-images.githubusercontent.com/47976279/54498780-45f07380-48d9-11e9-905b-324330fd61bb.png)
 
